@@ -1,0 +1,17 @@
+domain: http://acme-schemas.gdbots.io
+
+namespaces:
+  - acme:pages
+
+languages:
+  php:
+    output: ./build/php/src
+
+  js:
+    output: ./build/js/src
+    packages:
+      acme: '@triniti/acme-schemas'
+
+  json-schema:
+    include_all: true
+    output: ./gh-pages/json-schema
