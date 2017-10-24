@@ -11,7 +11,8 @@
   "require-dev": {
     "composer/composer": "1.0.*@dev",
     "phpunit/phpunit": "~6.0",
-    "gdbots/pbjc": "~0.3"
+    "gdbots/pbjc": "~0.3",
+    "triniti/schemas": "dev-beta"
   },
   "autoload": {
     "files": [

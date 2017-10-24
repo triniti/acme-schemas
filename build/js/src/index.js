@@ -8,6 +8,21 @@
  */
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
+import '@triniti/acme-schemas/acme/pages/command/CreatePageV1';
+import '@triniti/acme-schemas/acme/pages/command/DeletePageV1';
+import '@triniti/acme-schemas/acme/pages/command/UpdatePageV1';
+import '@triniti/acme-schemas/acme/pages/event/PageCreatedV1';
+import '@triniti/acme-schemas/acme/pages/event/PageDeletedV1';
+import '@triniti/acme-schemas/acme/pages/event/PageUpdatedV1';
+import '@triniti/acme-schemas/acme/pages/node/PageV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageBatchRequestV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageBatchResponseV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageHistoryRequestV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageHistoryResponseV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageRequestV1';
+import '@triniti/acme-schemas/acme/pages/request/GetPageResponseV1';
+import '@triniti/acme-schemas/acme/pages/request/SearchPagesRequestV1';
+import '@triniti/acme-schemas/acme/pages/request/SearchPagesResponseV1';
 import '@gdbots/schemas/gdbots/analytics/tracker/KeenV1';
 import '@gdbots/schemas/gdbots/contexts/AppV1';
 import '@gdbots/schemas/gdbots/contexts/CloudV1';

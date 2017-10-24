@@ -9,6 +9,21 @@
  */
 
 \Gdbots\Pbj\MessageResolver::registerMap([
+    'acme:pages:command:create-page' => 'Acme\Schemas\Pages\Command\CreatePageV1',
+    'acme:pages:command:delete-page' => 'Acme\Schemas\Pages\Command\DeletePageV1',
+    'acme:pages:command:update-page' => 'Acme\Schemas\Pages\Command\UpdatePageV1',
+    'acme:pages:event:page-created' => 'Acme\Schemas\Pages\Event\PageCreatedV1',
+    'acme:pages:event:page-deleted' => 'Acme\Schemas\Pages\Event\PageDeletedV1',
+    'acme:pages:event:page-updated' => 'Acme\Schemas\Pages\Event\PageUpdatedV1',
+    'acme:pages:node:page' => 'Acme\Schemas\Pages\Node\PageV1',
+    'acme:pages:request:get-page-batch-request' => 'Acme\Schemas\Pages\Request\GetPageBatchRequestV1',
+    'acme:pages:request:get-page-batch-response' => 'Acme\Schemas\Pages\Request\GetPageBatchResponseV1',
+    'acme:pages:request:get-page-history-request' => 'Acme\Schemas\Pages\Request\GetPageHistoryRequestV1',
+    'acme:pages:request:get-page-history-response' => 'Acme\Schemas\Pages\Request\GetPageHistoryResponseV1',
+    'acme:pages:request:get-page-request' => 'Acme\Schemas\Pages\Request\GetPageRequestV1',
+    'acme:pages:request:get-page-response' => 'Acme\Schemas\Pages\Request\GetPageResponseV1',
+    'acme:pages:request:search-pages-request' => 'Acme\Schemas\Pages\Request\SearchPagesRequestV1',
+    'acme:pages:request:search-pages-response' => 'Acme\Schemas\Pages\Request\SearchPagesResponseV1',
     'gdbots:analytics:tracker:keen' => 'Gdbots\Schemas\Analytics\Tracker\KeenV1',
     'gdbots:contexts::app' => 'Gdbots\Schemas\Contexts\AppV1',
     'gdbots:contexts::cloud' => 'Gdbots\Schemas\Contexts\CloudV1',
