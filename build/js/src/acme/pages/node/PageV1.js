@@ -44,6 +44,7 @@ export default class PageV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(PageV1);
+TrinitiPagesPageV1Trait(PageV1);
 MessageResolver.register('acme:pages:node:page', PageV1);
 Object.freeze(PageV1);
 Object.freeze(PageV1.prototype);

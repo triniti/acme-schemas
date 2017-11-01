@@ -17,6 +17,7 @@
     'acme:pages:event:page-created' => 'Acme\Schemas\Pages\Event\PageCreatedV1',
     'acme:pages:event:page-deleted' => 'Acme\Schemas\Pages\Event\PageDeletedV1',
     'acme:pages:event:page-published' => 'Acme\Schemas\Pages\Event\PagePublishedV1',
+    'acme:pages:event:page-scheduled' => 'Acme\Schemas\Pages\Event\PageScheduledV1',
     'acme:pages:event:page-unpublished' => 'Acme\Schemas\Pages\Event\PageUnpublishedV1',
     'acme:pages:event:page-updated' => 'Acme\Schemas\Pages\Event\PageUpdatedV1',
     'acme:pages:node:page' => 'Acme\Schemas\Pages\Node\PageV1',
