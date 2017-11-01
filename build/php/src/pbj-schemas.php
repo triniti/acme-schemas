@@ -11,9 +11,13 @@
 \Gdbots\Pbj\MessageResolver::registerMap([
     'acme:pages:command:create-page' => 'Acme\Schemas\Pages\Command\CreatePageV1',
     'acme:pages:command:delete-page' => 'Acme\Schemas\Pages\Command\DeletePageV1',
+    'acme:pages:command:publish-page' => 'Acme\Schemas\Pages\Command\PublishPageV1',
+    'acme:pages:command:unpublish-page' => 'Acme\Schemas\Pages\Command\UnpublishPageV1',
     'acme:pages:command:update-page' => 'Acme\Schemas\Pages\Command\UpdatePageV1',
     'acme:pages:event:page-created' => 'Acme\Schemas\Pages\Event\PageCreatedV1',
     'acme:pages:event:page-deleted' => 'Acme\Schemas\Pages\Event\PageDeletedV1',
+    'acme:pages:event:page-published' => 'Acme\Schemas\Pages\Event\PagePublishedV1',
+    'acme:pages:event:page-unpublished' => 'Acme\Schemas\Pages\Event\PageUnpublishedV1',
     'acme:pages:event:page-updated' => 'Acme\Schemas\Pages\Event\PageUpdatedV1',
     'acme:pages:node:page' => 'Acme\Schemas\Pages\Node\PageV1',
     'acme:pages:request:get-page-batch-request' => 'Acme\Schemas\Pages\Request\GetPageBatchRequestV1',
