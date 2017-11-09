@@ -10,11 +10,13 @@
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import '@triniti/acme-schemas/acme/pages/command/CreatePageV1';
 import '@triniti/acme-schemas/acme/pages/command/DeletePageV1';
+import '@triniti/acme-schemas/acme/pages/command/ExpirePageV1';
 import '@triniti/acme-schemas/acme/pages/command/PublishPageV1';
 import '@triniti/acme-schemas/acme/pages/command/UnpublishPageV1';
 import '@triniti/acme-schemas/acme/pages/command/UpdatePageV1';
 import '@triniti/acme-schemas/acme/pages/event/PageCreatedV1';
 import '@triniti/acme-schemas/acme/pages/event/PageDeletedV1';
+import '@triniti/acme-schemas/acme/pages/event/PageExpiredV1';
 import '@triniti/acme-schemas/acme/pages/event/PagePublishedV1';
 import '@triniti/acme-schemas/acme/pages/event/PageScheduledV1';
 import '@triniti/acme-schemas/acme/pages/event/PageUnpublishedV1';

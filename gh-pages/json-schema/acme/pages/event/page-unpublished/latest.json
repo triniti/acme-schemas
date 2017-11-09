@@ -185,22 +185,6 @@
         "format": "slug"
       }
     },
-    "status": {
-      "type": "string",
-      "default": "draft",
-      "enum": [
-        "unknown",
-        "published",
-        "scheduled",
-        "draft",
-        "expired",
-        "deleted"
-      ],
-      "pbj": {
-        "type": "string-enum",
-        "rule": "single"
-      }
-    },
     "ctx_ip_geo": {
       "type": "object",
       "anyOf": [
