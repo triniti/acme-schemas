@@ -2,6 +2,7 @@ domain: http://acme-schemas.gdbots.io
 
 namespaces:
   - acme:pages
+  - acme:videos
 
 languages:
   php:
