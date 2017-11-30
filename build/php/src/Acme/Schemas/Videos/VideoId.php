@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Tmz\Schemas\Videos;
+namespace Acme\Schemas\Videos;
 use Gdbots\Pbj\WellKnown\UuidIdentifier;
 use Gdbots\Schemas\Ncr\NodeRef;
 final class VideoId extends UuidIdentifier
