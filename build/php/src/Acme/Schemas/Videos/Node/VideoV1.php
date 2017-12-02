@@ -57,12 +57,4 @@ final class VideoV1 extends AbstractMessage implements
             ]
         );
     }
-
-    /**
-     * @return array
-     */
-    public function getUriTemplateVars()
-    {
-        return ['video_id' => (string)$this->get('_id')];
-    }
 }

@@ -38,13 +38,6 @@ export default class VideoV1 extends Message {
       ],
     );
   }
-
-  /**
-   * @returns {Object}
-   */
-  getUriTemplateVars() {
-    return { video_id: `${this.get('_id', '')}` };
-  }
 }
 
 GdbotsNcrNodeV1Trait(VideoV1);
