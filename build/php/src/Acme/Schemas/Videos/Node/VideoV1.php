@@ -18,6 +18,8 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
+use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
+use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
 use Triniti\Schemas\Videos\Mixin\Video\VideoV1 as TrinitiVideosVideoV1;
 use Triniti\Schemas\Videos\Mixin\Video\VideoV1Mixin as TrinitiVideosVideoV1Mixin;
 use Triniti\Schemas\Videos\Mixin\Video\VideoV1Trait as TrinitiVideosVideoV1Trait;
@@ -29,6 +31,7 @@ final class VideoV1 extends AbstractMessage implements
     GdbotsNcrIndexedV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrPublishableV1,
+    GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
 {
     use GdbotsNcrNodeV1Trait;
@@ -53,6 +56,7 @@ final class VideoV1 extends AbstractMessage implements
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
+                GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
             ]
         );

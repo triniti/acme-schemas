@@ -6,6 +6,7 @@ import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/In
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin';
 import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Trait';
 import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publishable/PublishableV1Mixin';
+import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggable/SluggableV1Mixin';
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
@@ -34,6 +35,7 @@ export default class VideoV1 extends Message {
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
+        GdbotsNcrSluggableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
@@ -41,7 +43,6 @@ export default class VideoV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(VideoV1);
-TrinitiVideosVideoV1Trait(VideoV1);
 MessageResolver.register('acme:videos:node:video', VideoV1);
 Object.freeze(VideoV1);
 Object.freeze(VideoV1.prototype);
