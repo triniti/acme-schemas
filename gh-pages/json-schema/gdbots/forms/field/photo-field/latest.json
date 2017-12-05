@@ -83,6 +83,19 @@
         "format": "url"
       }
     },
+    "pii_impact": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "high",
+        "moderate",
+        "low"
+      ],
+      "pbj": {
+        "type": "string-enum",
+        "rule": "single"
+      }
+    },
     "max_bytes": {
       "type": "integer",
       "default": 0,
