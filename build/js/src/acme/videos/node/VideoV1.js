@@ -11,7 +11,7 @@ import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
-import TrinitiVideosVideoV1Mixin from '@triniti/schemas/triniti/videos/mixin/video/VideoV1Mixin';
+import TrinitiOvpVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Mixin';
 import VideoId from '@triniti/acme-schemas/acme/videos/VideoId';
 
 export default class VideoV1 extends Message {
@@ -31,7 +31,7 @@ export default class VideoV1 extends Message {
       ],
       [
         GdbotsNcrNodeV1Mixin.create(),
-        TrinitiVideosVideoV1Mixin.create(),
+        TrinitiOvpVideoV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),

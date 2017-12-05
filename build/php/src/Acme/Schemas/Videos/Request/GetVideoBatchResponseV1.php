@@ -9,14 +9,14 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeBatchResponse\GetNodeBatchResponseV1Mixin as
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Videos\Mixin\GetVideoBatchResponse\GetVideoBatchResponseV1 as TrinitiVideosGetVideoBatchResponseV1;
-use Triniti\Schemas\Videos\Mixin\GetVideoBatchResponse\GetVideoBatchResponseV1Mixin as TrinitiVideosGetVideoBatchResponseV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\GetVideoBatchResponse\GetVideoBatchResponseV1 as TrinitiOvpGetVideoBatchResponseV1;
+use Triniti\Schemas\Ovp\Mixin\GetVideoBatchResponse\GetVideoBatchResponseV1Mixin as TrinitiOvpGetVideoBatchResponseV1Mixin;
 
 final class GetVideoBatchResponseV1 extends AbstractMessage implements
     GetVideoBatchResponse,
     GdbotsPbjxResponseV1,
     GdbotsNcrGetNodeBatchResponseV1,
-    TrinitiVideosGetVideoBatchResponseV1
+    TrinitiOvpGetVideoBatchResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +30,7 @@ final class GetVideoBatchResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsNcrGetNodeBatchResponseV1Mixin::create(),
-                TrinitiVideosGetVideoBatchResponseV1Mixin::create(),
+                TrinitiOvpGetVideoBatchResponseV1Mixin::create(),
             ]
         );
     }

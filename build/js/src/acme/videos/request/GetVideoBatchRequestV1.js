@@ -5,7 +5,7 @@ import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiVideosGetVideoBatchRequestV1Mixin from '@triniti/schemas/triniti/videos/mixin/get-video-batch-request/GetVideoBatchRequestV1Mixin';
+import TrinitiOvpGetVideoBatchRequestV1Mixin from '@triniti/schemas/triniti/ovp/mixin/get-video-batch-request/GetVideoBatchRequestV1Mixin';
 
 export default class GetVideoBatchRequestV1 extends Message {
   /**
@@ -19,7 +19,7 @@ export default class GetVideoBatchRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsNcrGetNodeBatchRequestV1Mixin.create(),
-        TrinitiVideosGetVideoBatchRequestV1Mixin.create(),
+        TrinitiOvpGetVideoBatchRequestV1Mixin.create(),
       ],
     );
   }

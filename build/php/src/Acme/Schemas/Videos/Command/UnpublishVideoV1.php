@@ -9,14 +9,14 @@ use Gdbots\Schemas\Ncr\Mixin\UnpublishNode\UnpublishNodeV1Mixin as GdbotsNcrUnpu
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Videos\Mixin\UnpublishVideo\UnpublishVideoV1 as TrinitiVideosUnpublishVideoV1;
-use Triniti\Schemas\Videos\Mixin\UnpublishVideo\UnpublishVideoV1Mixin as TrinitiVideosUnpublishVideoV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\UnpublishVideo\UnpublishVideoV1 as TrinitiOvpUnpublishVideoV1;
+use Triniti\Schemas\Ovp\Mixin\UnpublishVideo\UnpublishVideoV1Mixin as TrinitiOvpUnpublishVideoV1Mixin;
 
 final class UnpublishVideoV1 extends AbstractMessage implements
     UnpublishVideo,
     GdbotsPbjxCommandV1,
     GdbotsNcrUnpublishNodeV1,
-    TrinitiVideosUnpublishVideoV1
+    TrinitiOvpUnpublishVideoV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +30,7 @@ final class UnpublishVideoV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrUnpublishNodeV1Mixin::create(),
-                TrinitiVideosUnpublishVideoV1Mixin::create(),
+                TrinitiOvpUnpublishVideoV1Mixin::create(),
             ]
         );
     }

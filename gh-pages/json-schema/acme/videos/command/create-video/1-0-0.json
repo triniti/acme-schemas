@@ -225,7 +225,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.gdbots.io/json-schema/triniti/videos/mixin/video/1-0-0.json#"
+          "$ref": "http://acme-schemas.gdbots.io/json-schema/triniti/ovp/mixin/video/1-0-0.json#"
         }
       ]
     }

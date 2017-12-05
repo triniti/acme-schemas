@@ -9,14 +9,14 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeRequest\GetNodeRequestV1Mixin as GdbotsNcrGe
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Videos\Mixin\GetVideoRequest\GetVideoRequestV1 as TrinitiVideosGetVideoRequestV1;
-use Triniti\Schemas\Videos\Mixin\GetVideoRequest\GetVideoRequestV1Mixin as TrinitiVideosGetVideoRequestV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\GetVideoRequest\GetVideoRequestV1 as TrinitiOvpGetVideoRequestV1;
+use Triniti\Schemas\Ovp\Mixin\GetVideoRequest\GetVideoRequestV1Mixin as TrinitiOvpGetVideoRequestV1Mixin;
 
 final class GetVideoRequestV1 extends AbstractMessage implements
     GetVideoRequest,
     GdbotsPbjxRequestV1,
     GdbotsNcrGetNodeRequestV1,
-    TrinitiVideosGetVideoRequestV1
+    TrinitiOvpGetVideoRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +30,7 @@ final class GetVideoRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsNcrGetNodeRequestV1Mixin::create(),
-                TrinitiVideosGetVideoRequestV1Mixin::create(),
+                TrinitiOvpGetVideoRequestV1Mixin::create(),
             ]
         );
     }

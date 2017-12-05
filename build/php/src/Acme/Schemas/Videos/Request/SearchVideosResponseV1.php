@@ -9,14 +9,14 @@ use Gdbots\Schemas\Ncr\Mixin\SearchNodesResponse\SearchNodesResponseV1Mixin as G
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Videos\Mixin\SearchVideosResponse\SearchVideosResponseV1 as TrinitiVideosSearchVideosResponseV1;
-use Triniti\Schemas\Videos\Mixin\SearchVideosResponse\SearchVideosResponseV1Mixin as TrinitiVideosSearchVideosResponseV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\SearchVideosResponse\SearchVideosResponseV1 as TrinitiOvpSearchVideosResponseV1;
+use Triniti\Schemas\Ovp\Mixin\SearchVideosResponse\SearchVideosResponseV1Mixin as TrinitiOvpSearchVideosResponseV1Mixin;
 
 final class SearchVideosResponseV1 extends AbstractMessage implements
     SearchVideosResponse,
     GdbotsPbjxResponseV1,
     GdbotsNcrSearchNodesResponseV1,
-    TrinitiVideosSearchVideosResponseV1
+    TrinitiOvpSearchVideosResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +30,7 @@ final class SearchVideosResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsNcrSearchNodesResponseV1Mixin::create(),
-                TrinitiVideosSearchVideosResponseV1Mixin::create(),
+                TrinitiOvpSearchVideosResponseV1Mixin::create(),
             ]
         );
     }

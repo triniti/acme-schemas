@@ -9,14 +9,14 @@ use Gdbots\Schemas\Ncr\Mixin\PublishNode\PublishNodeV1Mixin as GdbotsNcrPublishN
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Videos\Mixin\PublishVideo\PublishVideoV1 as TrinitiVideosPublishVideoV1;
-use Triniti\Schemas\Videos\Mixin\PublishVideo\PublishVideoV1Mixin as TrinitiVideosPublishVideoV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\PublishVideo\PublishVideoV1 as TrinitiOvpPublishVideoV1;
+use Triniti\Schemas\Ovp\Mixin\PublishVideo\PublishVideoV1Mixin as TrinitiOvpPublishVideoV1Mixin;
 
 final class PublishVideoV1 extends AbstractMessage implements
     PublishVideo,
     GdbotsPbjxCommandV1,
     GdbotsNcrPublishNodeV1,
-    TrinitiVideosPublishVideoV1
+    TrinitiOvpPublishVideoV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +30,7 @@ final class PublishVideoV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrPublishNodeV1Mixin::create(),
-                TrinitiVideosPublishVideoV1Mixin::create(),
+                TrinitiOvpPublishVideoV1Mixin::create(),
             ]
         );
     }

@@ -19,14 +19,14 @@ use Gdbots\Schemas\Ncr\Mixin\NodePublished\NodePublishedV1Mixin as GdbotsNcrNode
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Videos\Mixin\VideoPublished\VideoPublishedV1 as TrinitiVideosVideoPublishedV1;
-use Triniti\Schemas\Videos\Mixin\VideoPublished\VideoPublishedV1Mixin as TrinitiVideosVideoPublishedV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\VideoPublished\VideoPublishedV1 as TrinitiOvpVideoPublishedV1;
+use Triniti\Schemas\Ovp\Mixin\VideoPublished\VideoPublishedV1Mixin as TrinitiOvpVideoPublishedV1Mixin;
 
 final class VideoPublishedV1 extends AbstractMessage implements
     VideoPublished,
     GdbotsPbjxEventV1,
     GdbotsNcrNodePublishedV1,
-    TrinitiVideosVideoPublishedV1,
+    TrinitiOvpVideoPublishedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsIpToGeoV1,
     GdbotsEnrichmentsTimePartingV1,
@@ -45,7 +45,7 @@ final class VideoPublishedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodePublishedV1Mixin::create(),
-                TrinitiVideosVideoPublishedV1Mixin::create(),
+                TrinitiOvpVideoPublishedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsIpToGeoV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),

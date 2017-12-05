@@ -9,14 +9,14 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsResponse\GetEventsResponseV1Mixin as Gdbo
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Videos\Mixin\GetVideoHistoryResponse\GetVideoHistoryResponseV1 as TrinitiVideosGetVideoHistoryResponseV1;
-use Triniti\Schemas\Videos\Mixin\GetVideoHistoryResponse\GetVideoHistoryResponseV1Mixin as TrinitiVideosGetVideoHistoryResponseV1Mixin;
+use Triniti\Schemas\Ovp\Mixin\GetVideoHistoryResponse\GetVideoHistoryResponseV1 as TrinitiOvpGetVideoHistoryResponseV1;
+use Triniti\Schemas\Ovp\Mixin\GetVideoHistoryResponse\GetVideoHistoryResponseV1Mixin as TrinitiOvpGetVideoHistoryResponseV1Mixin;
 
 final class GetVideoHistoryResponseV1 extends AbstractMessage implements
     GetVideoHistoryResponse,
     GdbotsPbjxResponseV1,
     GdbotsPbjxGetEventsResponseV1,
-    TrinitiVideosGetVideoHistoryResponseV1
+    TrinitiOvpGetVideoHistoryResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +30,7 @@ final class GetVideoHistoryResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsPbjxGetEventsResponseV1Mixin::create(),
-                TrinitiVideosGetVideoHistoryResponseV1Mixin::create(),
+                TrinitiOvpGetVideoHistoryResponseV1Mixin::create(),
             ]
         );
     }

@@ -10,7 +10,7 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiVideosVideoExpiredV1Mixin from '@triniti/schemas/triniti/videos/mixin/video-expired/VideoExpiredV1Mixin';
+import TrinitiOvpVideoExpiredV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video-expired/VideoExpiredV1Mixin';
 
 export default class VideoExpiredV1 extends Message {
   /**
@@ -24,7 +24,7 @@ export default class VideoExpiredV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeExpiredV1Mixin.create(),
-        TrinitiVideosVideoExpiredV1Mixin.create(),
+        TrinitiOvpVideoExpiredV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsIpToGeoV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),

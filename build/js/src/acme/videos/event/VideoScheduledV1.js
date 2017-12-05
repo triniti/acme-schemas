@@ -10,7 +10,7 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiVideosVideoScheduledV1Mixin from '@triniti/schemas/triniti/videos/mixin/video-scheduled/VideoScheduledV1Mixin';
+import TrinitiOvpVideoScheduledV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video-scheduled/VideoScheduledV1Mixin';
 
 export default class VideoScheduledV1 extends Message {
   /**
@@ -24,7 +24,7 @@ export default class VideoScheduledV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeScheduledV1Mixin.create(),
-        TrinitiVideosVideoScheduledV1Mixin.create(),
+        TrinitiOvpVideoScheduledV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsIpToGeoV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),

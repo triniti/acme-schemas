@@ -5,7 +5,7 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiVideosUnpublishVideoV1Mixin from '@triniti/schemas/triniti/videos/mixin/unpublish-video/UnpublishVideoV1Mixin';
+import TrinitiOvpUnpublishVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/unpublish-video/UnpublishVideoV1Mixin';
 
 export default class UnpublishVideoV1 extends Message {
   /**
@@ -19,7 +19,7 @@ export default class UnpublishVideoV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrUnpublishNodeV1Mixin.create(),
-        TrinitiVideosUnpublishVideoV1Mixin.create(),
+        TrinitiOvpUnpublishVideoV1Mixin.create(),
       ],
     );
   }
