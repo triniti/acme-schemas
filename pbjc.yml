@@ -2,7 +2,7 @@ domain: http://acme-schemas.gdbots.io
 
 namespaces:
   - acme:canvas
-  - acme:videos
+  - acme:ovp
 
 languages:
   php:
