@@ -21,7 +21,7 @@
 
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
-      <curie-major>triniti:videos:mixin:video:v1</curie-major>
+      <curie-major>triniti:ovp:mixin:video:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
