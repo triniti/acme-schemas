@@ -32,8 +32,8 @@ export default class VideoV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiOvpVideoV1Mixin.create(),
-        GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
+        GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),

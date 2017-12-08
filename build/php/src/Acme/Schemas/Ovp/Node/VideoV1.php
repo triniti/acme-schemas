@@ -28,8 +28,8 @@ final class VideoV1 extends AbstractMessage implements
     Video,
     GdbotsNcrNodeV1,
     TrinitiOvpVideoV1,
-    GdbotsNcrIndexedV1,
     GdbotsNcrExpirableV1,
+    GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
     GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
@@ -53,8 +53,8 @@ final class VideoV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiOvpVideoV1Mixin::create(),
-                GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
+                GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
