@@ -1,4 +1,4 @@
-// @link http://acme-schemas.gdbots.io/json-schema/acme/news/event/article-updated/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/event/article-updated/1-0-0.json#
 import GdbotsNcrNodeUpdatedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node-updated/NodeUpdatedV1Mixin';
 import GdbotsPbjxEventV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/event/EventV1Mixin';
 import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/EventV1Trait';

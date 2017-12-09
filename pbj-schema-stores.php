@@ -15,5 +15,6 @@ $vendorDir = realpath(__DIR__.'/vendor');
 \Gdbots\Pbjc\SchemaStore::addDirs([
     $vendorDir.'/gdbots/schemas/schemas/',
     $vendorDir.'/triniti/schemas/schemas/',
+    $vendorDir.'/gdbots/acme-schemas/schemas/',
     __DIR__.'/schemas/'
 ]);

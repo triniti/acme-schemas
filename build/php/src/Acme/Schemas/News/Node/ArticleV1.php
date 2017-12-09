@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/news/node/article/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-0.json#
 namespace Acme\Schemas\News\Node;
 
 use Acme\Schemas\News\ArticleId;

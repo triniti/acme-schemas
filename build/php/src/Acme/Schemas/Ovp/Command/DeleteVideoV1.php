@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/ovp/command/delete-video/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/command/delete-video/1-0-0.json#
 namespace Acme\Schemas\Ovp\Command;
 
 use Gdbots\Pbj\AbstractMessage;

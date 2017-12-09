@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/news/command/create-article/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/command/create-article/1-0-0.json#
 namespace Acme\Schemas\News\Command;
 
 use Gdbots\Pbj\AbstractMessage;

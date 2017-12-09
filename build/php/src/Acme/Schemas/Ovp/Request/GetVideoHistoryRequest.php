@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/ovp/request/get-video-history-request/latest.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/request/get-video-history-request/latest.json#
 namespace Acme\Schemas\Ovp\Request;
 
 use Gdbots\Pbj\Message;

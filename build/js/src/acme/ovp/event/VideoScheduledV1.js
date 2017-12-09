@@ -1,4 +1,4 @@
-// @link http://acme-schemas.gdbots.io/json-schema/acme/ovp/event/video-scheduled/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/event/video-scheduled/1-0-0.json#
 import GdbotsAnalyticsTrackedMessageV1Mixin from '@gdbots/schemas/gdbots/analytics/mixin/tracked-message/TrackedMessageV1Mixin';
 import GdbotsEnrichmentsTimePartingV1Mixin from '@gdbots/schemas/gdbots/enrichments/mixin/time-parting/TimePartingV1Mixin';
 import GdbotsEnrichmentsTimeSamplingV1Mixin from '@gdbots/schemas/gdbots/enrichments/mixin/time-sampling/TimeSamplingV1Mixin';

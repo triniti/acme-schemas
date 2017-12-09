@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.gdbots.io/json-schema/triniti/canvas/mixin/search-pages-response/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/canvas/mixin/search-pages-response/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -172,7 +172,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/pbjx/mixin/request/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/pbjx/mixin/request/1-0-0.json#"
         }
       ]
     },
@@ -180,7 +180,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.gdbots.io/json-schema/triniti/canvas/mixin/page/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/canvas/mixin/page/1-0-0.json#"
         }
       ]
     }

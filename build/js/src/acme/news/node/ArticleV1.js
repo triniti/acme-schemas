@@ -1,4 +1,4 @@
-// @link http://acme-schemas.gdbots.io/json-schema/acme/news/node/article/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-0.json#
 import ArticleId from '@triniti/acme-schemas/acme/news/ArticleId';
 import Fb from '@gdbots/pbj/FieldBuilder';
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';

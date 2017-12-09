@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/ovp/event/video-created/latest.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/event/video-created/latest.json#
 namespace Acme\Schemas\Ovp\Event;
 
 use Gdbots\Pbj\Message;

@@ -1,4 +1,4 @@
-// @link http://acme-schemas.gdbots.io/json-schema/acme/canvas/command/delete-page/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/canvas/command/delete-page/1-0-0.json#
 import GdbotsNcrDeleteNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/delete-node/DeleteNodeV1Mixin';
 import GdbotsPbjxCommandV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/command/CommandV1Mixin';
 import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/CommandV1Trait';

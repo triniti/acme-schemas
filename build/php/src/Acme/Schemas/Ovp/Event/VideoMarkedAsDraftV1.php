@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.gdbots.io/json-schema/acme/ovp/event/video-marked-as-draft/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/event/video-marked-as-draft/1-0-0.json#
 namespace Acme\Schemas\Ovp\Event;
 
 use Gdbots\Pbj\AbstractMessage;

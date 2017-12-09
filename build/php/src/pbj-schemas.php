@@ -5,7 +5,7 @@
  *
  * Registers all of the pbj schemas with the MessageResolver.
  *
- * @link http://acme-schemas.gdbots.io/
+ * @link http://acme-schemas.triniti.io/
  */
 
 \Gdbots\Pbj\MessageResolver::registerMap([
