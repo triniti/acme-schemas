@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/canvas/mixin/publish-page/1-0-0.json#",
+  "id": "http://acme-schemas.gdbots.io/json-schema/triniti/canvas/mixin/publish-page/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -196,6 +196,17 @@
         "type": "date-time",
         "rule": "single"
       }
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
+      "minLength": 0,
+      "maxLength": 255,
+      "pbj": {
+        "type": "string",
+        "rule": "single",
+        "format": "slug"
+      }
     }
   },
   "required": [
@@ -207,7 +218,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/app/1-0-0.json#"
+          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/app/1-0-0.json#"
         }
       ]
     },
@@ -215,7 +226,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
+          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
         }
       ]
     }

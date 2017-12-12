@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.triniti.io/json-schema/acme/canvas/node/page/1-0-0.json#
+// @link http://acme-schemas.gdbots.io/json-schema/acme/canvas/node/page/1-0-0.json#
 namespace Acme\Schemas\Canvas\Node;
 
 use Acme\Schemas\Canvas\PageId;
@@ -18,8 +18,6 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
-use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
-use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1 as TrinitiCanvasPageV1;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Mixin as TrinitiCanvasPageV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Trait as TrinitiCanvasPageV1Trait;
@@ -28,10 +26,9 @@ final class PageV1 extends AbstractMessage implements
     Page,
     GdbotsNcrNodeV1,
     TrinitiCanvasPageV1,
-    GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
+    GdbotsNcrExpirableV1,
     GdbotsNcrPublishableV1,
-    GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
 {
     use GdbotsNcrNodeV1Trait;
@@ -53,12 +50,19 @@ final class PageV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCanvasPageV1Mixin::create(),
-                GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
+                GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
-                GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
             ]
         );
+    }
+
+    /**
+     * @return array
+     */
+    public function getUriTemplateVars()
+    {
+        return ['page_id' => (string)$this->get('_id')];
     }
 }

@@ -1,10 +1,7 @@
-domain: http://acme-schemas.triniti.io
+domain: http://acme-schemas.gdbots.io
 
 namespaces:
   - acme:canvas
-  - acme:iam
-  - acme:news
-  - acme:ovp
 
 languages:
   php:
