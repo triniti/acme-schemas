@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.gdbots.io/json-schema/acme/canvas/request/search-pages-request/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/acme/canvas/request/search-pages-request/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -300,7 +300,9 @@
         "created-at-desc",
         "created-at-asc",
         "updated-at-desc",
-        "updated-at-asc"
+        "updated-at-asc",
+        "title-desc",
+        "title-asc"
       ],
       "pbj": {
         "type": "string-enum",
@@ -317,7 +319,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/app/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/app/1-0-0.json#"
         }
       ]
     },
@@ -325,7 +327,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
         }
       ]
     }
