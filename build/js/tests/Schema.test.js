@@ -3,7 +3,7 @@ import isPlainObject from 'lodash/isPlainObject';
 import Message from '@gdbots/pbj/Message';
 import MessageRef from '@gdbots/pbj/MessageRef';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
-import '@gdbots/acme-schemas';
+import '@triniti/acme-schemas';
 
 test('Can create all messages', (t) => {
   MessageResolver.all().forEach((classProto) => {

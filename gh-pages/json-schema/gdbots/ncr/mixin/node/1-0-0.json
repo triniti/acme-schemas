@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.gdbots.io/json-schema/gdbots/ncr/mixin/node/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/gdbots/ncr/mixin/node/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -20,8 +20,10 @@
         "unknown",
         "published",
         "scheduled",
+        "pending",
         "draft",
         "expired",
+        "archived",
         "deleted"
       ],
       "pbj": {
