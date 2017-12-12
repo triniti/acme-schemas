@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/gdbots/iam/mixin/grant-roles-to-user/1-0-0.json#",
+  "id": "http://acme-schemas.gdbots.io/json-schema/gdbots/iam/mixin/grant-roles-to-user/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -215,7 +215,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/app/1-0-0.json#"
+          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/app/1-0-0.json#"
         }
       ]
     },
@@ -223,7 +223,7 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
+          "$ref": "http://acme-schemas.gdbots.io/json-schema/gdbots/contexts/cloud/1-0-0.json#"
         }
       ]
     }
