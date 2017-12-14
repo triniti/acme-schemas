@@ -1,0 +1,31 @@
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/command/rename-article/1-0-0.json#
+import GdbotsNcrRenameNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/rename-node/RenameNodeV1Mixin';
+import GdbotsPbjxCommandV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/command/CommandV1Mixin';
+import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/CommandV1Trait';
+import Message from '@gdbots/pbj/Message';
+import MessageResolver from '@gdbots/pbj/MessageResolver';
+import Schema from '@gdbots/pbj/Schema';
+import TrinitiNewsRenameArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/rename-article/RenameArticleV1Mixin';
+
+export default class RenameArticleV1 extends Message {
+  /**
+   * @private
+   *
+   * @returns {Schema}
+   */
+  static defineSchema() {
+    return new Schema('pbj:acme:news:command:rename-article:1-0-0', RenameArticleV1,
+      [],
+      [
+        GdbotsPbjxCommandV1Mixin.create(),
+        GdbotsNcrRenameNodeV1Mixin.create(),
+        TrinitiNewsRenameArticleV1Mixin.create(),
+      ],
+    );
+  }
+}
+
+GdbotsPbjxCommandV1Trait(RenameArticleV1);
+MessageResolver.register('acme:news:command:rename-article', RenameArticleV1);
+Object.freeze(RenameArticleV1);
+Object.freeze(RenameArticleV1.prototype);
