@@ -8,6 +8,9 @@
  */
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
+import '@triniti/acme-schemas/acme/canvas/block/CodeBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/IframeBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/YoutubeVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/command/CreatePageV1';
 import '@triniti/acme-schemas/acme/canvas/command/DeletePageV1';
 import '@triniti/acme-schemas/acme/canvas/command/ExpirePageV1';
@@ -170,5 +173,6 @@ import '@gdbots/schemas/gdbots/pbjx/event/HealthCheckedV1';
 import '@gdbots/schemas/gdbots/pbjx/request/EchoRequestV1';
 import '@gdbots/schemas/gdbots/pbjx/request/EchoResponseV1';
 import '@gdbots/schemas/gdbots/pbjx/request/RequestFailedResponseV1';
+import '@triniti/schemas/triniti/canvas/block/RenderContextV1';
 
 export default MessageResolver;

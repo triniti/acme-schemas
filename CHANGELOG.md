@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v0.1.2
+* __Add Schemas:__
+  * `acme:canvas:block:code-block`
+  * `acme:canvas:block:iframe-block`
+  * `acme:canvas:block:youtube-video-block`
+
+
 ## v0.1.1
 * __Add Schemas:__
   * `acme:canvas:command:rename-page`

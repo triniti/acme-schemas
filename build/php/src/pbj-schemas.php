@@ -9,6 +9,9 @@
  */
 
 \Gdbots\Pbj\MessageResolver::registerMap([
+    'acme:canvas:block:code-block' => 'Acme\Schemas\Canvas\Block\CodeBlockV1',
+    'acme:canvas:block:iframe-block' => 'Acme\Schemas\Canvas\Block\IframeBlockV1',
+    'acme:canvas:block:youtube-video-block' => 'Acme\Schemas\Canvas\Block\YoutubeVideoBlockV1',
     'acme:canvas:command:create-page' => 'Acme\Schemas\Canvas\Command\CreatePageV1',
     'acme:canvas:command:delete-page' => 'Acme\Schemas\Canvas\Command\DeletePageV1',
     'acme:canvas:command:expire-page' => 'Acme\Schemas\Canvas\Command\ExpirePageV1',
@@ -171,4 +174,5 @@
     'gdbots:pbjx:request:echo-request' => 'Gdbots\Schemas\Pbjx\Request\EchoRequestV1',
     'gdbots:pbjx:request:echo-response' => 'Gdbots\Schemas\Pbjx\Request\EchoResponseV1',
     'gdbots:pbjx:request:request-failed-response' => 'Gdbots\Schemas\Pbjx\Request\RequestFailedResponseV1',
+    'triniti:canvas:block:render-context' => 'Triniti\Schemas\Canvas\Block\RenderContextV1',
 ]);
