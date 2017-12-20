@@ -1,6 +1,7 @@
 domain: http://acme-schemas.triniti.io
 
 namespaces:
+  - acme:apollo
   - acme:canvas
   - acme:iam
   - acme:news
