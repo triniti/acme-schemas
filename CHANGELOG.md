@@ -3,7 +3,6 @@
 
 ## v0.1.2
 * __Add Schemas:__
-  * `acme:canvas:block:block`
   * `acme:canvas:block:code-block`
   * `acme:canvas:block:facebook-post-block`
   * `acme:canvas:block:facebook-video-block`
