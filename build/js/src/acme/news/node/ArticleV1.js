@@ -13,6 +13,7 @@ import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiNewsArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Mixin';
+import TrinitiNewsArticleV1Trait from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Trait';
 
 export default class ArticleV1 extends Message {
   /**
@@ -43,6 +44,7 @@ export default class ArticleV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(ArticleV1);
+TrinitiNewsArticleV1Trait(ArticleV1);
 MessageResolver.register('acme:news:node:article', ArticleV1);
 Object.freeze(ArticleV1);
 Object.freeze(ArticleV1.prototype);
