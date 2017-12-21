@@ -9,7 +9,23 @@
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import '@triniti/acme-schemas/acme/canvas/block/CodeBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/FacebookPostBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/FacebookVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/IframeBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/ImgurPostBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/InstagramMediaBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/PinterestBoardBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/PinterestPinBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/PinterestProfileBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterCollectionTimelineBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterListTimelineBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterMomentBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterSearchTimelineBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterTweetBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterUserTimelineBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/TwitterVideoBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/VevoVideoBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/YoutubePlaylistBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/YoutubeVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/command/CreatePageV1';
 import '@triniti/acme-schemas/acme/canvas/command/DeletePageV1';

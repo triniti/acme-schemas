@@ -5,6 +5,7 @@ import Schema from '@gdbots/pbj/Schema';
 import TrinitiCanvasBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/block/BlockV1Mixin';
 import TrinitiCanvasBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/block/BlockV1Trait';
 import TrinitiCanvasYoutubeVideoBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/youtube-video-block/YoutubeVideoBlockV1Mixin';
+import TrinitiCanvasYoutubeVideoBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/youtube-video-block/YoutubeVideoBlockV1Trait';
 
 export default class YoutubeVideoBlockV1 extends Message {
   /**
@@ -24,6 +25,7 @@ export default class YoutubeVideoBlockV1 extends Message {
 }
 
 TrinitiCanvasBlockV1Trait(YoutubeVideoBlockV1);
+TrinitiCanvasYoutubeVideoBlockV1Trait(YoutubeVideoBlockV1);
 MessageResolver.register('acme:canvas:block:youtube-video-block', YoutubeVideoBlockV1);
 Object.freeze(YoutubeVideoBlockV1);
 Object.freeze(YoutubeVideoBlockV1.prototype);

@@ -12,6 +12,7 @@ import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiOvpVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Mixin';
+import TrinitiOvpVideoV1Trait from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Trait';
 import VideoId from '@triniti/acme-schemas/acme/ovp/VideoId';
 
 export default class VideoV1 extends Message {
@@ -43,6 +44,7 @@ export default class VideoV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(VideoV1);
+TrinitiOvpVideoV1Trait(VideoV1);
 MessageResolver.register('acme:ovp:node:video', VideoV1);
 Object.freeze(VideoV1);
 Object.freeze(VideoV1.prototype);
