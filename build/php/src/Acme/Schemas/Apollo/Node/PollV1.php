@@ -18,8 +18,6 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
-use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
-use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1 as TrinitiApolloPollV1;
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1Mixin as TrinitiApolloPollV1Mixin;
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1Trait as TrinitiApolloPollV1Trait;
@@ -31,7 +29,6 @@ final class PollV1 extends AbstractMessage implements
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
-    GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
 {
     use GdbotsNcrNodeV1Trait;
@@ -56,7 +53,6 @@ final class PollV1 extends AbstractMessage implements
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
-                GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
             ]
         );
