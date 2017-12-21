@@ -13,6 +13,7 @@ import PageId from '@triniti/acme-schemas/acme/canvas/PageId';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiCanvasPageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Mixin';
+import TrinitiCanvasPageV1Trait from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Trait';
 
 export default class PageV1 extends Message {
   /**
@@ -43,6 +44,7 @@ export default class PageV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(PageV1);
+TrinitiCanvasPageV1Trait(PageV1);
 MessageResolver.register('acme:canvas:node:page', PageV1);
 Object.freeze(PageV1);
 Object.freeze(PageV1.prototype);
