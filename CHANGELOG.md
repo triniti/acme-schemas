@@ -1,5 +1,34 @@
 # CHANGELOG
 
+## v0.1.3
+* __Add Schemas:__
+  * `acme:apollo:command:create-poll`
+  * `acme:apollo:command:delete-poll`
+  * `acme:apollo:command:expire-poll`
+  * `acme:apollo:command:mark-poll-as-draft`
+  * `acme:apollo:command:mark-poll-as-pending`
+  * `acme:apollo:command:publish-poll`
+  * `acme:apollo:command:unpublish-poll`
+  * `acme:apollo:command:update-poll`
+  * `acme:apollo:event:poll-created`
+  * `acme:apollo:event:poll-deleted`
+  * `acme:apollo:event:poll-expired`
+  * `acme:apollo:event:poll-marked-as-draft`
+  * `acme:apollo:event:poll-marked-as-pending`
+  * `acme:apollo:event:poll-published`
+  * `acme:apollo:event:poll-scheduled`
+  * `acme:apollo:event:poll-unpublished`
+  * `acme:apollo:event:poll-updated`
+  * `acme:apollo:node:poll`
+  * `acme:apollo:request:get-poll-batch-request`
+  * `acme:apollo:request:get-poll-batch-response`
+  * `acme:apollo:request:get-poll-history-request`
+  * `acme:apollo:request:get-poll-history-response`
+  * `acme:apollo:request:get-poll-request`
+  * `acme:apollo:request:get-poll-response`
+  * `acme:apollo:request:search-polls-request`
+  * `acme:apollo:request:search-polls-response`
+
 
 ## v0.1.2
 * __Add Schemas:__
