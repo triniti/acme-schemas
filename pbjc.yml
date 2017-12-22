@@ -2,6 +2,7 @@ domain: http://acme-schemas.triniti.io
 
 namespaces:
   - acme:canvas
+  - acme:dam
   - acme:iam
   - acme:news
   - acme:ovp
