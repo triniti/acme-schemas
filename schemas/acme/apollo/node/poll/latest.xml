@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pbj-schema xmlns="http://gdbots.io/pbj/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
+
+  <schema id="pbj:acme:apollo:node:poll:1-0-0">
+    <fields>
+      <field name="_id" type="identifier" required="true">
+        <php-options>
+          <imports>use Acme\Schemas\Apollo\PollId;</imports>
+          <class-name>PollId::class</class-name>
+          <default>function() { return PollId::generate(); }</default>
+        </php-options>
+        <js-options>
+          <imports>import PollId from '@triniti/acme-schemas/acme/apollo/PollId';</imports>
+          <class-proto>PollId</class-proto>
+          <default>() => PollId.generate()</default>
+        </js-options>
+      </field>
+    </fields>
+
+    <mixins>
+      <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
+      <curie-major>triniti:apollo:mixin:poll:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
+      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
+    </mixins>
+  </schema>
+</pbj-schema>
