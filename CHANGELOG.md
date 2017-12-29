@@ -1,7 +1,10 @@
 # CHANGELOG
 
+
 ## v0.1.3
 * __Add Schemas:__
+  * `acme:apollo::poll-answer`
+  * `acme:apollo:command:cast-vote`
   * `acme:apollo:command:create-poll`
   * `acme:apollo:command:delete-poll`
   * `acme:apollo:command:expire-poll`
@@ -19,6 +22,7 @@
   * `acme:apollo:event:poll-scheduled`
   * `acme:apollo:event:poll-unpublished`
   * `acme:apollo:event:poll-updated`
+  * `acme:apollo:event:vote-casted`
   * `acme:apollo:node:poll`
   * `acme:apollo:request:get-poll-batch-request`
   * `acme:apollo:request:get-poll-batch-response`

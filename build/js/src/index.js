@@ -8,6 +8,8 @@
  */
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
+import '@triniti/acme-schemas/acme/apollo/PollAnswerV1';
+import '@triniti/acme-schemas/acme/apollo/command/CastVoteV1';
 import '@triniti/acme-schemas/acme/apollo/command/CreatePollV1';
 import '@triniti/acme-schemas/acme/apollo/command/DeletePollV1';
 import '@triniti/acme-schemas/acme/apollo/command/ExpirePollV1';
@@ -25,6 +27,7 @@ import '@triniti/acme-schemas/acme/apollo/event/PollPublishedV1';
 import '@triniti/acme-schemas/acme/apollo/event/PollScheduledV1';
 import '@triniti/acme-schemas/acme/apollo/event/PollUnpublishedV1';
 import '@triniti/acme-schemas/acme/apollo/event/PollUpdatedV1';
+import '@triniti/acme-schemas/acme/apollo/event/VoteCastedV1';
 import '@triniti/acme-schemas/acme/apollo/node/PollV1';
 import '@triniti/acme-schemas/acme/apollo/request/GetPollBatchRequestV1';
 import '@triniti/acme-schemas/acme/apollo/request/GetPollBatchResponseV1';

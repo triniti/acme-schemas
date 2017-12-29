@@ -12,6 +12,7 @@ import PollId from '@triniti/acme-schemas/acme/apollo/PollId';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiApolloPollV1Mixin from '@triniti/schemas/triniti/apollo/mixin/poll/PollV1Mixin';
+import TrinitiApolloPollV1Trait from '@triniti/schemas/triniti/apollo/mixin/poll/PollV1Trait';
 
 export default class PollV1 extends Message {
   /**
@@ -41,6 +42,7 @@ export default class PollV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(PollV1);
+TrinitiApolloPollV1Trait(PollV1);
 MessageResolver.register('acme:apollo:node:poll', PollV1);
 Object.freeze(PollV1);
 Object.freeze(PollV1.prototype);

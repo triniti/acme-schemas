@@ -9,6 +9,8 @@
  */
 
 \Gdbots\Pbj\MessageResolver::registerMap([
+    'acme:apollo::poll-answer' => 'Acme\Schemas\Apollo\PollAnswerV1',
+    'acme:apollo:command:cast-vote' => 'Acme\Schemas\Apollo\Command\CastVoteV1',
     'acme:apollo:command:create-poll' => 'Acme\Schemas\Apollo\Command\CreatePollV1',
     'acme:apollo:command:delete-poll' => 'Acme\Schemas\Apollo\Command\DeletePollV1',
     'acme:apollo:command:expire-poll' => 'Acme\Schemas\Apollo\Command\ExpirePollV1',
@@ -26,6 +28,7 @@
     'acme:apollo:event:poll-scheduled' => 'Acme\Schemas\Apollo\Event\PollScheduledV1',
     'acme:apollo:event:poll-unpublished' => 'Acme\Schemas\Apollo\Event\PollUnpublishedV1',
     'acme:apollo:event:poll-updated' => 'Acme\Schemas\Apollo\Event\PollUpdatedV1',
+    'acme:apollo:event:vote-casted' => 'Acme\Schemas\Apollo\Event\VoteCastedV1',
     'acme:apollo:node:poll' => 'Acme\Schemas\Apollo\Node\PollV1',
     'acme:apollo:request:get-poll-batch-request' => 'Acme\Schemas\Apollo\Request\GetPollBatchRequestV1',
     'acme:apollo:request:get-poll-batch-response' => 'Acme\Schemas\Apollo\Request\GetPollBatchResponseV1',
