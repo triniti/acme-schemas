@@ -98,7 +98,6 @@
     'acme:dam:event:asset-scheduled' => 'Acme\Schemas\Dam\Event\AssetScheduledV1',
     'acme:dam:event:asset-unpublished' => 'Acme\Schemas\Dam\Event\AssetUnpublishedV1',
     'acme:dam:event:asset-updated' => 'Acme\Schemas\Dam\Event\AssetUpdatedV1',
-    'acme:dam:node:asset' => 'Acme\Schemas\Dam\Node\AssetV1',
     'acme:dam:node:audio-asset' => 'Acme\Schemas\Dam\Node\AudioAssetV1',
     'acme:dam:node:document-asset' => 'Acme\Schemas\Dam\Node\DocumentAssetV1',
     'acme:dam:node:image-asset' => 'Acme\Schemas\Dam\Node\ImageAssetV1',

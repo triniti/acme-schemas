@@ -97,7 +97,6 @@ import '@triniti/acme-schemas/acme/dam/event/AssetPublishedV1';
 import '@triniti/acme-schemas/acme/dam/event/AssetScheduledV1';
 import '@triniti/acme-schemas/acme/dam/event/AssetUnpublishedV1';
 import '@triniti/acme-schemas/acme/dam/event/AssetUpdatedV1';
-import '@triniti/acme-schemas/acme/dam/node/AssetV1';
 import '@triniti/acme-schemas/acme/dam/node/AudioAssetV1';
 import '@triniti/acme-schemas/acme/dam/node/DocumentAssetV1';
 import '@triniti/acme-schemas/acme/dam/node/ImageAssetV1';
