@@ -2,11 +2,8 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/video-asset/1-0-0.json#
 namespace Acme\Schemas\Dam\Node;
 
-use Acme\Schemas\Dam\AssetId;
 use Gdbots\Pbj\AbstractMessage;
-use Gdbots\Pbj\FieldBuilder as Fb;
 use Gdbots\Pbj\Schema;
-use Gdbots\Pbj\Type as T;
 use Gdbots\Schemas\Common\Mixin\Taggable\TaggableV1 as GdbotsCommonTaggableV1;
 use Gdbots\Schemas\Common\Mixin\Taggable\TaggableV1Mixin as GdbotsCommonTaggableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Expirable\ExpirableV1 as GdbotsNcrExpirableV1;
@@ -43,13 +40,7 @@ final class VideoAssetV1 extends AbstractMessage implements
     protected static function defineSchema()
     {
         return new Schema('pbj:acme:dam:node:video-asset:1-0-0', __CLASS__,
-            [
-                Fb::create('_id', T\IdentifierType::create())
-                    ->required()
-                    ->withDefault(function() { return AssetId::generate(); })
-                    ->className(AssetId::class)
-                    ->build(),
-            ],
+            [],
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),

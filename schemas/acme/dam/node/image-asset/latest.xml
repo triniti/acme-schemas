@@ -4,21 +4,6 @@
     xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
 
   <schema id="pbj:acme:dam:node:image-asset:1-0-0">
-    <fields>
-      <field name="_id" type="identifier" required="true">
-        <php-options>
-          <imports>use Acme\Schemas\Dam\AssetId;</imports>
-          <class-name>AssetId::class</class-name>
-          <default>function() { return AssetId::generate(); }</default>
-        </php-options>
-        <js-options>
-          <imports>import AssetId from '@triniti/acme-schemas/acme/dam/AssetId';</imports>
-          <class-proto>AssetId</class-proto>
-          <default>() => AssetId.generate()</default>
-        </js-options>
-      </field>
-    </fields>
-
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
       <curie-major>triniti:dam:mixin:asset:v1</curie-major>

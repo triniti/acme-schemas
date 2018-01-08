@@ -1,6 +1,4 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/audio-asset/1-0-0.json#
-import AssetId from '@triniti/acme-schemas/acme/dam/AssetId';
-import Fb from '@gdbots/pbj/FieldBuilder';
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirable/ExpirableV1Mixin';
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
@@ -10,7 +8,6 @@ import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publis
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import T from '@gdbots/pbj/types';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
 import TrinitiDamAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Trait';
 import TrinitiDamAudioAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/audio-asset/AudioAssetV1Mixin';
@@ -23,13 +20,7 @@ export default class AudioAssetV1 extends Message {
    */
   static defineSchema() {
     return new Schema('pbj:acme:dam:node:audio-asset:1-0-0', AudioAssetV1,
-      [
-        Fb.create('_id', T.IdentifierType.create())
-          .required()
-          .withDefault(() => AssetId.generate())
-          .classProto(AssetId)
-          .build(),
-      ],
+      [],
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
