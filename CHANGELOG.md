@@ -1,5 +1,35 @@
 # CHANGELOG
 
+## v0.1.4
+* __Add Schemas:__
+  * `acme:dam:command:create-asset`
+  * `acme:dam:command:delete-asset`
+  * `acme:dam:command:expire-asset`
+  * `acme:dam:command:publish-asset`
+  * `acme:dam:command:unpublish-asset`
+  * `acme:dam:command:update-asset`
+  * `acme:dam:event:asset-created`
+  * `acme:dam:event:asset-deleted`
+  * `acme:dam:event:asset-expired`
+  * `acme:dam:event:asset-published`
+  * `acme:dam:event:asset-scheduled`
+  * `acme:dam:event:asset-unpublished`
+  * `acme:dam:event:asset-updated`
+  * `acme:dam:node:audio-asset`
+  * `acme:dam:node:document-asset`
+  * `acme:dam:node:image-asset`
+  * `acme:dam:node:video-asset`
+  * `acme:dam:request:get-asset-batch-request`
+  * `acme:dam:request:get-asset-batch-response`
+  * `acme:dam:request:get-asset-history-request`
+  * `acme:dam:request:get-asset-history-response`
+  * `acme:dam:request:get-asset-request`
+  * `acme:dam:request:get-asset-response`
+  * `acme:dam:request:get-upload-urls-request`
+  * `acme:dam:request:get-upload-urls-response`
+  * `acme:dam:request:search-assets-request`
+  * `acme:dam:request:search-assets-response`
+
 
 ## v0.1.3
 * __Add Schemas:__
