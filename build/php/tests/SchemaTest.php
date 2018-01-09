@@ -47,7 +47,7 @@ class SchemaTest extends TestCase
             ['image/j$pg'],
             // Space in mime type
             ['image/ jpg'],
-            // Global where mime type should be specific
+            // Global mime type should be specific
             ['image/*'],
         ];
     }
