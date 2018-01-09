@@ -36,69 +36,52 @@ class SchemaTest extends TestCase
         }
     }
 
-    /**
-     * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
-     */
-    public function testAssetMimeTypeNoForwardSlash()
+    public function getInvalidMimeTypeSamples()
     {
-        ImageAssetV1::create()->set('mime_type', 'imagejpg');
+        return [
+            // No forward slash
+            ['imagejpg'],
+            // Invalid char in "type"
+            ['%image/jpg'],
+            // Invalid char in "subtype"
+            ['image/j$pg'],
+            // Space in mime type
+            ['image/ jpg'],
+            // Global where mime type should be specific
+            ['image/*'],
+        ];
     }
 
     /**
+     * @dataProvider getInvalidMimeTypeSamples
+     *
      * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
      */
-    public function testAssetMimeTypeInvalidCharBeforeSlash()
+    public function testInvalidMimeTypesThrowException($sampleMimeType)
     {
-        ImageAssetV1::create()->set('mime_type', '%image/jpg');
+        ImageAssetV1::create()->set('mime_type', $sampleMimeType);
+    }
+
+    public function getValidMimeTypeSamples()
+    {
+        return [
+            // Allow digits in type and subtype
+            ['1image/1jpg'],
+            // Allow dash in subtype
+            ['application/octet-stream'],
+            // Allow dots in subtype
+            ['application/vnd.hzn-3d-crossword'],
+            // Allow "+" char in subtype
+            ['application/vnd.adobe.air-application-installer-package+zip'],
+        ];
     }
 
     /**
-     * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
+     * @dataProvider getValidMimeTypeSamples
      */
-    public function testAssetMimeTypeInvalidCharAfterSlash()
+    public function testValidMimeTypes($sampleMimeType)
     {
-        ImageAssetV1::create()->set('mime_type', 'image/j$pg');
-    }
-
-    /**
-     * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
-     */
-    public function testAssetMimeTypeDoesNotAllowSpaces()
-    {
-        ImageAssetV1::create()->set('mime_type', 'image/ jpg');
-    }
-
-    public function testAssetMimeTypeAllowsDigits()
-    {
-        ImageAssetV1::create()->set('mime_type', '1image/1jpg');
-        $this->assertTrue(true, 'Accepted valid mime type contains digits');
-    }
-
-    public function testAssetMimeTypeAllowsDash()
-    {
-        ImageAssetV1::create()->set('mime_type', 'application/octet-stream');
-        $this->assertTrue(true, 'Accepted valid mime type');
-    }
-
-    public function testAssetMimeTypeAllowsDots()
-    {
-        ImageAssetV1::create()->set('mime_type', 'application/vnd.hzn-3d-crossword');
-        $this->assertTrue(true, 'Accepted valid mime type');
-    }
-
-    public function testAssetMimeTypeAllowsPlus()
-    {
-        ImageAssetV1::create()->set('mime_type', 'application/vnd.adobe.air-application-installer-package+zip');
-        $this->assertTrue(true, 'Accepted valid mime type');
-    }
-
-    /**
-     * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
-     * @todo: Should this fail, or should we allow a universal subtype?
-     */
-    public function testAssetMimeTypeAllowsStar()
-    {
-        ImageAssetV1::create()->set('mime_type', 'application/*');
+        ImageAssetV1::create()->set('mime_type', $sampleMimeType);
         $this->assertTrue(true, 'Accepted valid mime type');
     }
 }
