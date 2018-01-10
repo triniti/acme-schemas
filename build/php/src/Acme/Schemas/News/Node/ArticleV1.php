@@ -13,6 +13,8 @@ use Gdbots\Schemas\Ncr\Mixin\Expirable\ExpirableV1 as GdbotsNcrExpirableV1;
 use Gdbots\Schemas\Ncr\Mixin\Expirable\ExpirableV1Mixin as GdbotsNcrExpirableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Indexed\IndexedV1 as GdbotsNcrIndexedV1;
 use Gdbots\Schemas\Ncr\Mixin\Indexed\IndexedV1Mixin as GdbotsNcrIndexedV1Mixin;
+use Gdbots\Schemas\Ncr\Mixin\Lockable\LockableV1 as GdbotsNcrLockableV1;
+use Gdbots\Schemas\Ncr\Mixin\Lockable\LockableV1Mixin as GdbotsNcrLockableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1 as GdbotsNcrNodeV1;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
@@ -20,16 +22,26 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
+use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocksV1;
+use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1 as TrinitiNewsArticleV1;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Mixin as TrinitiNewsArticleV1Mixin;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Trait as TrinitiNewsArticleV1Trait;
+use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1 as TrinitiNewsHeadlineFragmentsV1;
+use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1Mixin as TrinitiNewsHeadlineFragmentsV1Mixin;
 
 final class ArticleV1 extends AbstractMessage implements
     Article,
     GdbotsNcrNodeV1,
     TrinitiNewsArticleV1,
+    TrinitiNewsHeadlineFragmentsV1,
+    TrinitiCanvasHasBlocksV1,
+    TrinitiCommonSeoV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
+    GdbotsNcrLockableV1,
     GdbotsNcrPublishableV1,
     GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
@@ -53,8 +65,12 @@ final class ArticleV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiNewsArticleV1Mixin::create(),
+                TrinitiNewsHeadlineFragmentsV1Mixin::create(),
+                TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCommonSeoV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
+                GdbotsNcrLockableV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

@@ -4,13 +4,12 @@ import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirabl
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin';
 import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Trait';
-import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publishable/PublishableV1Mixin';
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
-import TrinitiDamAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Trait';
 import TrinitiDamVideoAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/video-asset/VideoAssetV1Mixin';
+import TrinitiDamVideoAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/video-asset/VideoAssetV1Trait';
 
 export default class VideoAssetV1 extends Message {
   /**
@@ -27,7 +26,6 @@ export default class VideoAssetV1 extends Message {
         TrinitiDamVideoAssetV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
-        GdbotsNcrPublishableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
@@ -35,7 +33,7 @@ export default class VideoAssetV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(VideoAssetV1);
-TrinitiDamAssetV1Trait(VideoAssetV1);
+TrinitiDamVideoAssetV1Trait(VideoAssetV1);
 MessageResolver.register('acme:dam:node:video-asset', VideoAssetV1);
 Object.freeze(VideoAssetV1);
 Object.freeze(VideoAssetV1.prototype);

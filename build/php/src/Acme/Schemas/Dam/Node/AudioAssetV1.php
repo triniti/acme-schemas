@@ -13,13 +13,11 @@ use Gdbots\Schemas\Ncr\Mixin\Indexed\IndexedV1Mixin as GdbotsNcrIndexedV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1 as GdbotsNcrNodeV1;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
-use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
-use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Triniti\Schemas\Dam\Mixin\Asset\AssetV1 as TrinitiDamAssetV1;
 use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
-use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Trait as TrinitiDamAssetV1Trait;
 use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1 as TrinitiDamAudioAssetV1;
 use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1Mixin as TrinitiDamAudioAssetV1Mixin;
+use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1Trait as TrinitiDamAudioAssetV1Trait;
 
 final class AudioAssetV1 extends AbstractMessage implements
     AudioAsset,
@@ -28,11 +26,10 @@ final class AudioAssetV1 extends AbstractMessage implements
     TrinitiDamAudioAssetV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
-    GdbotsNcrPublishableV1,
     GdbotsCommonTaggableV1
 {
     use GdbotsNcrNodeV1Trait;
-    use TrinitiDamAssetV1Trait;
+    use TrinitiDamAudioAssetV1Trait;
 
     /**
      * @return Schema
@@ -47,7 +44,6 @@ final class AudioAssetV1 extends AbstractMessage implements
                 TrinitiDamAudioAssetV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
-                GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
             ]
         );

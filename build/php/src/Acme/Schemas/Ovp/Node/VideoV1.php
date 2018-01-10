@@ -20,6 +20,8 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1 as TrinitiOvpVideoV1;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Mixin as TrinitiOvpVideoV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Trait as TrinitiOvpVideoV1Trait;
@@ -28,6 +30,7 @@ final class VideoV1 extends AbstractMessage implements
     Video,
     GdbotsNcrNodeV1,
     TrinitiOvpVideoV1,
+    TrinitiCommonSeoV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
@@ -53,6 +56,7 @@ final class VideoV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiOvpVideoV1Mixin::create(),
+                TrinitiCommonSeoV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),

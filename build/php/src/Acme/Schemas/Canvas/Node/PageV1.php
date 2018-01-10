@@ -20,14 +20,23 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
+use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocksV1;
+use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1 as TrinitiCanvasPageV1;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Mixin as TrinitiCanvasPageV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Trait as TrinitiCanvasPageV1Trait;
+use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1 as TrinitiCommonCustomCodeV1;
+use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1Mixin as TrinitiCommonCustomCodeV1Mixin;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 
 final class PageV1 extends AbstractMessage implements
     Page,
     GdbotsNcrNodeV1,
     TrinitiCanvasPageV1,
+    TrinitiCanvasHasBlocksV1,
+    TrinitiCommonCustomCodeV1,
+    TrinitiCommonSeoV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
@@ -53,6 +62,9 @@ final class PageV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCanvasPageV1Mixin::create(),
+                TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCommonCustomCodeV1Mixin::create(),
+                TrinitiCommonSeoV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),

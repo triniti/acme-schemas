@@ -4,13 +4,12 @@ import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirabl
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin';
 import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Trait';
-import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publishable/PublishableV1Mixin';
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
-import TrinitiDamAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Trait';
 import TrinitiDamImageAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/image-asset/ImageAssetV1Mixin';
+import TrinitiDamImageAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/image-asset/ImageAssetV1Trait';
 
 export default class ImageAssetV1 extends Message {
   /**
@@ -27,7 +26,6 @@ export default class ImageAssetV1 extends Message {
         TrinitiDamImageAssetV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
-        GdbotsNcrPublishableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
@@ -35,7 +33,7 @@ export default class ImageAssetV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(ImageAssetV1);
-TrinitiDamAssetV1Trait(ImageAssetV1);
+TrinitiDamImageAssetV1Trait(ImageAssetV1);
 MessageResolver.register('acme:dam:node:image-asset', ImageAssetV1);
 Object.freeze(ImageAssetV1);
 Object.freeze(ImageAssetV1.prototype);
