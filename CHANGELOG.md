@@ -6,15 +6,10 @@
   * `acme:dam:command:create-asset`
   * `acme:dam:command:delete-asset`
   * `acme:dam:command:expire-asset`
-  * `acme:dam:command:publish-asset`
-  * `acme:dam:command:unpublish-asset`
   * `acme:dam:command:update-asset`
   * `acme:dam:event:asset-created`
   * `acme:dam:event:asset-deleted`
   * `acme:dam:event:asset-expired`
-  * `acme:dam:event:asset-published`
-  * `acme:dam:event:asset-scheduled`
-  * `acme:dam:event:asset-unpublished`
   * `acme:dam:event:asset-updated`
   * `acme:dam:node:archive-asset`
   * `acme:dam:node:audio-asset`
@@ -31,6 +26,21 @@
   * `acme:dam:request:get-upload-urls-response`
   * `acme:dam:request:search-assets-request`
   * `acme:dam:request:search-assets-response`
+  * `acme:people:command:create-person`
+  * `acme:people:command:delete-person`
+  * `acme:people:command:rename-person`
+  * `acme:people:command:update-person`
+  * `acme:people:event:person-created`
+  * `acme:people:event:person-deleted`
+  * `acme:people:event:person-renamed`
+  * `acme:people:event:person-updated`
+  * `acme:people:node:person`
+  * `acme:people:request:get-person-history-request`
+  * `acme:people:request:get-person-history-response`
+  * `acme:people:request:get-person-request`
+  * `acme:people:request:get-person-response`
+  * `acme:people:request:search-people-request`
+  * `acme:people:request:search-people-response`
 * __Remove Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
   * `acme:apollo:mixin:get-poll-batch-request`
   * `acme:apollo:mixin:get-poll-batch-response`
