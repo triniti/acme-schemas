@@ -7,6 +7,8 @@ namespaces:
   - acme:iam
   - acme:news
   - acme:ovp
+  - acme:people
+  - acme:taxonomy
 
 languages:
   php:
