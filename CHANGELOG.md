@@ -16,12 +16,13 @@
   * `acme:dam:event:asset-scheduled`
   * `acme:dam:event:asset-unpublished`
   * `acme:dam:event:asset-updated`
+  * `acme:dam:node:archive-asset`
   * `acme:dam:node:audio-asset`
+  * `acme:dam:node:code-asset`
   * `acme:dam:node:document-asset`
   * `acme:dam:node:image-asset`
+  * `acme:dam:node:unknown-asset`
   * `acme:dam:node:video-asset`
-  * `acme:dam:request:get-asset-batch-request`
-  * `acme:dam:request:get-asset-batch-response`
   * `acme:dam:request:get-asset-history-request`
   * `acme:dam:request:get-asset-history-response`
   * `acme:dam:request:get-asset-request`
@@ -30,6 +31,15 @@
   * `acme:dam:request:get-upload-urls-response`
   * `acme:dam:request:search-assets-request`
   * `acme:dam:request:search-assets-response`
+* __Remove Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
+  * `acme:apollo:mixin:get-poll-batch-request`
+  * `acme:apollo:mixin:get-poll-batch-response`
+  * `acme:canvas:mixin:get-page-batch-request`
+  * `acme:canvas:mixin:get-page-batch-response`
+  * `acme:news:mixin:get-article-batch-request`
+  * `acme:news:mixin:get-article-batch-response`
+  * `acme:ovp:mixin:get-video-batch-request`
+  * `acme:ovp:mixin:get-video-batch-response`
 
 
 ## v0.1.3
