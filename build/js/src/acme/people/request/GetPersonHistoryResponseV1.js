@@ -1,0 +1,31 @@
+// @link http://acme-schemas.triniti.io/json-schema/acme/people/request/get-person-history-response/1-0-0.json#
+import GdbotsPbjxGetEventsResponseV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/get-events-response/GetEventsResponseV1Mixin';
+import GdbotsPbjxResponseV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/response/ResponseV1Mixin';
+import GdbotsPbjxResponseV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/response/ResponseV1Trait';
+import Message from '@gdbots/pbj/Message';
+import MessageResolver from '@gdbots/pbj/MessageResolver';
+import Schema from '@gdbots/pbj/Schema';
+import TrinitiPeopleGetPersonHistoryResponseV1Mixin from '@triniti/schemas/triniti/people/mixin/get-person-history-response/GetPersonHistoryResponseV1Mixin';
+
+export default class GetPersonHistoryResponseV1 extends Message {
+  /**
+   * @private
+   *
+   * @returns {Schema}
+   */
+  static defineSchema() {
+    return new Schema('pbj:acme:people:request:get-person-history-response:1-0-0', GetPersonHistoryResponseV1,
+      [],
+      [
+        GdbotsPbjxResponseV1Mixin.create(),
+        GdbotsPbjxGetEventsResponseV1Mixin.create(),
+        TrinitiPeopleGetPersonHistoryResponseV1Mixin.create(),
+      ],
+    );
+  }
+}
+
+GdbotsPbjxResponseV1Trait(GetPersonHistoryResponseV1);
+MessageResolver.register('acme:people:request:get-person-history-response', GetPersonHistoryResponseV1);
+Object.freeze(GetPersonHistoryResponseV1);
+Object.freeze(GetPersonHistoryResponseV1.prototype);

@@ -7,14 +7,14 @@
     <fields>
       <field name="_id" type="identifier" required="true">
         <php-options>
-          <imports>use Acme\Schemas\Ovp\personId;</imports>
-          <class-name>personId::class</class-name>
-          <default>function() { return personId::generate(); }</default>
+          <imports>use Acme\Schemas\People\PersonId;</imports>
+          <class-name>PersonId::class</class-name>
+          <default>function() { return PersonId::generate(); }</default>
         </php-options>
         <js-options>
-          <imports>import personId from '@triniti/acme-schemas/acme/ovp/personId';</imports>
-          <class-proto>personId</class-proto>
-          <default>() => personId.generate()</default>
+          <imports>import PersonId from '@triniti/acme-schemas/acme/people/personId';</imports>
+          <class-proto>PersonId</class-proto>
+          <default>() => PersonId.generate()</default>
         </js-options>
       </field>
     </fields>
@@ -23,9 +23,7 @@
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
       <curie-major>triniti:people:mixin:person:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
-      <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
-      <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
       <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
     </mixins>
