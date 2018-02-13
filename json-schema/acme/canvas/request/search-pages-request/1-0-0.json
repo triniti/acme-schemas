@@ -317,6 +317,16 @@
         "rule": "single"
       }
     },
+    "is_unlisted": {
+      "type": "integer",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 2,
+      "pbj": {
+        "type": "trinary",
+        "rule": "single"
+      }
+    },
     "sort": {
       "type": "string",
       "default": "relevance",
@@ -327,6 +337,10 @@
         "created-at-asc",
         "updated-at-desc",
         "updated-at-asc",
+        "published-at-desc",
+        "published-at-asc",
+        "order-date-desc",
+        "order-date-asc",
         "title-desc",
         "title-asc"
       ],
