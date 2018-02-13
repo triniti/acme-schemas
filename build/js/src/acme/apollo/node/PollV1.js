@@ -13,6 +13,7 @@ import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiApolloPollV1Mixin from '@triniti/schemas/triniti/apollo/mixin/poll/PollV1Mixin';
 import TrinitiApolloPollV1Trait from '@triniti/schemas/triniti/apollo/mixin/poll/PollV1Trait';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
 import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
@@ -35,6 +36,7 @@ export default class PollV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiApolloPollV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),
         TrinitiTaxonomyHasChannelV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),

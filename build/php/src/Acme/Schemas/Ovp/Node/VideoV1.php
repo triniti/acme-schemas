@@ -27,6 +27,8 @@ use Triniti\Schemas\OvpKaltura\Mixin\MediaEntry\MediaEntryV1Mixin as TrinitiOvpK
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1 as TrinitiOvpVideoV1;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Mixin as TrinitiOvpVideoV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Trait as TrinitiOvpVideoV1Trait;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
@@ -40,6 +42,7 @@ final class VideoV1 extends AbstractMessage implements
     TrinitiOvpVideoV1,
     TrinitiOvpKalturaMediaEntryV1,
     TrinitiCommonSeoV1,
+    TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
     TrinitiTaxonomyHashtaggableV1,
@@ -70,6 +73,7 @@ final class VideoV1 extends AbstractMessage implements
                 TrinitiOvpVideoV1Mixin::create(),
                 TrinitiOvpKalturaMediaEntryV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),
                 TrinitiTaxonomyHashtaggableV1Mixin::create(),

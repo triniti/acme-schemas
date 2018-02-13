@@ -17,6 +17,7 @@ import TrinitiCanvasPageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page
 import TrinitiCanvasPageV1Trait from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Trait';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
 import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
@@ -42,6 +43,7 @@ export default class PageV1 extends Message {
         TrinitiCanvasHasBlocksV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),
         TrinitiTaxonomyHasChannelV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),

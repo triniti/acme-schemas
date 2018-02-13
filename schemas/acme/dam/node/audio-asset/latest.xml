@@ -8,6 +8,7 @@
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
       <curie-major>triniti:dam:mixin:asset:v1</curie-major>
       <curie-major>triniti:dam:mixin:audio-asset:v1</curie-major>
+      <curie-major>triniti:people:mixin:has-people:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>

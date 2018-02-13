@@ -10,6 +10,7 @@ import Schema from '@gdbots/pbj/Schema';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
 import TrinitiDamAudioAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/audio-asset/AudioAssetV1Mixin';
 import TrinitiDamAudioAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/audio-asset/AudioAssetV1Trait';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class AudioAssetV1 extends Message {
@@ -25,6 +26,7 @@ export default class AudioAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamAudioAssetV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),

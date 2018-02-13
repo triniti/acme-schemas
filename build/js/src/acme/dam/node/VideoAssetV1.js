@@ -10,6 +10,7 @@ import Schema from '@gdbots/pbj/Schema';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
 import TrinitiDamVideoAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/video-asset/VideoAssetV1Mixin';
 import TrinitiDamVideoAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/video-asset/VideoAssetV1Trait';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class VideoAssetV1 extends Message {
@@ -25,6 +26,7 @@ export default class VideoAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamVideoAssetV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),

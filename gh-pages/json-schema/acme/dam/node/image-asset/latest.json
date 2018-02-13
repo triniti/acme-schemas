@@ -235,6 +235,21 @@
         "rule": "single"
       }
     },
+    "person_refs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "^[\\w\\/\\.:-]+$"
+        }
+      ],
+      "uniqueItems": true,
+      "additionalProperties": false,
+      "pbj": {
+        "type": "identifier",
+        "rule": "set"
+      }
+    },
     "hashtags": {
       "type": "array",
       "items": [

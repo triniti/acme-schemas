@@ -29,6 +29,8 @@ use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1 as TrinitiCommonCustomC
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1Mixin as TrinitiCommonCustomCodeV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
@@ -43,6 +45,7 @@ final class PageV1 extends AbstractMessage implements
     TrinitiCanvasHasBlocksV1,
     TrinitiCommonCustomCodeV1,
     TrinitiCommonSeoV1,
+    TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
     TrinitiTaxonomyHashtaggableV1,
@@ -74,6 +77,7 @@ final class PageV1 extends AbstractMessage implements
                 TrinitiCanvasHasBlocksV1Mixin::create(),
                 TrinitiCommonCustomCodeV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),
                 TrinitiTaxonomyHashtaggableV1Mixin::create(),

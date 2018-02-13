@@ -18,6 +18,7 @@ import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/S
 import TrinitiNewsArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Mixin';
 import TrinitiNewsArticleV1Trait from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Trait';
 import TrinitiNewsHeadlineFragmentsV1Mixin from '@triniti/schemas/triniti/news/mixin/headline-fragments/HeadlineFragmentsV1Mixin';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
 import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
@@ -43,6 +44,7 @@ export default class ArticleV1 extends Message {
         TrinitiNewsHeadlineFragmentsV1Mixin.create(),
         TrinitiCanvasHasBlocksV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),
         TrinitiTaxonomyHasChannelV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),

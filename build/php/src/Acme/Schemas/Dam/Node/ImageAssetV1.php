@@ -18,6 +18,8 @@ use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\ImageAsset\ImageAssetV1 as TrinitiDamImageAssetV1;
 use Triniti\Schemas\Dam\Mixin\ImageAsset\ImageAssetV1Mixin as TrinitiDamImageAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\ImageAsset\ImageAssetV1Trait as TrinitiDamImageAssetV1Trait;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
 use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
@@ -26,6 +28,7 @@ final class ImageAssetV1 extends AbstractMessage implements
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamImageAssetV1,
+    TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
@@ -45,6 +48,7 @@ final class ImageAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamImageAssetV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),

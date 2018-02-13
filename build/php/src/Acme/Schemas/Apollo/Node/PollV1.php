@@ -21,6 +21,8 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublisha
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1 as TrinitiApolloPollV1;
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1Mixin as TrinitiApolloPollV1Mixin;
 use Triniti\Schemas\Apollo\Mixin\Poll\PollV1Trait as TrinitiApolloPollV1Trait;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
@@ -32,6 +34,7 @@ final class PollV1 extends AbstractMessage implements
     Poll,
     GdbotsNcrNodeV1,
     TrinitiApolloPollV1,
+    TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
     TrinitiTaxonomyHashtaggableV1,
@@ -59,6 +62,7 @@ final class PollV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiApolloPollV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),
                 TrinitiTaxonomyHashtaggableV1Mixin::create(),
