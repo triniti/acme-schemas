@@ -21,12 +21,15 @@ use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 use Triniti\Schemas\People\Mixin\Person\PersonV1 as TrinitiPeoplePersonV1;
 use Triniti\Schemas\People\Mixin\Person\PersonV1Mixin as TrinitiPeoplePersonV1Mixin;
 use Triniti\Schemas\People\Mixin\Person\PersonV1Trait as TrinitiPeoplePersonV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class PersonV1 extends AbstractMessage implements
     Person,
     GdbotsNcrNodeV1,
     TrinitiPeoplePersonV1,
     TrinitiCommonSeoV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrSluggableV1,
     GdbotsCommonTaggableV1
@@ -51,6 +54,7 @@ final class PersonV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiPeoplePersonV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

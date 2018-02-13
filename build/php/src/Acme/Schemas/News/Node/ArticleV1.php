@@ -31,6 +31,12 @@ use Triniti\Schemas\News\Mixin\Article\ArticleV1Mixin as TrinitiNewsArticleV1Mix
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Trait as TrinitiNewsArticleV1Trait;
 use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1 as TrinitiNewsHeadlineFragmentsV1;
 use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1Mixin as TrinitiNewsHeadlineFragmentsV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1Mixin as TrinitiTaxonomyHasChannelV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class ArticleV1 extends AbstractMessage implements
     Article,
@@ -39,6 +45,9 @@ final class ArticleV1 extends AbstractMessage implements
     TrinitiNewsHeadlineFragmentsV1,
     TrinitiCanvasHasBlocksV1,
     TrinitiCommonSeoV1,
+    TrinitiTaxonomyCategorizableV1,
+    TrinitiTaxonomyHasChannelV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrLockableV1,
@@ -68,6 +77,9 @@ final class ArticleV1 extends AbstractMessage implements
                 TrinitiNewsHeadlineFragmentsV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiTaxonomyCategorizableV1Mixin::create(),
+                TrinitiTaxonomyHasChannelV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrLockableV1Mixin::create(),

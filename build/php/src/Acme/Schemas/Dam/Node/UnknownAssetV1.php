@@ -18,12 +18,15 @@ use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\UnknownAsset\UnknownAssetV1 as TrinitiDamUnknownAssetV1;
 use Triniti\Schemas\Dam\Mixin\UnknownAsset\UnknownAssetV1Mixin as TrinitiDamUnknownAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\UnknownAsset\UnknownAssetV1Trait as TrinitiDamUnknownAssetV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class UnknownAssetV1 extends AbstractMessage implements
     UnknownAsset,
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamUnknownAssetV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsCommonTaggableV1
@@ -42,6 +45,7 @@ final class UnknownAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamUnknownAssetV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

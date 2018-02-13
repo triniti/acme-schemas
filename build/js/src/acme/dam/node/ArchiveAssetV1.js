@@ -10,6 +10,7 @@ import Schema from '@gdbots/pbj/Schema';
 import TrinitiDamArchiveAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/archive-asset/ArchiveAssetV1Mixin';
 import TrinitiDamArchiveAssetV1Trait from '@triniti/schemas/triniti/dam/mixin/archive-asset/ArchiveAssetV1Trait';
 import TrinitiDamAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/asset/AssetV1Mixin';
+import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class ArchiveAssetV1 extends Message {
   /**
@@ -24,6 +25,7 @@ export default class ArchiveAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamArchiveAssetV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),

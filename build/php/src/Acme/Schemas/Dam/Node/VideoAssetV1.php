@@ -18,12 +18,15 @@ use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\VideoAsset\VideoAssetV1 as TrinitiDamVideoAssetV1;
 use Triniti\Schemas\Dam\Mixin\VideoAsset\VideoAssetV1Mixin as TrinitiDamVideoAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\VideoAsset\VideoAssetV1Trait as TrinitiDamVideoAssetV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class VideoAssetV1 extends AbstractMessage implements
     VideoAsset,
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamVideoAssetV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsCommonTaggableV1
@@ -42,6 +45,7 @@ final class VideoAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamVideoAssetV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

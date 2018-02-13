@@ -18,12 +18,15 @@ use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\CodeAsset\CodeAssetV1 as TrinitiDamCodeAssetV1;
 use Triniti\Schemas\Dam\Mixin\CodeAsset\CodeAssetV1Mixin as TrinitiDamCodeAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\CodeAsset\CodeAssetV1Trait as TrinitiDamCodeAssetV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class CodeAssetV1 extends AbstractMessage implements
     CodeAsset,
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamCodeAssetV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsCommonTaggableV1
@@ -42,6 +45,7 @@ final class CodeAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamCodeAssetV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

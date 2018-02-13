@@ -13,6 +13,7 @@ import T from '@gdbots/pbj/types';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiPeoplePersonV1Mixin from '@triniti/schemas/triniti/people/mixin/person/PersonV1Mixin';
 import TrinitiPeoplePersonV1Trait from '@triniti/schemas/triniti/people/mixin/person/PersonV1Trait';
+import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class PersonV1 extends Message {
   /**
@@ -33,6 +34,7 @@ export default class PersonV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiPeoplePersonV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),

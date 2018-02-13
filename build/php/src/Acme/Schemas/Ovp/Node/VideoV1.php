@@ -27,6 +27,12 @@ use Triniti\Schemas\OvpKaltura\Mixin\MediaEntry\MediaEntryV1Mixin as TrinitiOvpK
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1 as TrinitiOvpVideoV1;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Mixin as TrinitiOvpVideoV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Trait as TrinitiOvpVideoV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1Mixin as TrinitiTaxonomyHasChannelV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class VideoV1 extends AbstractMessage implements
     Video,
@@ -34,6 +40,9 @@ final class VideoV1 extends AbstractMessage implements
     TrinitiOvpVideoV1,
     TrinitiOvpKalturaMediaEntryV1,
     TrinitiCommonSeoV1,
+    TrinitiTaxonomyCategorizableV1,
+    TrinitiTaxonomyHasChannelV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
@@ -61,6 +70,9 @@ final class VideoV1 extends AbstractMessage implements
                 TrinitiOvpVideoV1Mixin::create(),
                 TrinitiOvpKalturaMediaEntryV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiTaxonomyCategorizableV1Mixin::create(),
+                TrinitiTaxonomyHasChannelV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),

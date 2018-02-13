@@ -18,12 +18,15 @@ use Triniti\Schemas\Dam\Mixin\Asset\AssetV1Mixin as TrinitiDamAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1 as TrinitiDamAudioAssetV1;
 use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1Mixin as TrinitiDamAudioAssetV1Mixin;
 use Triniti\Schemas\Dam\Mixin\AudioAsset\AudioAssetV1Trait as TrinitiDamAudioAssetV1Trait;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class AudioAssetV1 extends AbstractMessage implements
     AudioAsset,
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamAudioAssetV1,
+    TrinitiTaxonomyHashtaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsCommonTaggableV1
@@ -42,6 +45,7 @@ final class AudioAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamAudioAssetV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),

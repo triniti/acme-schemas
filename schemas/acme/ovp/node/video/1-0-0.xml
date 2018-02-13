@@ -24,6 +24,9 @@
       <curie-major>triniti:ovp:mixin:video:v1</curie-major>
       <curie-major>triniti:ovp.kaltura:mixin:media-entry:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
