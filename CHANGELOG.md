@@ -41,6 +41,36 @@
   * `acme:people:request:get-person-response`
   * `acme:people:request:search-people-request`
   * `acme:people:request:search-people-response`
+  * `acme:taxonomy:command:create-category`
+  * `acme:taxonomy:command:create-channel`
+  * `acme:taxonomy:command:delete-category`
+  * `acme:taxonomy:command:delete-channel`
+  * `acme:taxonomy:command:rename-category`
+  * `acme:taxonomy:command:rename-channel`
+  * `acme:taxonomy:command:update-category`
+  * `acme:taxonomy:command:update-channel`
+  * `acme:taxonomy:event:category-created`
+  * `acme:taxonomy:event:category-deleted`
+  * `acme:taxonomy:event:category-renamed`
+  * `acme:taxonomy:event:category-updated`
+  * `acme:taxonomy:event:channel-created`
+  * `acme:taxonomy:event:channel-deleted`
+  * `acme:taxonomy:event:channel-renamed`
+  * `acme:taxonomy:event:channel-updated`
+  * `acme:taxonomy:node:category`
+  * `acme:taxonomy:node:channel`
+  * `acme:taxonomy:request:get-all-channels-request`
+  * `acme:taxonomy:request:get-all-channels-response`
+  * `acme:taxonomy:request:get-category-history-request`
+  * `acme:taxonomy:request:get-category-history-response`
+  * `acme:taxonomy:request:get-category-request`
+  * `acme:taxonomy:request:get-category-response`
+  * `acme:taxonomy:request:get-channel-history-request`
+  * `acme:taxonomy:request:get-channel-history-response`
+  * `acme:taxonomy:request:get-channel-request`
+  * `acme:taxonomy:request:get-channel-response`
+  * `acme:taxonomy:request:search-categories-request`
+  * `acme:taxonomy:request:search-categories-response`
 * __Remove Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
   * `acme:apollo:mixin:get-poll-batch-request`
   * `acme:apollo:mixin:get-poll-batch-response`
