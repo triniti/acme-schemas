@@ -7,6 +7,9 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:command:v1</curie-major>
       <curie-major>triniti:apollo:mixin:cast-vote:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:time-parting:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:time-sampling:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:utm:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

@@ -3,9 +3,12 @@ domain: http://acme-schemas.triniti.io
 namespaces:
   - acme:apollo
   - acme:canvas
+  - acme:dam
   - acme:iam
   - acme:news
   - acme:ovp
+  - acme:people
+  - acme:taxonomy
 
 languages:
   php:

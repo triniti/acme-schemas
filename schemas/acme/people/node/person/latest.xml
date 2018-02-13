@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pbj-schema xmlns="http://gdbots.io/pbj/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
+
+  <schema id="pbj:acme:people:node:person:1-0-0">
+    <fields>
+      <field name="_id" type="identifier" required="true">
+        <php-options>
+          <imports>use Acme\Schemas\People\PersonId;</imports>
+          <class-name>PersonId::class</class-name>
+          <default>function() { return PersonId::generate(); }</default>
+        </php-options>
+        <js-options>
+          <imports>import PersonId from '@triniti/acme-schemas/acme/people/personId';</imports>
+          <class-proto>PersonId</class-proto>
+          <default>() => PersonId.generate()</default>
+        </js-options>
+      </field>
+    </fields>
+
+    <mixins>
+      <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
+      <curie-major>triniti:people:mixin:person:v1</curie-major>
+      <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
+      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
+    </mixins>
+  </schema>
+</pbj-schema>

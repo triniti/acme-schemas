@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pbj-schema xmlns="http://gdbots.io/pbj/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
+
+  <schema id="pbj:acme:taxonomy:node:channel:1-0-0">
+    <fields>
+      <field name="_id" type="identifier" required="true">
+        <php-options>
+          <imports>use Acme\Schemas\Taxonomy\ChannelId;</imports>
+          <class-name>ChannelId::class</class-name>
+          <default>function() { return ChannelId::generate(); }</default>
+        </php-options>
+        <js-options>
+          <imports>import ChannelId from '@triniti/acme-schemas/acme/taxonomy/ChannelId';</imports>
+          <class-proto>ChannelId</class-proto>
+          <default>() => ChannelId.generate()</default>
+        </js-options>
+      </field>
+    </fields>
+
+    <mixins>
+      <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:channel:v1</curie-major>
+      <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
+      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
+    </mixins>
+  </schema>
+</pbj-schema>
