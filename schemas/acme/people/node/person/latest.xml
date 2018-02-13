@@ -12,7 +12,7 @@
           <default>function() { return PersonId::generate(); }</default>
         </php-options>
         <js-options>
-          <imports>import PersonId from '@triniti/acme-schemas/acme/people/personId';</imports>
+          <imports>import PersonId from '@triniti/acme-schemas/acme/people/PersonId';</imports>
           <class-proto>PersonId</class-proto>
           <default>() => PersonId.generate()</default>
         </js-options>

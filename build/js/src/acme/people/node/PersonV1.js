@@ -7,7 +7,7 @@ import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Tr
 import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggable/SluggableV1Mixin';
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
-import PersonId from '@triniti/acme-schemas/acme/people/personId';
+import PersonId from '@triniti/acme-schemas/acme/people/PersonId';
 import Schema from '@gdbots/pbj/Schema';
 import T from '@gdbots/pbj/types';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
