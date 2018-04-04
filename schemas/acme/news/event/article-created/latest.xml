@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:event:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:node-created:v1</curie-major>
-      <curie-major>triniti:news:mixin:article-created:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

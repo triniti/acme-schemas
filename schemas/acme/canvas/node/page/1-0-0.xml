@@ -21,7 +21,6 @@
 
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
-      <curie-major>triniti:canvas:mixin:page:v1</curie-major>
       <curie-major>triniti:canvas:mixin:has-blocks:v1</curie-major>
       <curie-major>triniti:common:mixin:custom-code:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>

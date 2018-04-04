@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:command:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publish-node:v1</curie-major>
-      <curie-major>triniti:news:mixin:publish-article:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

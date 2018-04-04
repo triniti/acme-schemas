@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:request:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:search-nodes-request:v1</curie-major>
-      <curie-major>triniti:canvas:mixin:search-pages-request:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>
