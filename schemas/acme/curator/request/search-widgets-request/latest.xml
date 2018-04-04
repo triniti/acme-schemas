@@ -6,7 +6,8 @@
   <schema id="pbj:acme:canvas:request:search-widgets-request:1-0-0">
     <mixins>
       <curie-major>gdbots:pbjx:mixin:request:v1</curie-major>
-      <curie-major>gdbots:ncr:mixin:search-promotions-request:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:search-nodes-request:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:search-widgets-request:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>
