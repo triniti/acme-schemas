@@ -3,12 +3,10 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
 
-  <schema id="pbj:acme:curator:node:article-teaser:1-0-0">
+  <schema id="pbj:acme:curator:node:widget:1-0-0">
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
-      <curie-major>triniti:curator:mixin:teaser:v1</curie-major>
-      <curie-major>triniti:curator:mixin:teaser-has-target:v1</curie-major>
-      <curie-major>triniti:curator:mixin:article-teaser:v1</curie-major>
+      <curie-major>triniti:curator:mixin:widget:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
