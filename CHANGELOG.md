@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## v0.1.5
+* __Add Schemas:__
+  * `acme:canvas:node:image-block`
+  * `acme:canvas:node:video-block`
+  * `acme:curator:node:article-teaser`
+  * `acme:curator:node:gallery-teaser`
+  * `acme:curator:node:gallery`
+  * `acme:curator:node:promotion`
+  * `acme:curator:node:teaser-has-target`
+  * `acme:curator:node:teaser`
+  * `acme:curator:node:teaserable`
+  * `acme:curator:node:timeline-teaser`
+  * `acme:curator:node:timeline`
+  * `acme:curator:node:video-teaser`
+  * `acme:curator:node:widget-teaser`
+  * `acme:curator:node:youtube-video-teaser`
+  * `acme:curator:request:search-galleries-request`
+  * `acme:curator:request:search-galleries-response`
+  * `acme:curator:request:search-promotions-request`
+  * `acme:curator:request:search-promotions-response`
+  * `acme:curator:request:search-teasers-request`
+  * `acme:curator:request:search-teasers-response`
+  * `acme:curator:request:search-timelines-request`
+  * `acme:curator:request:search-timelines-response`
+  * `acme:curator:request:search-widgets-request`
+  * `acme:curator:request:search-widgets-response`
 
 ## v0.1.4
 * __Add Schemas:__
