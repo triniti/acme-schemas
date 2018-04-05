@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\ExpireNode\ExpireNodeV1Mixin as GdbotsNcrExpireNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Ovp\Mixin\ExpireVideo\ExpireVideoV1 as TrinitiOvpExpireVideoV1;
-use Triniti\Schemas\Ovp\Mixin\ExpireVideo\ExpireVideoV1Mixin as TrinitiOvpExpireVideoV1Mixin;
 
 final class ExpireVideoV1 extends AbstractMessage implements
     ExpireVideo,
     GdbotsPbjxCommandV1,
-    GdbotsNcrExpireNodeV1,
-    TrinitiOvpExpireVideoV1
+    GdbotsNcrExpireNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class ExpireVideoV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrExpireNodeV1Mixin::create(),
-                TrinitiOvpExpireVideoV1Mixin::create(),
             ]
         );
     }

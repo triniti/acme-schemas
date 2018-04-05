@@ -167,6 +167,19 @@
         "rule": "single"
       }
     },
+    "blocks": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/block"
+        }
+      ],
+      "additionalProperties": false,
+      "pbj": {
+        "type": "message",
+        "rule": "list"
+      }
+    },
     "image_ref": {
       "type": "string",
       "pattern": "^[\\w\\/\\.:-]+$",
@@ -195,17 +208,16 @@
         "rule": "single"
       }
     },
-    "blocks": {
-      "type": "array",
-      "items": [
-        {
-          "$ref": "#/definitions/block"
-        }
-      ],
-      "additionalProperties": false,
+    "layout": {
+      "type": "string",
+      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "Visual layout for the page. e.g. \"two-column\", \"one-column\".",
       "pbj": {
-        "type": "message",
-        "rule": "list"
+        "type": "string",
+        "rule": "single",
+        "format": "slug"
       }
     },
     "custom_code": {

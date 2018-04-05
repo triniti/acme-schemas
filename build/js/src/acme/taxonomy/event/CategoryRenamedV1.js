@@ -5,7 +5,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiTaxonomyCategoryRenamedV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/category-renamed/CategoryRenamedV1Mixin';
 
 export default class CategoryRenamedV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class CategoryRenamedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeRenamedV1Mixin.create(),
-        TrinitiTaxonomyCategoryRenamedV1Mixin.create(),
       ],
     );
   }

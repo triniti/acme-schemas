@@ -8,7 +8,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloPollUnpublishedV1Mixin from '@triniti/schemas/triniti/apollo/mixin/poll-unpublished/PollUnpublishedV1Mixin';
 
 export default class PollUnpublishedV1 extends Message {
   /**
@@ -22,7 +21,6 @@ export default class PollUnpublishedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeUnpublishedV1Mixin.create(),
-        TrinitiApolloPollUnpublishedV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),
         GdbotsEnrichmentsTimeSamplingV1Mixin.create(),

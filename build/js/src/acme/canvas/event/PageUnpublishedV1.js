@@ -8,7 +8,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiCanvasPageUnpublishedV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page-unpublished/PageUnpublishedV1Mixin';
 
 export default class PageUnpublishedV1 extends Message {
   /**
@@ -22,7 +21,6 @@ export default class PageUnpublishedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeUnpublishedV1Mixin.create(),
-        TrinitiCanvasPageUnpublishedV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),
         GdbotsEnrichmentsTimeSamplingV1Mixin.create(),

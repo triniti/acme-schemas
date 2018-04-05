@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsResponse\GetEventsResponseV1Mixin as Gdbo
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Canvas\Mixin\GetPageHistoryResponse\GetPageHistoryResponseV1 as TrinitiCanvasGetPageHistoryResponseV1;
-use Triniti\Schemas\Canvas\Mixin\GetPageHistoryResponse\GetPageHistoryResponseV1Mixin as TrinitiCanvasGetPageHistoryResponseV1Mixin;
 
 final class GetPageHistoryResponseV1 extends AbstractMessage implements
     GetPageHistoryResponse,
     GdbotsPbjxResponseV1,
-    GdbotsPbjxGetEventsResponseV1,
-    TrinitiCanvasGetPageHistoryResponseV1
+    GdbotsPbjxGetEventsResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +27,6 @@ final class GetPageHistoryResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsPbjxGetEventsResponseV1Mixin::create(),
-                TrinitiCanvasGetPageHistoryResponseV1Mixin::create(),
             ]
         );
     }

@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsPending\MarkNodeAsPendingV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Ovp\Mixin\MarkVideoAsPending\MarkVideoAsPendingV1 as TrinitiOvpMarkVideoAsPendingV1;
-use Triniti\Schemas\Ovp\Mixin\MarkVideoAsPending\MarkVideoAsPendingV1Mixin as TrinitiOvpMarkVideoAsPendingV1Mixin;
 
 final class MarkVideoAsPendingV1 extends AbstractMessage implements
     MarkVideoAsPending,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsPendingV1,
-    TrinitiOvpMarkVideoAsPendingV1
+    GdbotsNcrMarkNodeAsPendingV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkVideoAsPendingV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsPendingV1Mixin::create(),
-                TrinitiOvpMarkVideoAsPendingV1Mixin::create(),
             ]
         );
     }

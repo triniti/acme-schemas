@@ -5,7 +5,6 @@ import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiPeopleGetPersonHistoryRequestV1Mixin from '@triniti/schemas/triniti/people/mixin/get-person-history-request/GetPersonHistoryRequestV1Mixin';
 
 export default class GetPersonHistoryRequestV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetPersonHistoryRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsPbjxGetEventsRequestV1Mixin.create(),
-        TrinitiPeopleGetPersonHistoryRequestV1Mixin.create(),
       ],
     );
   }

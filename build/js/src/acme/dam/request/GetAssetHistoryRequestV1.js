@@ -5,7 +5,6 @@ import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiDamGetAssetHistoryRequestV1Mixin from '@triniti/schemas/triniti/dam/mixin/get-asset-history-request/GetAssetHistoryRequestV1Mixin';
 
 export default class GetAssetHistoryRequestV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetAssetHistoryRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsPbjxGetEventsRequestV1Mixin.create(),
-        TrinitiDamGetAssetHistoryRequestV1Mixin.create(),
       ],
     );
   }

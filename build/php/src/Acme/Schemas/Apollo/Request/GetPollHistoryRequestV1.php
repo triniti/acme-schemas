@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Apollo\Mixin\GetPollHistoryRequest\GetPollHistoryRequestV1 as TrinitiApolloGetPollHistoryRequestV1;
-use Triniti\Schemas\Apollo\Mixin\GetPollHistoryRequest\GetPollHistoryRequestV1Mixin as TrinitiApolloGetPollHistoryRequestV1Mixin;
 
 final class GetPollHistoryRequestV1 extends AbstractMessage implements
     GetPollHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiApolloGetPollHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetPollHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiApolloGetPollHistoryRequestV1Mixin::create(),
             ]
         );
     }

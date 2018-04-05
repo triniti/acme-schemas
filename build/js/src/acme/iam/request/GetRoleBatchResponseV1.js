@@ -1,5 +1,4 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/iam/request/get-role-batch-response/1-0-0.json#
-import GdbotsIamGetRoleBatchResponseV1Mixin from '@gdbots/schemas/gdbots/iam/mixin/get-role-batch-response/GetRoleBatchResponseV1Mixin';
 import GdbotsNcrGetNodeBatchResponseV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/get-node-batch-response/GetNodeBatchResponseV1Mixin';
 import GdbotsPbjxResponseV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/response/ResponseV1Mixin';
 import GdbotsPbjxResponseV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/response/ResponseV1Trait';
@@ -19,7 +18,6 @@ export default class GetRoleBatchResponseV1 extends Message {
       [
         GdbotsPbjxResponseV1Mixin.create(),
         GdbotsNcrGetNodeBatchResponseV1Mixin.create(),
-        GdbotsIamGetRoleBatchResponseV1Mixin.create(),
       ],
     );
   }

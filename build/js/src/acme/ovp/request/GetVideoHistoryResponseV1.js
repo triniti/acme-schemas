@@ -5,7 +5,6 @@ import GdbotsPbjxResponseV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/respons
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpGetVideoHistoryResponseV1Mixin from '@triniti/schemas/triniti/ovp/mixin/get-video-history-response/GetVideoHistoryResponseV1Mixin';
 
 export default class GetVideoHistoryResponseV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetVideoHistoryResponseV1 extends Message {
       [
         GdbotsPbjxResponseV1Mixin.create(),
         GdbotsPbjxGetEventsResponseV1Mixin.create(),
-        TrinitiOvpGetVideoHistoryResponseV1Mixin.create(),
       ],
     );
   }

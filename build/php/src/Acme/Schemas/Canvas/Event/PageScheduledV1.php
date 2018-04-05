@@ -15,14 +15,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeScheduled\NodeScheduledV1Mixin as GdbotsNcrNode
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Canvas\Mixin\PageScheduled\PageScheduledV1 as TrinitiCanvasPageScheduledV1;
-use Triniti\Schemas\Canvas\Mixin\PageScheduled\PageScheduledV1Mixin as TrinitiCanvasPageScheduledV1Mixin;
 
 final class PageScheduledV1 extends AbstractMessage implements
     PageScheduled,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeScheduledV1,
-    TrinitiCanvasPageScheduledV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsTimePartingV1,
     GdbotsEnrichmentsTimeSamplingV1
@@ -39,7 +36,6 @@ final class PageScheduledV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeScheduledV1Mixin::create(),
-                TrinitiCanvasPageScheduledV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),
                 GdbotsEnrichmentsTimeSamplingV1Mixin::create(),

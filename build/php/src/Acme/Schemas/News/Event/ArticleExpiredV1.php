@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeExpired\NodeExpiredV1Mixin as GdbotsNcrNodeExpi
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\News\Mixin\ArticleExpired\ArticleExpiredV1 as TrinitiNewsArticleExpiredV1;
-use Triniti\Schemas\News\Mixin\ArticleExpired\ArticleExpiredV1Mixin as TrinitiNewsArticleExpiredV1Mixin;
 
 final class ArticleExpiredV1 extends AbstractMessage implements
     ArticleExpired,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeExpiredV1,
-    TrinitiNewsArticleExpiredV1
+    GdbotsNcrNodeExpiredV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class ArticleExpiredV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeExpiredV1Mixin::create(),
-                TrinitiNewsArticleExpiredV1Mixin::create(),
             ]
         );
     }

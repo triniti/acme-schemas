@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloExpirePollV1Mixin from '@triniti/schemas/triniti/apollo/mixin/expire-poll/ExpirePollV1Mixin';
 
 export default class ExpirePollV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class ExpirePollV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrExpireNodeV1Mixin.create(),
-        TrinitiApolloExpirePollV1Mixin.create(),
       ],
     );
   }

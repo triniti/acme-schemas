@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeRenamed\NodeRenamedV1Mixin as GdbotsNcrNodeRena
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Ovp\Mixin\VideoRenamed\VideoRenamedV1 as TrinitiOvpVideoRenamedV1;
-use Triniti\Schemas\Ovp\Mixin\VideoRenamed\VideoRenamedV1Mixin as TrinitiOvpVideoRenamedV1Mixin;
 
 final class VideoRenamedV1 extends AbstractMessage implements
     VideoRenamed,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeRenamedV1,
-    TrinitiOvpVideoRenamedV1
+    GdbotsNcrNodeRenamedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class VideoRenamedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeRenamedV1Mixin::create(),
-                TrinitiOvpVideoRenamedV1Mixin::create(),
             ]
         );
     }

@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1Mixin as GdbotsNcrNodeDele
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\ChannelDeleted\ChannelDeletedV1 as TrinitiTaxonomyChannelDeletedV1;
-use Triniti\Schemas\Taxonomy\Mixin\ChannelDeleted\ChannelDeletedV1Mixin as TrinitiTaxonomyChannelDeletedV1Mixin;
 
 final class ChannelDeletedV1 extends AbstractMessage implements
     ChannelDeleted,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeDeletedV1,
-    TrinitiTaxonomyChannelDeletedV1
+    GdbotsNcrNodeDeletedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class ChannelDeletedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeDeletedV1Mixin::create(),
-                TrinitiTaxonomyChannelDeletedV1Mixin::create(),
             ]
         );
     }

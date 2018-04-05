@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1Mixin as GdbotsNcrNodeDele
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Dam\Mixin\AssetDeleted\AssetDeletedV1 as TrinitiDamAssetDeletedV1;
-use Triniti\Schemas\Dam\Mixin\AssetDeleted\AssetDeletedV1Mixin as TrinitiDamAssetDeletedV1Mixin;
 
 final class AssetDeletedV1 extends AbstractMessage implements
     AssetDeleted,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeDeletedV1,
-    TrinitiDamAssetDeletedV1
+    GdbotsNcrNodeDeletedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class AssetDeletedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeDeletedV1Mixin::create(),
-                TrinitiDamAssetDeletedV1Mixin::create(),
             ]
         );
     }

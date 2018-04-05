@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeMarkedAsDraft\NodeMarkedAsDraftV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\News\Mixin\ArticleMarkedAsDraft\ArticleMarkedAsDraftV1 as TrinitiNewsArticleMarkedAsDraftV1;
-use Triniti\Schemas\News\Mixin\ArticleMarkedAsDraft\ArticleMarkedAsDraftV1Mixin as TrinitiNewsArticleMarkedAsDraftV1Mixin;
 
 final class ArticleMarkedAsDraftV1 extends AbstractMessage implements
     ArticleMarkedAsDraft,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeMarkedAsDraftV1,
-    TrinitiNewsArticleMarkedAsDraftV1
+    GdbotsNcrNodeMarkedAsDraftV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class ArticleMarkedAsDraftV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeMarkedAsDraftV1Mixin::create(),
-                TrinitiNewsArticleMarkedAsDraftV1Mixin::create(),
             ]
         );
     }

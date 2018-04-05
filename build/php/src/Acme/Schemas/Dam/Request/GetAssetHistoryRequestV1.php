@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Dam\Mixin\GetAssetHistoryRequest\GetAssetHistoryRequestV1 as TrinitiDamGetAssetHistoryRequestV1;
-use Triniti\Schemas\Dam\Mixin\GetAssetHistoryRequest\GetAssetHistoryRequestV1Mixin as TrinitiDamGetAssetHistoryRequestV1Mixin;
 
 final class GetAssetHistoryRequestV1 extends AbstractMessage implements
     GetAssetHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiDamGetAssetHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetAssetHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiDamGetAssetHistoryRequestV1Mixin::create(),
             ]
         );
     }

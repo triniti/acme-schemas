@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\DeleteNode\DeleteNodeV1Mixin as GdbotsNcrDeleteNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\DeletePoll\DeletePollV1 as TrinitiApolloDeletePollV1;
-use Triniti\Schemas\Apollo\Mixin\DeletePoll\DeletePollV1Mixin as TrinitiApolloDeletePollV1Mixin;
 
 final class DeletePollV1 extends AbstractMessage implements
     DeletePoll,
     GdbotsPbjxCommandV1,
-    GdbotsNcrDeleteNodeV1,
-    TrinitiApolloDeletePollV1
+    GdbotsNcrDeleteNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class DeletePollV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrDeleteNodeV1Mixin::create(),
-                TrinitiApolloDeletePollV1Mixin::create(),
             ]
         );
     }

@@ -5,7 +5,6 @@ import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloGetPollRequestV1Mixin from '@triniti/schemas/triniti/apollo/mixin/get-poll-request/GetPollRequestV1Mixin';
 
 export default class GetPollRequestV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetPollRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsNcrGetNodeRequestV1Mixin.create(),
-        TrinitiApolloGetPollRequestV1Mixin.create(),
       ],
     );
   }

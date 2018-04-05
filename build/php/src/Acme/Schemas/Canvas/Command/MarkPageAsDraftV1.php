@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsDraft\MarkNodeAsDraftV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\MarkPageAsDraft\MarkPageAsDraftV1 as TrinitiCanvasMarkPageAsDraftV1;
-use Triniti\Schemas\Canvas\Mixin\MarkPageAsDraft\MarkPageAsDraftV1Mixin as TrinitiCanvasMarkPageAsDraftV1Mixin;
 
 final class MarkPageAsDraftV1 extends AbstractMessage implements
     MarkPageAsDraft,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsDraftV1,
-    TrinitiCanvasMarkPageAsDraftV1
+    GdbotsNcrMarkNodeAsDraftV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkPageAsDraftV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsDraftV1Mixin::create(),
-                TrinitiCanvasMarkPageAsDraftV1Mixin::create(),
             ]
         );
     }

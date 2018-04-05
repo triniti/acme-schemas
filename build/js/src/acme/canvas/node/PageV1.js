@@ -39,8 +39,8 @@ export default class PageV1 extends Message {
       ],
       [
         GdbotsNcrNodeV1Mixin.create(),
-        TrinitiCanvasPageV1Mixin.create(),
         TrinitiCanvasHasBlocksV1Mixin.create(),
+        TrinitiCanvasPageV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiPeopleHasPeopleV1Mixin.create(),

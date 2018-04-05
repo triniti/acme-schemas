@@ -41,8 +41,8 @@ use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTa
 final class PageV1 extends AbstractMessage implements
     Page,
     GdbotsNcrNodeV1,
-    TrinitiCanvasPageV1,
     TrinitiCanvasHasBlocksV1,
+    TrinitiCanvasPageV1,
     TrinitiCommonCustomCodeV1,
     TrinitiCommonSeoV1,
     TrinitiPeopleHasPeopleV1,
@@ -73,8 +73,8 @@ final class PageV1 extends AbstractMessage implements
             ],
             [
                 GdbotsNcrNodeV1Mixin::create(),
-                TrinitiCanvasPageV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCanvasPageV1Mixin::create(),
                 TrinitiCommonCustomCodeV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
                 TrinitiPeopleHasPeopleV1Mixin::create(),

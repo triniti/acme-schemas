@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\DeleteNode\DeleteNodeV1Mixin as GdbotsNcrDeleteNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\DeleteCategory\DeleteCategoryV1 as TrinitiTaxonomyDeleteCategoryV1;
-use Triniti\Schemas\Taxonomy\Mixin\DeleteCategory\DeleteCategoryV1Mixin as TrinitiTaxonomyDeleteCategoryV1Mixin;
 
 final class DeleteCategoryV1 extends AbstractMessage implements
     DeleteCategory,
     GdbotsPbjxCommandV1,
-    GdbotsNcrDeleteNodeV1,
-    TrinitiTaxonomyDeleteCategoryV1
+    GdbotsNcrDeleteNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class DeleteCategoryV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrDeleteNodeV1Mixin::create(),
-                TrinitiTaxonomyDeleteCategoryV1Mixin::create(),
             ]
         );
     }

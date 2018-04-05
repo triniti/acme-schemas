@@ -5,7 +5,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpVideoMarkedAsPendingV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video-marked-as-pending/VideoMarkedAsPendingV1Mixin';
 
 export default class VideoMarkedAsPendingV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class VideoMarkedAsPendingV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeMarkedAsPendingV1Mixin.create(),
-        TrinitiOvpVideoMarkedAsPendingV1Mixin.create(),
       ],
     );
   }
