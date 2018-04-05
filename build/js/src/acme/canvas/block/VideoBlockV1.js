@@ -4,6 +4,7 @@ import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiCanvasBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/block/BlockV1Mixin';
 import TrinitiCanvasBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/block/BlockV1Trait';
+import TrinitiCanvasNodeRefBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/node-ref-block/NodeRefBlockV1Mixin';
 import TrinitiCanvasVideoBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/video-block/VideoBlockV1Mixin';
 import TrinitiCanvasVideoBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/video-block/VideoBlockV1Trait';
 
@@ -18,6 +19,7 @@ export default class VideoBlockV1 extends Message {
       [],
       [
         TrinitiCanvasBlockV1Mixin.create(),
+        TrinitiCanvasNodeRefBlockV1Mixin.create(),
         TrinitiCanvasVideoBlockV1Mixin.create(),
       ],
     );

@@ -22,6 +22,14 @@ use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1 as TrinitiCu
 use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1Mixin as TrinitiCuratorTeaserHasTargetV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1 as TrinitiCuratorTeaserV1;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1Mixin as TrinitiCuratorTeaserV1Mixin;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1Mixin as TrinitiTaxonomyHasChannelV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class ArticleTeaserV1 extends AbstractMessage implements
     ArticleTeaser,
@@ -29,10 +37,14 @@ final class ArticleTeaserV1 extends AbstractMessage implements
     TrinitiCuratorTeaserV1,
     TrinitiCuratorTeaserHasTargetV1,
     TrinitiCuratorArticleTeaserV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
-    GdbotsCommonTaggableV1
+    TrinitiPeopleHasPeopleV1,
+    TrinitiTaxonomyCategorizableV1,
+    TrinitiTaxonomyHasChannelV1,
+    TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiCuratorArticleTeaserV1Trait;
@@ -49,10 +61,14 @@ final class ArticleTeaserV1 extends AbstractMessage implements
                 TrinitiCuratorTeaserV1Mixin::create(),
                 TrinitiCuratorTeaserHasTargetV1Mixin::create(),
                 TrinitiCuratorArticleTeaserV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
+                TrinitiTaxonomyCategorizableV1Mixin::create(),
+                TrinitiTaxonomyHasChannelV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]
         );
     }

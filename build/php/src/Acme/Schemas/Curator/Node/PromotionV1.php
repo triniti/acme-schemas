@@ -23,10 +23,10 @@ final class PromotionV1 extends AbstractMessage implements
     Promotion,
     GdbotsNcrNodeV1,
     TrinitiCuratorPromotionV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
-    GdbotsNcrPublishableV1,
-    GdbotsCommonTaggableV1
+    GdbotsNcrPublishableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiCuratorPromotionV1Trait;
@@ -41,10 +41,10 @@ final class PromotionV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCuratorPromotionV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
             ]
         );
     }

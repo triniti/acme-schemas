@@ -8,10 +8,13 @@ import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publis
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiCuratorTeaserHasTargetV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser-has-target/TeaserHasTargetV1Mixin';
 import TrinitiCuratorTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser/TeaserV1Mixin';
 import TrinitiCuratorYoutubeVideoTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/youtube-video-teaser/YoutubeVideoTeaserV1Mixin';
 import TrinitiCuratorYoutubeVideoTeaserV1Trait from '@triniti/schemas/triniti/curator/mixin/youtube-video-teaser/YoutubeVideoTeaserV1Trait';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
+import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
+import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
+import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class YoutubeVideoTeaserV1 extends Message {
   /**
@@ -25,12 +28,15 @@ export default class YoutubeVideoTeaserV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiCuratorTeaserV1Mixin.create(),
-        TrinitiCuratorTeaserHasTargetV1Mixin.create(),
         TrinitiCuratorYoutubeVideoTeaserV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
+        TrinitiTaxonomyCategorizableV1Mixin.create(),
+        TrinitiTaxonomyHasChannelV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );
   }

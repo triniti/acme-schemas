@@ -210,6 +210,21 @@
         "rule": "list"
       }
     },
+    "tags": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
+          "type": "string",
+          "pattern": "^[\\w\\/\\.:-]+$"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Tags is a map that categorizes data or tracks references in external systems. The tags names should be consistent and descriptive, e.g. fb_user_id:123, salesforce_customer_id:456.",
+      "pbj": {
+        "type": "string",
+        "rule": "map"
+      }
+    },
     "expires_at": {
       "type": "string",
       "format": "date-time",
@@ -226,19 +241,131 @@
         "rule": "single"
       }
     },
-    "tags": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
+    "slug": {
+      "type": "string",
+      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "The \"slug\" is a secondary identifier, typically used in a url: - MUST be url friendly - SHOULD NOT be case sensitive - SHOULD be unique within the message curie namespace - CAN be changed, but in practice once nodes are published you should avoid it if possible",
+      "pbj": {
+        "type": "string",
+        "rule": "single",
+        "format": "slug"
+      }
+    },
+    "seo_title": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "pbj": {
+        "type": "string",
+        "rule": "single"
+      }
+    },
+    "seo_image_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "description": "A reference to the image asset to use for SEO instead of the usual image_ref.",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
+    "meta_description": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 5000,
+      "pbj": {
+        "type": "text",
+        "rule": "single"
+      }
+    },
+    "meta_keywords": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 255
+        }
+      ],
+      "uniqueItems": true,
+      "additionalProperties": false,
+      "pbj": {
+        "type": "string",
+        "rule": "set"
+      }
+    },
+    "is_unlisted": {
+      "type": "boolean",
+      "description": "Unlisted content will not show up in any search results but can still be viewed if you know the URL.",
+      "pbj": {
+        "type": "boolean",
+        "rule": "single"
+      }
+    },
+    "order_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Determines the sequence that this teaserable node will be rendered in lists, search results, etc. It DOES NOT control visibility or publishing. A date was used over an integer (e.g. seq_no) for blog-like, reverse chronological, clarity in sorting.",
+      "pbj": {
+        "type": "date-time",
+        "rule": "single"
+      }
+    },
+    "person_refs": {
+      "type": "array",
+      "items": [
+        {
           "type": "string",
           "pattern": "^[\\w\\/\\.:-]+$"
         }
-      },
+      ],
+      "uniqueItems": true,
       "additionalProperties": false,
-      "description": "Tags is a map that categorizes data or tracks references in external systems. The tags names should be consistent and descriptive, e.g. fb_user_id:123, salesforce_customer_id:456.",
+      "pbj": {
+        "type": "identifier",
+        "rule": "set"
+      }
+    },
+    "category_refs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "^[\\w\\/\\.:-]+$"
+        }
+      ],
+      "uniqueItems": true,
+      "additionalProperties": false,
+      "pbj": {
+        "type": "identifier",
+        "rule": "set"
+      }
+    },
+    "channel_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
+    "hashtags": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 255
+        }
+      ],
+      "uniqueItems": true,
+      "additionalProperties": false,
       "pbj": {
         "type": "string",
-        "rule": "map"
+        "rule": "set",
+        "format": "hashtag"
       }
     }
   },

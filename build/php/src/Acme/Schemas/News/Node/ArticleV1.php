@@ -2,11 +2,8 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-0.json#
 namespace Acme\Schemas\News\Node;
 
-use Acme\Schemas\News\ArticleId;
 use Gdbots\Pbj\AbstractMessage;
-use Gdbots\Pbj\FieldBuilder as Fb;
 use Gdbots\Pbj\Schema;
-use Gdbots\Pbj\Type as T;
 use Gdbots\Schemas\Common\Mixin\Taggable\TaggableV1 as GdbotsCommonTaggableV1;
 use Gdbots\Schemas\Common\Mixin\Taggable\TaggableV1Mixin as GdbotsCommonTaggableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Expirable\ExpirableV1 as GdbotsNcrExpirableV1;
@@ -26,6 +23,8 @@ use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocks
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1 as TrinitiCuratorTeaserableV1;
+use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1Mixin as TrinitiCuratorTeaserableV1Mixin;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1 as TrinitiNewsArticleV1;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Mixin as TrinitiNewsArticleV1Mixin;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Trait as TrinitiNewsArticleV1Trait;
@@ -44,19 +43,20 @@ final class ArticleV1 extends AbstractMessage implements
     Article,
     GdbotsNcrNodeV1,
     TrinitiNewsArticleV1,
-    TrinitiNewsHeadlineFragmentsV1,
-    TrinitiCanvasHasBlocksV1,
-    TrinitiCommonSeoV1,
-    TrinitiPeopleHasPeopleV1,
-    TrinitiTaxonomyCategorizableV1,
-    TrinitiTaxonomyHasChannelV1,
-    TrinitiTaxonomyHashtaggableV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrLockableV1,
     GdbotsNcrPublishableV1,
     GdbotsNcrSluggableV1,
-    GdbotsCommonTaggableV1
+    TrinitiCanvasHasBlocksV1,
+    TrinitiCuratorTeaserableV1,
+    TrinitiCommonSeoV1,
+    TrinitiNewsHeadlineFragmentsV1,
+    TrinitiPeopleHasPeopleV1,
+    TrinitiTaxonomyCategorizableV1,
+    TrinitiTaxonomyHasChannelV1,
+    TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiNewsArticleV1Trait;
@@ -67,29 +67,24 @@ final class ArticleV1 extends AbstractMessage implements
     protected static function defineSchema()
     {
         return new Schema('pbj:acme:news:node:article:1-0-0', __CLASS__,
-            [
-                Fb::create('_id', T\IdentifierType::create())
-                    ->required()
-                    ->withDefault(function() { return ArticleId::generate(); })
-                    ->className(ArticleId::class)
-                    ->build(),
-            ],
+            [],
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiNewsArticleV1Mixin::create(),
-                TrinitiNewsHeadlineFragmentsV1Mixin::create(),
-                TrinitiCanvasHasBlocksV1Mixin::create(),
-                TrinitiCommonSeoV1Mixin::create(),
-                TrinitiPeopleHasPeopleV1Mixin::create(),
-                TrinitiTaxonomyCategorizableV1Mixin::create(),
-                TrinitiTaxonomyHasChannelV1Mixin::create(),
-                TrinitiTaxonomyHashtaggableV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrLockableV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
+                TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCuratorTeaserableV1Mixin::create(),
+                TrinitiCommonSeoV1Mixin::create(),
+                TrinitiNewsHeadlineFragmentsV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
+                TrinitiTaxonomyCategorizableV1Mixin::create(),
+                TrinitiTaxonomyHasChannelV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]
         );
     }

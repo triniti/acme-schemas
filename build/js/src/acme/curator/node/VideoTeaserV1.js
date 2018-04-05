@@ -12,6 +12,10 @@ import TrinitiCuratorTeaserHasTargetV1Mixin from '@triniti/schemas/triniti/curat
 import TrinitiCuratorTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser/TeaserV1Mixin';
 import TrinitiCuratorVideoTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/video-teaser/VideoTeaserV1Mixin';
 import TrinitiCuratorVideoTeaserV1Trait from '@triniti/schemas/triniti/curator/mixin/video-teaser/VideoTeaserV1Trait';
+import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
+import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
+import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
+import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class VideoTeaserV1 extends Message {
   /**
@@ -27,10 +31,14 @@ export default class VideoTeaserV1 extends Message {
         TrinitiCuratorTeaserV1Mixin.create(),
         TrinitiCuratorTeaserHasTargetV1Mixin.create(),
         TrinitiCuratorVideoTeaserV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
+        TrinitiTaxonomyCategorizableV1Mixin.create(),
+        TrinitiTaxonomyHasChannelV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );
   }
