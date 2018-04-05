@@ -23,10 +23,10 @@ export default class PromotionV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiCuratorPromotionV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
   }

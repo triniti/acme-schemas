@@ -1,6 +1,4 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/taxonomy/node/channel/1-0-0.json#
-import ChannelId from '@triniti/acme-schemas/acme/taxonomy/ChannelId';
-import Fb from '@gdbots/pbj/FieldBuilder';
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin';
 import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Trait';
@@ -8,7 +6,7 @@ import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggabl
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import T from '@gdbots/pbj/types';
+import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiTaxonomyChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/channel/ChannelV1Mixin';
 import TrinitiTaxonomyChannelV1Trait from '@triniti/schemas/triniti/taxonomy/mixin/channel/ChannelV1Trait';
@@ -22,20 +20,15 @@ export default class ChannelV1 extends Message {
    */
   static defineSchema() {
     return new Schema('pbj:acme:taxonomy:node:channel:1-0-0', ChannelV1,
-      [
-        Fb.create('_id', T.IdentifierType.create())
-          .required()
-          .withDefault(() => ChannelId.generate())
-          .classProto(ChannelId)
-          .build(),
-      ],
+      [],
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiTaxonomyChannelV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
+        GdbotsNcrSluggableV1Mixin.create(),
+        TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),
-        GdbotsNcrSluggableV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
   }
