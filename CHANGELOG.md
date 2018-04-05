@@ -1,11 +1,14 @@
 # CHANGELOG
 
+## v0.1.6
+* __Add Schemas:__
+  * `acme:curator:node:gallery-teaser`
+
 ## v0.1.5
 * __Add Schemas:__
   * `acme:canvas:node:image-block`
   * `acme:canvas:node:video-block`
   * `acme:curator:node:article-teaser`
-  * `acme:curator:node:gallery-teaser`
   * `acme:curator:node:gallery`
   * `acme:curator:node:promotion`
   * `acme:curator:node:teaser-has-target`

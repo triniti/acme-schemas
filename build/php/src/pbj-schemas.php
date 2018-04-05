@@ -90,6 +90,7 @@
     'acme:canvas:request:search-pages-response' => 'Acme\Schemas\Canvas\Request\SearchPagesResponseV1',
     'acme:curator:node:article-teaser' => 'Acme\Schemas\Curator\Node\ArticleTeaserV1',
     'acme:curator:node:gallery' => 'Acme\Schemas\Curator\Node\GalleryV1',
+    'acme:curator:node:gallery-teaser' => 'Acme\Schemas\Curator\Node\GalleryTeaserV1',
     'acme:curator:node:promotion' => 'Acme\Schemas\Curator\Node\PromotionV1',
     'acme:curator:node:timeline' => 'Acme\Schemas\Curator\Node\TimelineV1',
     'acme:curator:node:timeline-teaser' => 'Acme\Schemas\Curator\Node\TimelineTeaserV1',

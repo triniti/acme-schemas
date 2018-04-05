@@ -89,6 +89,7 @@ import '@triniti/acme-schemas/acme/canvas/request/SearchPagesRequestV1';
 import '@triniti/acme-schemas/acme/canvas/request/SearchPagesResponseV1';
 import '@triniti/acme-schemas/acme/curator/node/ArticleTeaserV1';
 import '@triniti/acme-schemas/acme/curator/node/GalleryV1';
+import '@triniti/acme-schemas/acme/curator/node/GalleryTeaserV1';
 import '@triniti/acme-schemas/acme/curator/node/PromotionV1';
 import '@triniti/acme-schemas/acme/curator/node/TimelineV1';
 import '@triniti/acme-schemas/acme/curator/node/TimelineTeaserV1';

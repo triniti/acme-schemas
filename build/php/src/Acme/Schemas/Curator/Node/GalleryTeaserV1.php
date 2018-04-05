@@ -15,6 +15,9 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
+use Triniti\Schemas\Curator\Mixin\GalleryTeaser\GalleryTeaserV1 as TrinitiCuratorGalleryTeaserV1;
+use Triniti\Schemas\Curator\Mixin\GalleryTeaser\GalleryTeaserV1Mixin as TrinitiCuratorGalleryTeaserV1Mixin;
+use Triniti\Schemas\Curator\Mixin\GalleryTeaser\GalleryTeaserV1Trait as TrinitiCuratorGalleryTeaserV1Trait;
 use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1 as TrinitiCuratorTeaserHasTargetV1;
 use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1Mixin as TrinitiCuratorTeaserHasTargetV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1 as TrinitiCuratorTeaserV1;
@@ -25,12 +28,14 @@ final class GalleryTeaserV1 extends AbstractMessage implements
     GdbotsNcrNodeV1,
     TrinitiCuratorTeaserV1,
     TrinitiCuratorTeaserHasTargetV1,
+    TrinitiCuratorGalleryTeaserV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
     GdbotsCommonTaggableV1
 {
     use GdbotsNcrNodeV1Trait;
+    use TrinitiCuratorGalleryTeaserV1Trait;
 
     /**
      * @return Schema
@@ -43,6 +48,7 @@ final class GalleryTeaserV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCuratorTeaserV1Mixin::create(),
                 TrinitiCuratorTeaserHasTargetV1Mixin::create(),
+                TrinitiCuratorGalleryTeaserV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
