@@ -108,7 +108,7 @@
           "type": "object",
           "anyOf": [
             {
-              "$ref": "#/definitions/role"
+              "$ref": "#/definitions/node"
             }
           ]
         }
@@ -116,7 +116,8 @@
       "additionalProperties": false,
       "pbj": {
         "type": "message",
-        "rule": "map"
+        "rule": "map",
+        "overridable": true
       }
     },
     "missing_node_refs": {
@@ -149,11 +150,11 @@
         }
       ]
     },
-    "role": {
+    "node": {
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/iam/mixin/role/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/ncr/mixin/node/1-0-0.json#"
         }
       ]
     }

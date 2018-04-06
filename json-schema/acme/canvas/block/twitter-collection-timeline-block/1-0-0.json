@@ -50,13 +50,6 @@
         "rule": "single"
       }
     },
-    "show_replies": {
-      "type": "boolean",
-      "pbj": {
-        "type": "boolean",
-        "rule": "single"
-      }
-    },
     "tweet_limit": {
       "type": "integer",
       "default": 1,
@@ -64,6 +57,13 @@
       "maximum": 20,
       "pbj": {
         "type": "tiny-int",
+        "rule": "single"
+      }
+    },
+    "grid_view": {
+      "type": "boolean",
+      "pbj": {
+        "type": "boolean",
         "rule": "single"
       }
     }
