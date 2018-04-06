@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\DeleteNode\DeleteNodeV1Mixin as GdbotsNcrDeleteNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\DeletePage\DeletePageV1 as TrinitiCanvasDeletePageV1;
-use Triniti\Schemas\Canvas\Mixin\DeletePage\DeletePageV1Mixin as TrinitiCanvasDeletePageV1Mixin;
 
 final class DeletePageV1 extends AbstractMessage implements
     DeletePage,
     GdbotsPbjxCommandV1,
-    GdbotsNcrDeleteNodeV1,
-    TrinitiCanvasDeletePageV1
+    GdbotsNcrDeleteNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class DeletePageV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrDeleteNodeV1Mixin::create(),
-                TrinitiCanvasDeletePageV1Mixin::create(),
             ]
         );
     }

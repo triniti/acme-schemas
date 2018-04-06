@@ -10,7 +10,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsArticleUnlockedV1Mixin from '@triniti/schemas/triniti/news/mixin/article-unlocked/ArticleUnlockedV1Mixin';
 
 export default class ArticleUnlockedV1 extends Message {
   /**
@@ -24,7 +23,6 @@ export default class ArticleUnlockedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeUnlockedV1Mixin.create(),
-        TrinitiNewsArticleUnlockedV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsIpToGeoV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),

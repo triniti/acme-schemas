@@ -5,7 +5,6 @@ import GdbotsPbjxResponseV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/respons
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiTaxonomyGetChannelHistoryResponseV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/get-channel-history-response/GetChannelHistoryResponseV1Mixin';
 
 export default class GetChannelHistoryResponseV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetChannelHistoryResponseV1 extends Message {
       [
         GdbotsPbjxResponseV1Mixin.create(),
         GdbotsPbjxGetEventsResponseV1Mixin.create(),
-        TrinitiTaxonomyGetChannelHistoryResponseV1Mixin.create(),
       ],
     );
   }

@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeResponse\GetNodeResponseV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\GetChannelResponse\GetChannelResponseV1 as TrinitiTaxonomyGetChannelResponseV1;
-use Triniti\Schemas\Taxonomy\Mixin\GetChannelResponse\GetChannelResponseV1Mixin as TrinitiTaxonomyGetChannelResponseV1Mixin;
 
 final class GetChannelResponseV1 extends AbstractMessage implements
     GetChannelResponse,
     GdbotsPbjxResponseV1,
-    GdbotsNcrGetNodeResponseV1,
-    TrinitiTaxonomyGetChannelResponseV1
+    GdbotsNcrGetNodeResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +27,6 @@ final class GetChannelResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsNcrGetNodeResponseV1Mixin::create(),
-                TrinitiTaxonomyGetChannelResponseV1Mixin::create(),
             ]
         );
     }

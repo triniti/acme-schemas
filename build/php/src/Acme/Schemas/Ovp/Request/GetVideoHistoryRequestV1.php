@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Ovp\Mixin\GetVideoHistoryRequest\GetVideoHistoryRequestV1 as TrinitiOvpGetVideoHistoryRequestV1;
-use Triniti\Schemas\Ovp\Mixin\GetVideoHistoryRequest\GetVideoHistoryRequestV1Mixin as TrinitiOvpGetVideoHistoryRequestV1Mixin;
 
 final class GetVideoHistoryRequestV1 extends AbstractMessage implements
     GetVideoHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiOvpGetVideoHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetVideoHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiOvpGetVideoHistoryRequestV1Mixin::create(),
             ]
         );
     }

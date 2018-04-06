@@ -1,5 +1,4 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/iam/request/get-user-batch-request/1-0-0.json#
-import GdbotsIamGetUserBatchRequestV1Mixin from '@gdbots/schemas/gdbots/iam/mixin/get-user-batch-request/GetUserBatchRequestV1Mixin';
 import GdbotsNcrGetNodeBatchRequestV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/get-node-batch-request/GetNodeBatchRequestV1Mixin';
 import GdbotsPbjxRequestV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/request/RequestV1Mixin';
 import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/RequestV1Trait';
@@ -19,7 +18,6 @@ export default class GetUserBatchRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsNcrGetNodeBatchRequestV1Mixin.create(),
-        GdbotsIamGetUserBatchRequestV1Mixin.create(),
       ],
     );
   }

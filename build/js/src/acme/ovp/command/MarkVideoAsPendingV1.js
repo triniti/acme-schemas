@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpMarkVideoAsPendingV1Mixin from '@triniti/schemas/triniti/ovp/mixin/mark-video-as-pending/MarkVideoAsPendingV1Mixin';
 
 export default class MarkVideoAsPendingV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class MarkVideoAsPendingV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrMarkNodeAsPendingV1Mixin.create(),
-        TrinitiOvpMarkVideoAsPendingV1Mixin.create(),
       ],
     );
   }

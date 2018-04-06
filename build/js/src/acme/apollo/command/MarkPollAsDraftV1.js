@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloMarkPollAsDraftV1Mixin from '@triniti/schemas/triniti/apollo/mixin/mark-poll-as-draft/MarkPollAsDraftV1Mixin';
 
 export default class MarkPollAsDraftV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class MarkPollAsDraftV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrMarkNodeAsDraftV1Mixin.create(),
-        TrinitiApolloMarkPollAsDraftV1Mixin.create(),
       ],
     );
   }

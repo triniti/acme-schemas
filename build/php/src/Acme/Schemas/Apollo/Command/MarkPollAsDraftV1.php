@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsDraft\MarkNodeAsDraftV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\MarkPollAsDraft\MarkPollAsDraftV1 as TrinitiApolloMarkPollAsDraftV1;
-use Triniti\Schemas\Apollo\Mixin\MarkPollAsDraft\MarkPollAsDraftV1Mixin as TrinitiApolloMarkPollAsDraftV1Mixin;
 
 final class MarkPollAsDraftV1 extends AbstractMessage implements
     MarkPollAsDraft,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsDraftV1,
-    TrinitiApolloMarkPollAsDraftV1
+    GdbotsNcrMarkNodeAsDraftV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkPollAsDraftV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsDraftV1Mixin::create(),
-                TrinitiApolloMarkPollAsDraftV1Mixin::create(),
             ]
         );
     }

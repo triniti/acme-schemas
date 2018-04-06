@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\DeleteNode\DeleteNodeV1Mixin as GdbotsNcrDeleteNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Ovp\Mixin\DeleteVideo\DeleteVideoV1 as TrinitiOvpDeleteVideoV1;
-use Triniti\Schemas\Ovp\Mixin\DeleteVideo\DeleteVideoV1Mixin as TrinitiOvpDeleteVideoV1Mixin;
 
 final class DeleteVideoV1 extends AbstractMessage implements
     DeleteVideo,
     GdbotsPbjxCommandV1,
-    GdbotsNcrDeleteNodeV1,
-    TrinitiOvpDeleteVideoV1
+    GdbotsNcrDeleteNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class DeleteVideoV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrDeleteNodeV1Mixin::create(),
-                TrinitiOvpDeleteVideoV1Mixin::create(),
             ]
         );
     }

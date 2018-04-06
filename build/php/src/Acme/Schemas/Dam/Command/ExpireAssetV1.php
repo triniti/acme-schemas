@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\ExpireNode\ExpireNodeV1Mixin as GdbotsNcrExpireNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Dam\Mixin\ExpireAsset\ExpireAssetV1 as TrinitiDamExpireAssetV1;
-use Triniti\Schemas\Dam\Mixin\ExpireAsset\ExpireAssetV1Mixin as TrinitiDamExpireAssetV1Mixin;
 
 final class ExpireAssetV1 extends AbstractMessage implements
     ExpireAsset,
     GdbotsPbjxCommandV1,
-    GdbotsNcrExpireNodeV1,
-    TrinitiDamExpireAssetV1
+    GdbotsNcrExpireNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class ExpireAssetV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrExpireNodeV1Mixin::create(),
-                TrinitiDamExpireAssetV1Mixin::create(),
             ]
         );
     }

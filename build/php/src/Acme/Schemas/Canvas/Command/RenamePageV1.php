@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\RenameNode\RenameNodeV1Mixin as GdbotsNcrRenameNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\RenamePage\RenamePageV1 as TrinitiCanvasRenamePageV1;
-use Triniti\Schemas\Canvas\Mixin\RenamePage\RenamePageV1Mixin as TrinitiCanvasRenamePageV1Mixin;
 
 final class RenamePageV1 extends AbstractMessage implements
     RenamePage,
     GdbotsPbjxCommandV1,
-    GdbotsNcrRenameNodeV1,
-    TrinitiCanvasRenamePageV1
+    GdbotsNcrRenameNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class RenamePageV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrRenameNodeV1Mixin::create(),
-                TrinitiCanvasRenamePageV1Mixin::create(),
             ]
         );
     }

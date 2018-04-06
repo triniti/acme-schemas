@@ -5,7 +5,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsArticleMarkedAsDraftV1Mixin from '@triniti/schemas/triniti/news/mixin/article-marked-as-draft/ArticleMarkedAsDraftV1Mixin';
 
 export default class ArticleMarkedAsDraftV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class ArticleMarkedAsDraftV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeMarkedAsDraftV1Mixin.create(),
-        TrinitiNewsArticleMarkedAsDraftV1Mixin.create(),
       ],
     );
   }

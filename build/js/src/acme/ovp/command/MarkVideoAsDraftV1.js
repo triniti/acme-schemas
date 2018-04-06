@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpMarkVideoAsDraftV1Mixin from '@triniti/schemas/triniti/ovp/mixin/mark-video-as-draft/MarkVideoAsDraftV1Mixin';
 
 export default class MarkVideoAsDraftV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class MarkVideoAsDraftV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrMarkNodeAsDraftV1Mixin.create(),
-        TrinitiOvpMarkVideoAsDraftV1Mixin.create(),
       ],
     );
   }

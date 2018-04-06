@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeExpired\NodeExpiredV1Mixin as GdbotsNcrNodeExpi
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Canvas\Mixin\PageExpired\PageExpiredV1 as TrinitiCanvasPageExpiredV1;
-use Triniti\Schemas\Canvas\Mixin\PageExpired\PageExpiredV1Mixin as TrinitiCanvasPageExpiredV1Mixin;
 
 final class PageExpiredV1 extends AbstractMessage implements
     PageExpired,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeExpiredV1,
-    TrinitiCanvasPageExpiredV1
+    GdbotsNcrNodeExpiredV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class PageExpiredV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeExpiredV1Mixin::create(),
-                TrinitiCanvasPageExpiredV1Mixin::create(),
             ]
         );
     }

@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeResponse\GetNodeResponseV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Apollo\Mixin\GetPollResponse\GetPollResponseV1 as TrinitiApolloGetPollResponseV1;
-use Triniti\Schemas\Apollo\Mixin\GetPollResponse\GetPollResponseV1Mixin as TrinitiApolloGetPollResponseV1Mixin;
 
 final class GetPollResponseV1 extends AbstractMessage implements
     GetPollResponse,
     GdbotsPbjxResponseV1,
-    GdbotsNcrGetNodeResponseV1,
-    TrinitiApolloGetPollResponseV1
+    GdbotsNcrGetNodeResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +27,6 @@ final class GetPollResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsNcrGetNodeResponseV1Mixin::create(),
-                TrinitiApolloGetPollResponseV1Mixin::create(),
             ]
         );
     }

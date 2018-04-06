@@ -4,30 +4,16 @@
     xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
 
   <schema id="pbj:acme:taxonomy:node:category:1-0-0">
-    <fields>
-      <field name="_id" type="identifier" required="true">
-        <php-options>
-          <imports>use Acme\Schemas\Taxonomy\CategoryId;</imports>
-          <class-name>CategoryId::class</class-name>
-          <default>function() { return CategoryId::generate(); }</default>
-        </php-options>
-        <js-options>
-          <imports>import CategoryId from '@triniti/acme-schemas/acme/taxonomy/CategoryId';</imports>
-          <class-proto>CategoryId</class-proto>
-          <default>() => CategoryId.generate()</default>
-        </js-options>
-      </field>
-    </fields>
-
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:category:v1</curie-major>
+      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
+      <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
+      <curie-major>triniti:common:mixin:custom-code:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
-      <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
-      <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
-      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

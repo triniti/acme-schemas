@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\UpdateNode\UpdateNodeV1Mixin as GdbotsNcrUpdateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\UpdatePage\UpdatePageV1 as TrinitiCanvasUpdatePageV1;
-use Triniti\Schemas\Canvas\Mixin\UpdatePage\UpdatePageV1Mixin as TrinitiCanvasUpdatePageV1Mixin;
 
 final class UpdatePageV1 extends AbstractMessage implements
     UpdatePage,
     GdbotsPbjxCommandV1,
-    GdbotsNcrUpdateNodeV1,
-    TrinitiCanvasUpdatePageV1
+    GdbotsNcrUpdateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class UpdatePageV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrUpdateNodeV1Mixin::create(),
-                TrinitiCanvasUpdatePageV1Mixin::create(),
             ]
         );
     }

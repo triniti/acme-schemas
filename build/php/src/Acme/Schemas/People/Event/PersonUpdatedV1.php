@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeUpdated\NodeUpdatedV1Mixin as GdbotsNcrNodeUpda
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\People\Mixin\PersonUpdated\PersonUpdatedV1 as TrinitiPeoplePersonUpdatedV1;
-use Triniti\Schemas\People\Mixin\PersonUpdated\PersonUpdatedV1Mixin as TrinitiPeoplePersonUpdatedV1Mixin;
 
 final class PersonUpdatedV1 extends AbstractMessage implements
     PersonUpdated,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeUpdatedV1,
-    TrinitiPeoplePersonUpdatedV1
+    GdbotsNcrNodeUpdatedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class PersonUpdatedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeUpdatedV1Mixin::create(),
-                TrinitiPeoplePersonUpdatedV1Mixin::create(),
             ]
         );
     }

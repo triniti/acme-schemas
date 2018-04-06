@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\CreateNode\CreateNodeV1Mixin as GdbotsNcrCreateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Ovp\Mixin\CreateVideo\CreateVideoV1 as TrinitiOvpCreateVideoV1;
-use Triniti\Schemas\Ovp\Mixin\CreateVideo\CreateVideoV1Mixin as TrinitiOvpCreateVideoV1Mixin;
 
 final class CreateVideoV1 extends AbstractMessage implements
     CreateVideo,
     GdbotsPbjxCommandV1,
-    GdbotsNcrCreateNodeV1,
-    TrinitiOvpCreateVideoV1
+    GdbotsNcrCreateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class CreateVideoV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrCreateNodeV1Mixin::create(),
-                TrinitiOvpCreateVideoV1Mixin::create(),
             ]
         );
     }

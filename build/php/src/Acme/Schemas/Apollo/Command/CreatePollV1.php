@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\CreateNode\CreateNodeV1Mixin as GdbotsNcrCreateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\CreatePoll\CreatePollV1 as TrinitiApolloCreatePollV1;
-use Triniti\Schemas\Apollo\Mixin\CreatePoll\CreatePollV1Mixin as TrinitiApolloCreatePollV1Mixin;
 
 final class CreatePollV1 extends AbstractMessage implements
     CreatePoll,
     GdbotsPbjxCommandV1,
-    GdbotsNcrCreateNodeV1,
-    TrinitiApolloCreatePollV1
+    GdbotsNcrCreateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class CreatePollV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrCreateNodeV1Mixin::create(),
-                TrinitiApolloCreatePollV1Mixin::create(),
             ]
         );
     }

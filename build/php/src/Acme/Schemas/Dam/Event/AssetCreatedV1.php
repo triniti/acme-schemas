@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeCreated\NodeCreatedV1Mixin as GdbotsNcrNodeCrea
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Dam\Mixin\AssetCreated\AssetCreatedV1 as TrinitiDamAssetCreatedV1;
-use Triniti\Schemas\Dam\Mixin\AssetCreated\AssetCreatedV1Mixin as TrinitiDamAssetCreatedV1Mixin;
 
 final class AssetCreatedV1 extends AbstractMessage implements
     AssetCreated,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeCreatedV1,
-    TrinitiDamAssetCreatedV1
+    GdbotsNcrNodeCreatedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class AssetCreatedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeCreatedV1Mixin::create(),
-                TrinitiDamAssetCreatedV1Mixin::create(),
             ]
         );
     }

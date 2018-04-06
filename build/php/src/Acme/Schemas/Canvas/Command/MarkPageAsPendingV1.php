@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsPending\MarkNodeAsPendingV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\MarkPageAsPending\MarkPageAsPendingV1 as TrinitiCanvasMarkPageAsPendingV1;
-use Triniti\Schemas\Canvas\Mixin\MarkPageAsPending\MarkPageAsPendingV1Mixin as TrinitiCanvasMarkPageAsPendingV1Mixin;
 
 final class MarkPageAsPendingV1 extends AbstractMessage implements
     MarkPageAsPending,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsPendingV1,
-    TrinitiCanvasMarkPageAsPendingV1
+    GdbotsNcrMarkNodeAsPendingV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkPageAsPendingV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsPendingV1Mixin::create(),
-                TrinitiCanvasMarkPageAsPendingV1Mixin::create(),
             ]
         );
     }

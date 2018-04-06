@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsPending\MarkNodeAsPendingV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\News\Mixin\MarkArticleAsPending\MarkArticleAsPendingV1 as TrinitiNewsMarkArticleAsPendingV1;
-use Triniti\Schemas\News\Mixin\MarkArticleAsPending\MarkArticleAsPendingV1Mixin as TrinitiNewsMarkArticleAsPendingV1Mixin;
 
 final class MarkArticleAsPendingV1 extends AbstractMessage implements
     MarkArticleAsPending,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsPendingV1,
-    TrinitiNewsMarkArticleAsPendingV1
+    GdbotsNcrMarkNodeAsPendingV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkArticleAsPendingV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsPendingV1Mixin::create(),
-                TrinitiNewsMarkArticleAsPendingV1Mixin::create(),
             ]
         );
     }

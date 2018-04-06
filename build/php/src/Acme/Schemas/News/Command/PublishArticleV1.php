@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\PublishNode\PublishNodeV1Mixin as GdbotsNcrPublishN
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\News\Mixin\PublishArticle\PublishArticleV1 as TrinitiNewsPublishArticleV1;
-use Triniti\Schemas\News\Mixin\PublishArticle\PublishArticleV1Mixin as TrinitiNewsPublishArticleV1Mixin;
 
 final class PublishArticleV1 extends AbstractMessage implements
     PublishArticle,
     GdbotsPbjxCommandV1,
-    GdbotsNcrPublishNodeV1,
-    TrinitiNewsPublishArticleV1
+    GdbotsNcrPublishNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class PublishArticleV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrPublishNodeV1Mixin::create(),
-                TrinitiNewsPublishArticleV1Mixin::create(),
             ]
         );
     }

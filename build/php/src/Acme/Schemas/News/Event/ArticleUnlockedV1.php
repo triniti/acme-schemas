@@ -19,14 +19,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeUnlocked\NodeUnlockedV1Mixin as GdbotsNcrNodeUn
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\News\Mixin\ArticleUnlocked\ArticleUnlockedV1 as TrinitiNewsArticleUnlockedV1;
-use Triniti\Schemas\News\Mixin\ArticleUnlocked\ArticleUnlockedV1Mixin as TrinitiNewsArticleUnlockedV1Mixin;
 
 final class ArticleUnlockedV1 extends AbstractMessage implements
     ArticleUnlocked,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeUnlockedV1,
-    TrinitiNewsArticleUnlockedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsIpToGeoV1,
     GdbotsEnrichmentsTimePartingV1,
@@ -45,7 +42,6 @@ final class ArticleUnlockedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeUnlockedV1Mixin::create(),
-                TrinitiNewsArticleUnlockedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsIpToGeoV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),

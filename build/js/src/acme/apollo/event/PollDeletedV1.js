@@ -5,7 +5,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloPollDeletedV1Mixin from '@triniti/schemas/triniti/apollo/mixin/poll-deleted/PollDeletedV1Mixin';
 
 export default class PollDeletedV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class PollDeletedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeDeletedV1Mixin.create(),
-        TrinitiApolloPollDeletedV1Mixin.create(),
       ],
     );
   }

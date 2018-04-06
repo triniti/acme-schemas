@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:request:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:get-node-request:v1</curie-major>
-      <curie-major>triniti:dam:mixin:get-asset-request:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\News\Mixin\GetArticleHistoryRequest\GetArticleHistoryRequestV1 as TrinitiNewsGetArticleHistoryRequestV1;
-use Triniti\Schemas\News\Mixin\GetArticleHistoryRequest\GetArticleHistoryRequestV1Mixin as TrinitiNewsGetArticleHistoryRequestV1Mixin;
 
 final class GetArticleHistoryRequestV1 extends AbstractMessage implements
     GetArticleHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiNewsGetArticleHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetArticleHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiNewsGetArticleHistoryRequestV1Mixin::create(),
             ]
         );
     }

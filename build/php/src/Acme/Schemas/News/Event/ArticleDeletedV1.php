@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1Mixin as GdbotsNcrNodeDele
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\News\Mixin\ArticleDeleted\ArticleDeletedV1 as TrinitiNewsArticleDeletedV1;
-use Triniti\Schemas\News\Mixin\ArticleDeleted\ArticleDeletedV1Mixin as TrinitiNewsArticleDeletedV1Mixin;
 
 final class ArticleDeletedV1 extends AbstractMessage implements
     ArticleDeleted,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeDeletedV1,
-    TrinitiNewsArticleDeletedV1
+    GdbotsNcrNodeDeletedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class ArticleDeletedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeDeletedV1Mixin::create(),
-                TrinitiNewsArticleDeletedV1Mixin::create(),
             ]
         );
     }

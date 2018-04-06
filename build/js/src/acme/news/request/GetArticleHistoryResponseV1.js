@@ -5,7 +5,6 @@ import GdbotsPbjxResponseV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/respons
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsGetArticleHistoryResponseV1Mixin from '@triniti/schemas/triniti/news/mixin/get-article-history-response/GetArticleHistoryResponseV1Mixin';
 
 export default class GetArticleHistoryResponseV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetArticleHistoryResponseV1 extends Message {
       [
         GdbotsPbjxResponseV1Mixin.create(),
         GdbotsPbjxGetEventsResponseV1Mixin.create(),
-        TrinitiNewsGetArticleHistoryResponseV1Mixin.create(),
       ],
     );
   }

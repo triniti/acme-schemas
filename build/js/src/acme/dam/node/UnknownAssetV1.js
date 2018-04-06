@@ -25,10 +25,10 @@ export default class UnknownAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamUnknownAssetV1Mixin.create(),
-        TrinitiTaxonomyHashtaggableV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );
   }

@@ -197,6 +197,16 @@
         "rule": "single"
       }
     },
+    "description": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 5000,
+      "description": "A description of the asset (usually a few sentences). It should typically not have HTML as it is used in metadata, feeds, SERP and social.",
+      "pbj": {
+        "type": "text",
+        "rule": "single"
+      }
+    },
     "associated_refs": {
       "type": "array",
       "items": [
@@ -211,6 +221,29 @@
       "pbj": {
         "type": "identifier",
         "rule": "set"
+      }
+    },
+    "tags": {
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
+          "type": "string",
+          "pattern": "^[\\w\\/\\.:-]+$"
+        }
+      },
+      "additionalProperties": false,
+      "description": "Tags is a map that categorizes data or tracks references in external systems. The tags names should be consistent and descriptive, e.g. fb_user_id:123, salesforce_customer_id:456.",
+      "pbj": {
+        "type": "string",
+        "rule": "map"
+      }
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "pbj": {
+        "type": "date-time",
+        "rule": "single"
       }
     },
     "person_refs": {
@@ -243,29 +276,6 @@
         "type": "string",
         "rule": "set",
         "format": "hashtag"
-      }
-    },
-    "expires_at": {
-      "type": "string",
-      "format": "date-time",
-      "pbj": {
-        "type": "date-time",
-        "rule": "single"
-      }
-    },
-    "tags": {
-      "type": "object",
-      "patternProperties": {
-        "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
-          "type": "string",
-          "pattern": "^[\\w\\/\\.:-]+$"
-        }
-      },
-      "additionalProperties": false,
-      "description": "Tags is a map that categorizes data or tracks references in external systems. The tags names should be consistent and descriptive, e.g. fb_user_id:123, salesforce_customer_id:456.",
-      "pbj": {
-        "type": "string",
-        "rule": "map"
       }
     }
   },

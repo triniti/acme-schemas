@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Canvas\Mixin\GetPageHistoryRequest\GetPageHistoryRequestV1 as TrinitiCanvasGetPageHistoryRequestV1;
-use Triniti\Schemas\Canvas\Mixin\GetPageHistoryRequest\GetPageHistoryRequestV1Mixin as TrinitiCanvasGetPageHistoryRequestV1Mixin;
 
 final class GetPageHistoryRequestV1 extends AbstractMessage implements
     GetPageHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiCanvasGetPageHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetPageHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiCanvasGetPageHistoryRequestV1Mixin::create(),
             ]
         );
     }

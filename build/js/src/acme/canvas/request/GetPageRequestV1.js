@@ -5,7 +5,6 @@ import GdbotsPbjxRequestV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/request/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiCanvasGetPageRequestV1Mixin from '@triniti/schemas/triniti/canvas/mixin/get-page-request/GetPageRequestV1Mixin';
 
 export default class GetPageRequestV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class GetPageRequestV1 extends Message {
       [
         GdbotsPbjxRequestV1Mixin.create(),
         GdbotsNcrGetNodeRequestV1Mixin.create(),
-        TrinitiCanvasGetPageRequestV1Mixin.create(),
       ],
     );
   }

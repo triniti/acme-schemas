@@ -5,7 +5,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpVideoRenamedV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video-renamed/VideoRenamedV1Mixin';
 
 export default class VideoRenamedV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class VideoRenamedV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeRenamedV1Mixin.create(),
-        TrinitiOvpVideoRenamedV1Mixin.create(),
       ],
     );
   }

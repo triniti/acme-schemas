@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\MarkNodeAsPending\MarkNodeAsPendingV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\MarkPollAsPending\MarkPollAsPendingV1 as TrinitiApolloMarkPollAsPendingV1;
-use Triniti\Schemas\Apollo\Mixin\MarkPollAsPending\MarkPollAsPendingV1Mixin as TrinitiApolloMarkPollAsPendingV1Mixin;
 
 final class MarkPollAsPendingV1 extends AbstractMessage implements
     MarkPollAsPending,
     GdbotsPbjxCommandV1,
-    GdbotsNcrMarkNodeAsPendingV1,
-    TrinitiApolloMarkPollAsPendingV1
+    GdbotsNcrMarkNodeAsPendingV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class MarkPollAsPendingV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrMarkNodeAsPendingV1Mixin::create(),
-                TrinitiApolloMarkPollAsPendingV1Mixin::create(),
             ]
         );
     }

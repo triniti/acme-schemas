@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeMarkedAsDraft\NodeMarkedAsDraftV1Mixin as Gdbot
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Ovp\Mixin\VideoMarkedAsDraft\VideoMarkedAsDraftV1 as TrinitiOvpVideoMarkedAsDraftV1;
-use Triniti\Schemas\Ovp\Mixin\VideoMarkedAsDraft\VideoMarkedAsDraftV1Mixin as TrinitiOvpVideoMarkedAsDraftV1Mixin;
 
 final class VideoMarkedAsDraftV1 extends AbstractMessage implements
     VideoMarkedAsDraft,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeMarkedAsDraftV1,
-    TrinitiOvpVideoMarkedAsDraftV1
+    GdbotsNcrNodeMarkedAsDraftV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class VideoMarkedAsDraftV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeMarkedAsDraftV1Mixin::create(),
-                TrinitiOvpVideoMarkedAsDraftV1Mixin::create(),
             ]
         );
     }

@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiOvpExpireVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/expire-video/ExpireVideoV1Mixin';
 
 export default class ExpireVideoV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class ExpireVideoV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrExpireNodeV1Mixin.create(),
-        TrinitiOvpExpireVideoV1Mixin.create(),
       ],
     );
   }
