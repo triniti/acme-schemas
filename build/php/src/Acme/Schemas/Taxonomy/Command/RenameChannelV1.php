@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\RenameNode\RenameNodeV1Mixin as GdbotsNcrRenameNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\RenameChannel\RenameChannelV1 as TrinitiTaxonomyRenameChannelV1;
-use Triniti\Schemas\Taxonomy\Mixin\RenameChannel\RenameChannelV1Mixin as TrinitiTaxonomyRenameChannelV1Mixin;
 
 final class RenameChannelV1 extends AbstractMessage implements
     RenameChannel,
     GdbotsPbjxCommandV1,
-    GdbotsNcrRenameNodeV1,
-    TrinitiTaxonomyRenameChannelV1
+    GdbotsNcrRenameNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class RenameChannelV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrRenameNodeV1Mixin::create(),
-                TrinitiTaxonomyRenameChannelV1Mixin::create(),
             ]
         );
     }

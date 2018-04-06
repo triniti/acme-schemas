@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeResponse\GetNodeResponseV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1 as GdbotsPbjxResponseV1;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Mixin as GdbotsPbjxResponseV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Response\ResponseV1Trait as GdbotsPbjxResponseV1Trait;
-use Triniti\Schemas\Dam\Mixin\GetAssetResponse\GetAssetResponseV1 as TrinitiDamGetAssetResponseV1;
-use Triniti\Schemas\Dam\Mixin\GetAssetResponse\GetAssetResponseV1Mixin as TrinitiDamGetAssetResponseV1Mixin;
 
 final class GetAssetResponseV1 extends AbstractMessage implements
     GetAssetResponse,
     GdbotsPbjxResponseV1,
-    GdbotsNcrGetNodeResponseV1,
-    TrinitiDamGetAssetResponseV1
+    GdbotsNcrGetNodeResponseV1
 {
     use GdbotsPbjxResponseV1Trait;
 
@@ -30,7 +27,6 @@ final class GetAssetResponseV1 extends AbstractMessage implements
             [
                 GdbotsPbjxResponseV1Mixin::create(),
                 GdbotsNcrGetNodeResponseV1Mixin::create(),
-                TrinitiDamGetAssetResponseV1Mixin::create(),
             ]
         );
     }

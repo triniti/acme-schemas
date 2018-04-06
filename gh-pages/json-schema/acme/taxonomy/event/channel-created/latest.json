@@ -170,12 +170,13 @@
       "type": "object",
       "anyOf": [
         {
-          "$ref": "#/definitions/channel"
+          "$ref": "#/definitions/node"
         }
       ],
       "pbj": {
         "type": "message",
-        "rule": "single"
+        "rule": "single",
+        "overridable": true
       }
     }
   },
@@ -201,11 +202,11 @@
         }
       ]
     },
-    "channel": {
+    "node": {
       "type": "object",
       "anyOf": [
         {
-          "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/taxonomy/mixin/channel/1-0-0.json#"
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/ncr/mixin/node/1-0-0.json#"
         }
       ]
     }

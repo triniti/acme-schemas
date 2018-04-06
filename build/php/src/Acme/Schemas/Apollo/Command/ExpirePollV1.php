@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\ExpireNode\ExpireNodeV1Mixin as GdbotsNcrExpireNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\ExpirePoll\ExpirePollV1 as TrinitiApolloExpirePollV1;
-use Triniti\Schemas\Apollo\Mixin\ExpirePoll\ExpirePollV1Mixin as TrinitiApolloExpirePollV1Mixin;
 
 final class ExpirePollV1 extends AbstractMessage implements
     ExpirePoll,
     GdbotsPbjxCommandV1,
-    GdbotsNcrExpireNodeV1,
-    TrinitiApolloExpirePollV1
+    GdbotsNcrExpireNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class ExpirePollV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrExpireNodeV1Mixin::create(),
-                TrinitiApolloExpirePollV1Mixin::create(),
             ]
         );
     }

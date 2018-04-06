@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeExpired\NodeExpiredV1Mixin as GdbotsNcrNodeExpi
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Ovp\Mixin\VideoExpired\VideoExpiredV1 as TrinitiOvpVideoExpiredV1;
-use Triniti\Schemas\Ovp\Mixin\VideoExpired\VideoExpiredV1Mixin as TrinitiOvpVideoExpiredV1Mixin;
 
 final class VideoExpiredV1 extends AbstractMessage implements
     VideoExpired,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeExpiredV1,
-    TrinitiOvpVideoExpiredV1
+    GdbotsNcrNodeExpiredV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class VideoExpiredV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeExpiredV1Mixin::create(),
-                TrinitiOvpVideoExpiredV1Mixin::create(),
             ]
         );
     }

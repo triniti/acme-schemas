@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:command:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:mark-node-as-draft:v1</curie-major>
-      <curie-major>triniti:canvas:mixin:mark-page-as-draft:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

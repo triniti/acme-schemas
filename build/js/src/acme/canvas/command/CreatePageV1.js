@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiCanvasCreatePageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/create-page/CreatePageV1Mixin';
 
 export default class CreatePageV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class CreatePageV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrCreateNodeV1Mixin.create(),
-        TrinitiCanvasCreatePageV1Mixin.create(),
       ],
     );
   }

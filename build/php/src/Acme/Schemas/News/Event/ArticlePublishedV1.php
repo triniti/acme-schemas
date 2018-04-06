@@ -15,14 +15,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodePublished\NodePublishedV1Mixin as GdbotsNcrNode
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\News\Mixin\ArticlePublished\ArticlePublishedV1 as TrinitiNewsArticlePublishedV1;
-use Triniti\Schemas\News\Mixin\ArticlePublished\ArticlePublishedV1Mixin as TrinitiNewsArticlePublishedV1Mixin;
 
 final class ArticlePublishedV1 extends AbstractMessage implements
     ArticlePublished,
     GdbotsPbjxEventV1,
     GdbotsNcrNodePublishedV1,
-    TrinitiNewsArticlePublishedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsTimePartingV1,
     GdbotsEnrichmentsTimeSamplingV1
@@ -39,7 +36,6 @@ final class ArticlePublishedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodePublishedV1Mixin::create(),
-                TrinitiNewsArticlePublishedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),
                 GdbotsEnrichmentsTimeSamplingV1Mixin::create(),

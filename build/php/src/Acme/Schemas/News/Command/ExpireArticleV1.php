@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\ExpireNode\ExpireNodeV1Mixin as GdbotsNcrExpireNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\News\Mixin\ExpireArticle\ExpireArticleV1 as TrinitiNewsExpireArticleV1;
-use Triniti\Schemas\News\Mixin\ExpireArticle\ExpireArticleV1Mixin as TrinitiNewsExpireArticleV1Mixin;
 
 final class ExpireArticleV1 extends AbstractMessage implements
     ExpireArticle,
     GdbotsPbjxCommandV1,
-    GdbotsNcrExpireNodeV1,
-    TrinitiNewsExpireArticleV1
+    GdbotsNcrExpireNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class ExpireArticleV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrExpireNodeV1Mixin::create(),
-                TrinitiNewsExpireArticleV1Mixin::create(),
             ]
         );
     }

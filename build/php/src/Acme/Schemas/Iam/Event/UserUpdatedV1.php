@@ -14,8 +14,6 @@ use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1 as GdbotsEnrich
 use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1Mixin as GdbotsEnrichmentsTimeSamplingV1Mixin;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1 as GdbotsEnrichmentsUaParserV1;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1Mixin as GdbotsEnrichmentsUaParserV1Mixin;
-use Gdbots\Schemas\Iam\Mixin\UserUpdated\UserUpdatedV1 as GdbotsIamUserUpdatedV1;
-use Gdbots\Schemas\Iam\Mixin\UserUpdated\UserUpdatedV1Mixin as GdbotsIamUserUpdatedV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\NodeUpdated\NodeUpdatedV1 as GdbotsNcrNodeUpdatedV1;
 use Gdbots\Schemas\Ncr\Mixin\NodeUpdated\NodeUpdatedV1Mixin as GdbotsNcrNodeUpdatedV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
@@ -26,7 +24,6 @@ final class UserUpdatedV1 extends AbstractMessage implements
     UserUpdated,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeUpdatedV1,
-    GdbotsIamUserUpdatedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsIpToGeoV1,
     GdbotsEnrichmentsTimePartingV1,
@@ -45,7 +42,6 @@ final class UserUpdatedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeUpdatedV1Mixin::create(),
-                GdbotsIamUserUpdatedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsIpToGeoV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),

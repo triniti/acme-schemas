@@ -15,14 +15,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodePublished\NodePublishedV1Mixin as GdbotsNcrNode
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Canvas\Mixin\PagePublished\PagePublishedV1 as TrinitiCanvasPagePublishedV1;
-use Triniti\Schemas\Canvas\Mixin\PagePublished\PagePublishedV1Mixin as TrinitiCanvasPagePublishedV1Mixin;
 
 final class PagePublishedV1 extends AbstractMessage implements
     PagePublished,
     GdbotsPbjxEventV1,
     GdbotsNcrNodePublishedV1,
-    TrinitiCanvasPagePublishedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsTimePartingV1,
     GdbotsEnrichmentsTimeSamplingV1
@@ -39,7 +36,6 @@ final class PagePublishedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodePublishedV1Mixin::create(),
-                TrinitiCanvasPagePublishedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),
                 GdbotsEnrichmentsTimeSamplingV1Mixin::create(),

@@ -7,7 +7,6 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:command:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:mark-node-as-pending:v1</curie-major>
-      <curie-major>triniti:news:mixin:mark-article-as-pending:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

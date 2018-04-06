@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\RenameNode\RenameNodeV1Mixin as GdbotsNcrRenameNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\RenameCategory\RenameCategoryV1 as TrinitiTaxonomyRenameCategoryV1;
-use Triniti\Schemas\Taxonomy\Mixin\RenameCategory\RenameCategoryV1Mixin as TrinitiTaxonomyRenameCategoryV1Mixin;
 
 final class RenameCategoryV1 extends AbstractMessage implements
     RenameCategory,
     GdbotsPbjxCommandV1,
-    GdbotsNcrRenameNodeV1,
-    TrinitiTaxonomyRenameCategoryV1
+    GdbotsNcrRenameNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class RenameCategoryV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrRenameNodeV1Mixin::create(),
-                TrinitiTaxonomyRenameCategoryV1Mixin::create(),
             ]
         );
     }

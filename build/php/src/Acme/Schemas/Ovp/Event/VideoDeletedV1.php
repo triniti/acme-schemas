@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1Mixin as GdbotsNcrNodeDele
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Ovp\Mixin\VideoDeleted\VideoDeletedV1 as TrinitiOvpVideoDeletedV1;
-use Triniti\Schemas\Ovp\Mixin\VideoDeleted\VideoDeletedV1Mixin as TrinitiOvpVideoDeletedV1Mixin;
 
 final class VideoDeletedV1 extends AbstractMessage implements
     VideoDeleted,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeDeletedV1,
-    TrinitiOvpVideoDeletedV1
+    GdbotsNcrNodeDeletedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class VideoDeletedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeDeletedV1Mixin::create(),
-                TrinitiOvpVideoDeletedV1Mixin::create(),
             ]
         );
     }

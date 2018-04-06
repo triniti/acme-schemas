@@ -26,10 +26,10 @@ final class ArchiveAssetV1 extends AbstractMessage implements
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamArchiveAssetV1,
-    TrinitiTaxonomyHashtaggableV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
-    GdbotsCommonTaggableV1
+    TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiDamArchiveAssetV1Trait;
@@ -45,10 +45,10 @@ final class ArchiveAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamArchiveAssetV1Mixin::create(),
-                TrinitiTaxonomyHashtaggableV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]
         );
     }

@@ -26,11 +26,11 @@ export default class VideoAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamVideoAssetV1Mixin.create(),
-        TrinitiPeopleHasPeopleV1Mixin.create(),
-        TrinitiTaxonomyHashtaggableV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );
   }

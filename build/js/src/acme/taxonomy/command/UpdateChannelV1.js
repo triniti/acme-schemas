@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiTaxonomyUpdateChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/update-channel/UpdateChannelV1Mixin';
 
 export default class UpdateChannelV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class UpdateChannelV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrUpdateNodeV1Mixin.create(),
-        TrinitiTaxonomyUpdateChannelV1Mixin.create(),
       ],
     );
   }

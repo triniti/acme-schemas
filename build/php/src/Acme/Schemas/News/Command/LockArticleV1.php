@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\LockNode\LockNodeV1Mixin as GdbotsNcrLockNodeV1Mixi
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\News\Mixin\LockArticle\LockArticleV1 as TrinitiNewsLockArticleV1;
-use Triniti\Schemas\News\Mixin\LockArticle\LockArticleV1Mixin as TrinitiNewsLockArticleV1Mixin;
 
 final class LockArticleV1 extends AbstractMessage implements
     LockArticle,
     GdbotsPbjxCommandV1,
-    GdbotsNcrLockNodeV1,
-    TrinitiNewsLockArticleV1
+    GdbotsNcrLockNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class LockArticleV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrLockNodeV1Mixin::create(),
-                TrinitiNewsLockArticleV1Mixin::create(),
             ]
         );
     }

@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsUnpublishArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/unpublish-article/UnpublishArticleV1Mixin';
 
 export default class UnpublishArticleV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class UnpublishArticleV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrUnpublishNodeV1Mixin.create(),
-        TrinitiNewsUnpublishArticleV1Mixin.create(),
       ],
     );
   }

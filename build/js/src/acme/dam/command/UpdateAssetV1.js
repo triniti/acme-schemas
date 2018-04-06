@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiDamUpdateAssetV1Mixin from '@triniti/schemas/triniti/dam/mixin/update-asset/UpdateAssetV1Mixin';
 
 export default class UpdateAssetV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class UpdateAssetV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrUpdateNodeV1Mixin.create(),
-        TrinitiDamUpdateAssetV1Mixin.create(),
       ],
     );
   }

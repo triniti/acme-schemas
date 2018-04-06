@@ -15,14 +15,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeScheduled\NodeScheduledV1Mixin as GdbotsNcrNode
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Ovp\Mixin\VideoScheduled\VideoScheduledV1 as TrinitiOvpVideoScheduledV1;
-use Triniti\Schemas\Ovp\Mixin\VideoScheduled\VideoScheduledV1Mixin as TrinitiOvpVideoScheduledV1Mixin;
 
 final class VideoScheduledV1 extends AbstractMessage implements
     VideoScheduled,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeScheduledV1,
-    TrinitiOvpVideoScheduledV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsTimePartingV1,
     GdbotsEnrichmentsTimeSamplingV1
@@ -39,7 +36,6 @@ final class VideoScheduledV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeScheduledV1Mixin::create(),
-                TrinitiOvpVideoScheduledV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),
                 GdbotsEnrichmentsTimeSamplingV1Mixin::create(),

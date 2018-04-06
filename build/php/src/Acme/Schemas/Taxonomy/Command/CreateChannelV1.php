@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\CreateNode\CreateNodeV1Mixin as GdbotsNcrCreateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\CreateChannel\CreateChannelV1 as TrinitiTaxonomyCreateChannelV1;
-use Triniti\Schemas\Taxonomy\Mixin\CreateChannel\CreateChannelV1Mixin as TrinitiTaxonomyCreateChannelV1Mixin;
 
 final class CreateChannelV1 extends AbstractMessage implements
     CreateChannel,
     GdbotsPbjxCommandV1,
-    GdbotsNcrCreateNodeV1,
-    TrinitiTaxonomyCreateChannelV1
+    GdbotsNcrCreateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class CreateChannelV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrCreateNodeV1Mixin::create(),
-                TrinitiTaxonomyCreateChannelV1Mixin::create(),
             ]
         );
     }

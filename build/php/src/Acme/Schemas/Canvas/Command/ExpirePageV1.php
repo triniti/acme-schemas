@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\ExpireNode\ExpireNodeV1Mixin as GdbotsNcrExpireNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Canvas\Mixin\ExpirePage\ExpirePageV1 as TrinitiCanvasExpirePageV1;
-use Triniti\Schemas\Canvas\Mixin\ExpirePage\ExpirePageV1Mixin as TrinitiCanvasExpirePageV1Mixin;
 
 final class ExpirePageV1 extends AbstractMessage implements
     ExpirePage,
     GdbotsPbjxCommandV1,
-    GdbotsNcrExpireNodeV1,
-    TrinitiCanvasExpirePageV1
+    GdbotsNcrExpireNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class ExpirePageV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrExpireNodeV1Mixin::create(),
-                TrinitiCanvasExpirePageV1Mixin::create(),
             ]
         );
     }

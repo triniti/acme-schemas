@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\DeleteNode\DeleteNodeV1Mixin as GdbotsNcrDeleteNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\News\Mixin\DeleteArticle\DeleteArticleV1 as TrinitiNewsDeleteArticleV1;
-use Triniti\Schemas\News\Mixin\DeleteArticle\DeleteArticleV1Mixin as TrinitiNewsDeleteArticleV1Mixin;
 
 final class DeleteArticleV1 extends AbstractMessage implements
     DeleteArticle,
     GdbotsPbjxCommandV1,
-    GdbotsNcrDeleteNodeV1,
-    TrinitiNewsDeleteArticleV1
+    GdbotsNcrDeleteNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class DeleteArticleV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrDeleteNodeV1Mixin::create(),
-                TrinitiNewsDeleteArticleV1Mixin::create(),
             ]
         );
     }

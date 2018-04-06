@@ -14,8 +14,6 @@ use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1 as GdbotsEnrich
 use Gdbots\Schemas\Enrichments\Mixin\TimeSampling\TimeSamplingV1Mixin as GdbotsEnrichmentsTimeSamplingV1Mixin;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1 as GdbotsEnrichmentsUaParserV1;
 use Gdbots\Schemas\Enrichments\Mixin\UaParser\UaParserV1Mixin as GdbotsEnrichmentsUaParserV1Mixin;
-use Gdbots\Schemas\Iam\Mixin\UserDeleted\UserDeletedV1 as GdbotsIamUserDeletedV1;
-use Gdbots\Schemas\Iam\Mixin\UserDeleted\UserDeletedV1Mixin as GdbotsIamUserDeletedV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1 as GdbotsNcrNodeDeletedV1;
 use Gdbots\Schemas\Ncr\Mixin\NodeDeleted\NodeDeletedV1Mixin as GdbotsNcrNodeDeletedV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
@@ -26,7 +24,6 @@ final class UserDeletedV1 extends AbstractMessage implements
     UserDeleted,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeDeletedV1,
-    GdbotsIamUserDeletedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsIpToGeoV1,
     GdbotsEnrichmentsTimePartingV1,
@@ -45,7 +42,6 @@ final class UserDeletedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeDeletedV1Mixin::create(),
-                GdbotsIamUserDeletedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsIpToGeoV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),

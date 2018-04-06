@@ -9,14 +9,11 @@ use Gdbots\Schemas\Pbjx\Mixin\GetEventsRequest\GetEventsRequestV1Mixin as Gdbots
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\GetChannelHistoryRequest\GetChannelHistoryRequestV1 as TrinitiTaxonomyGetChannelHistoryRequestV1;
-use Triniti\Schemas\Taxonomy\Mixin\GetChannelHistoryRequest\GetChannelHistoryRequestV1Mixin as TrinitiTaxonomyGetChannelHistoryRequestV1Mixin;
 
 final class GetChannelHistoryRequestV1 extends AbstractMessage implements
     GetChannelHistoryRequest,
     GdbotsPbjxRequestV1,
-    GdbotsPbjxGetEventsRequestV1,
-    TrinitiTaxonomyGetChannelHistoryRequestV1
+    GdbotsPbjxGetEventsRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetChannelHistoryRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsPbjxGetEventsRequestV1Mixin::create(),
-                TrinitiTaxonomyGetChannelHistoryRequestV1Mixin::create(),
             ]
         );
     }

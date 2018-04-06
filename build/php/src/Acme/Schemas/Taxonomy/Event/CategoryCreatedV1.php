@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeCreated\NodeCreatedV1Mixin as GdbotsNcrNodeCrea
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Taxonomy\Mixin\CategoryCreated\CategoryCreatedV1 as TrinitiTaxonomyCategoryCreatedV1;
-use Triniti\Schemas\Taxonomy\Mixin\CategoryCreated\CategoryCreatedV1Mixin as TrinitiTaxonomyCategoryCreatedV1Mixin;
 
 final class CategoryCreatedV1 extends AbstractMessage implements
     CategoryCreated,
     GdbotsPbjxEventV1,
-    GdbotsNcrNodeCreatedV1,
-    TrinitiTaxonomyCategoryCreatedV1
+    GdbotsNcrNodeCreatedV1
 {
     use GdbotsPbjxEventV1Trait;
 
@@ -30,7 +27,6 @@ final class CategoryCreatedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeCreatedV1Mixin::create(),
-                TrinitiTaxonomyCategoryCreatedV1Mixin::create(),
             ]
         );
     }

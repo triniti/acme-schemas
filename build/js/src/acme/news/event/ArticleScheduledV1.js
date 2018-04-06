@@ -8,7 +8,6 @@ import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/Even
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsArticleScheduledV1Mixin from '@triniti/schemas/triniti/news/mixin/article-scheduled/ArticleScheduledV1Mixin';
 
 export default class ArticleScheduledV1 extends Message {
   /**
@@ -22,7 +21,6 @@ export default class ArticleScheduledV1 extends Message {
       [
         GdbotsPbjxEventV1Mixin.create(),
         GdbotsNcrNodeScheduledV1Mixin.create(),
-        TrinitiNewsArticleScheduledV1Mixin.create(),
         GdbotsAnalyticsTrackedMessageV1Mixin.create(),
         GdbotsEnrichmentsTimePartingV1Mixin.create(),
         GdbotsEnrichmentsTimeSamplingV1Mixin.create(),

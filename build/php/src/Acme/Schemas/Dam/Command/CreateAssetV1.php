@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\CreateNode\CreateNodeV1Mixin as GdbotsNcrCreateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Dam\Mixin\CreateAsset\CreateAssetV1 as TrinitiDamCreateAssetV1;
-use Triniti\Schemas\Dam\Mixin\CreateAsset\CreateAssetV1Mixin as TrinitiDamCreateAssetV1Mixin;
 
 final class CreateAssetV1 extends AbstractMessage implements
     CreateAsset,
     GdbotsPbjxCommandV1,
-    GdbotsNcrCreateNodeV1,
-    TrinitiDamCreateAssetV1
+    GdbotsNcrCreateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class CreateAssetV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrCreateNodeV1Mixin::create(),
-                TrinitiDamCreateAssetV1Mixin::create(),
             ]
         );
     }

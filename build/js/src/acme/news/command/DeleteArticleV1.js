@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiNewsDeleteArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/delete-article/DeleteArticleV1Mixin';
 
 export default class DeleteArticleV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class DeleteArticleV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrDeleteNodeV1Mixin.create(),
-        TrinitiNewsDeleteArticleV1Mixin.create(),
       ],
     );
   }

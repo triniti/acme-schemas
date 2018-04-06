@@ -15,14 +15,11 @@ use Gdbots\Schemas\Ncr\Mixin\NodeUnpublished\NodeUnpublishedV1Mixin as GdbotsNcr
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
-use Triniti\Schemas\Apollo\Mixin\PollUnpublished\PollUnpublishedV1 as TrinitiApolloPollUnpublishedV1;
-use Triniti\Schemas\Apollo\Mixin\PollUnpublished\PollUnpublishedV1Mixin as TrinitiApolloPollUnpublishedV1Mixin;
 
 final class PollUnpublishedV1 extends AbstractMessage implements
     PollUnpublished,
     GdbotsPbjxEventV1,
     GdbotsNcrNodeUnpublishedV1,
-    TrinitiApolloPollUnpublishedV1,
     GdbotsAnalyticsTrackedMessageV1,
     GdbotsEnrichmentsTimePartingV1,
     GdbotsEnrichmentsTimeSamplingV1
@@ -39,7 +36,6 @@ final class PollUnpublishedV1 extends AbstractMessage implements
             [
                 GdbotsPbjxEventV1Mixin::create(),
                 GdbotsNcrNodeUnpublishedV1Mixin::create(),
-                TrinitiApolloPollUnpublishedV1Mixin::create(),
                 GdbotsAnalyticsTrackedMessageV1Mixin::create(),
                 GdbotsEnrichmentsTimePartingV1Mixin::create(),
                 GdbotsEnrichmentsTimeSamplingV1Mixin::create(),

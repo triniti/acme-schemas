@@ -5,7 +5,6 @@ import GdbotsPbjxCommandV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/command/
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
-import TrinitiApolloMarkPollAsPendingV1Mixin from '@triniti/schemas/triniti/apollo/mixin/mark-poll-as-pending/MarkPollAsPendingV1Mixin';
 
 export default class MarkPollAsPendingV1 extends Message {
   /**
@@ -19,7 +18,6 @@ export default class MarkPollAsPendingV1 extends Message {
       [
         GdbotsPbjxCommandV1Mixin.create(),
         GdbotsNcrMarkNodeAsPendingV1Mixin.create(),
-        TrinitiApolloMarkPollAsPendingV1Mixin.create(),
       ],
     );
   }

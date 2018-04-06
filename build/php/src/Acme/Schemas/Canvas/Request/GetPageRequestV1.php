@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\GetNodeRequest\GetNodeRequestV1Mixin as GdbotsNcrGe
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1 as GdbotsPbjxRequestV1;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Mixin as GdbotsPbjxRequestV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Request\RequestV1Trait as GdbotsPbjxRequestV1Trait;
-use Triniti\Schemas\Canvas\Mixin\GetPageRequest\GetPageRequestV1 as TrinitiCanvasGetPageRequestV1;
-use Triniti\Schemas\Canvas\Mixin\GetPageRequest\GetPageRequestV1Mixin as TrinitiCanvasGetPageRequestV1Mixin;
 
 final class GetPageRequestV1 extends AbstractMessage implements
     GetPageRequest,
     GdbotsPbjxRequestV1,
-    GdbotsNcrGetNodeRequestV1,
-    TrinitiCanvasGetPageRequestV1
+    GdbotsNcrGetNodeRequestV1
 {
     use GdbotsPbjxRequestV1Trait;
 
@@ -30,7 +27,6 @@ final class GetPageRequestV1 extends AbstractMessage implements
             [
                 GdbotsPbjxRequestV1Mixin::create(),
                 GdbotsNcrGetNodeRequestV1Mixin::create(),
-                TrinitiCanvasGetPageRequestV1Mixin::create(),
             ]
         );
     }

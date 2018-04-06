@@ -9,14 +9,11 @@ use Gdbots\Schemas\Ncr\Mixin\UpdateNode\UpdateNodeV1Mixin as GdbotsNcrUpdateNode
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Apollo\Mixin\UpdatePoll\UpdatePollV1 as TrinitiApolloUpdatePollV1;
-use Triniti\Schemas\Apollo\Mixin\UpdatePoll\UpdatePollV1Mixin as TrinitiApolloUpdatePollV1Mixin;
 
 final class UpdatePollV1 extends AbstractMessage implements
     UpdatePoll,
     GdbotsPbjxCommandV1,
-    GdbotsNcrUpdateNodeV1,
-    TrinitiApolloUpdatePollV1
+    GdbotsNcrUpdateNodeV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -30,7 +27,6 @@ final class UpdatePollV1 extends AbstractMessage implements
             [
                 GdbotsPbjxCommandV1Mixin::create(),
                 GdbotsNcrUpdateNodeV1Mixin::create(),
-                TrinitiApolloUpdatePollV1Mixin::create(),
             ]
         );
     }

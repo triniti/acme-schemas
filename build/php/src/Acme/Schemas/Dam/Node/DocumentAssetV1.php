@@ -28,11 +28,11 @@ final class DocumentAssetV1 extends AbstractMessage implements
     GdbotsNcrNodeV1,
     TrinitiDamAssetV1,
     TrinitiDamDocumentAssetV1,
-    TrinitiPeopleHasPeopleV1,
-    TrinitiTaxonomyHashtaggableV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
-    GdbotsCommonTaggableV1
+    TrinitiPeopleHasPeopleV1,
+    TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiDamDocumentAssetV1Trait;
@@ -48,11 +48,11 @@ final class DocumentAssetV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiDamAssetV1Mixin::create(),
                 TrinitiDamDocumentAssetV1Mixin::create(),
-                TrinitiPeopleHasPeopleV1Mixin::create(),
-                TrinitiTaxonomyHashtaggableV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]
         );
     }
