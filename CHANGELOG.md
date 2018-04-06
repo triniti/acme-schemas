@@ -10,14 +10,110 @@
   * `acme:canvas:block:twitter-likes-timeline-block`
   * `acme:canvas:block:twitter-mention-button-block`
   * `acme:canvas:block:video-block`
+  * `acme:curator:command:create-gallery`
+  * `acme:curator:command:create-promotion`
+  * `acme:curator:command:create-teaser`
+  * `acme:curator:command:create-timeline`
+  * `acme:curator:command:delete-gallery`
+  * `acme:curator:command:delete-promotion`
+  * `acme:curator:command:delete-teaser`
+  * `acme:curator:command:delete-timeline`
+  * `acme:curator:command:expire-gallery`
+  * `acme:curator:command:expire-promotion`
+  * `acme:curator:command:expire-teaser`
+  * `acme:curator:command:expire-timeline`
+  * `acme:curator:command:mark-gallery-as-draft`
+  * `acme:curator:command:mark-gallery-as-pending`
+  * `acme:curator:command:mark-promotion-as-draft`
+  * `acme:curator:command:mark-promotion-as-pending`
+  * `acme:curator:command:mark-teaser-as-draft`
+  * `acme:curator:command:mark-teaser-as-pending`
+  * `acme:curator:command:mark-timeline-as-draft`
+  * `acme:curator:command:mark-timeline-as-pending`
+  * `acme:curator:command:publish-gallery`
+  * `acme:curator:command:publish-promotion`
+  * `acme:curator:command:publish-teaser`
+  * `acme:curator:command:publish-timeline`
+  * `acme:curator:command:rename-gallery`
+  * `acme:curator:command:rename-promotion`
+  * `acme:curator:command:rename-teaser`
+  * `acme:curator:command:rename-timeline`
+  * `acme:curator:command:unpublish-gallery`
+  * `acme:curator:command:unpublish-promotion`
+  * `acme:curator:command:unpublish-teaser`
+  * `acme:curator:command:unpublish-timeline`
+  * `acme:curator:command:update-gallery`
+  * `acme:curator:command:update-promotion`
+  * `acme:curator:command:update-teaser`
+  * `acme:curator:command:update-timeline`
+  * `acme:curator:event:gallery-created`
+  * `acme:curator:event:gallery-deleted`
+  * `acme:curator:event:gallery-expired`
+  * `acme:curator:event:gallery-marked-as-draft`
+  * `acme:curator:event:gallery-marked-as-pending`
+  * `acme:curator:event:gallery-published`
+  * `acme:curator:event:gallery-renamed`
+  * `acme:curator:event:gallery-scheduled`
+  * `acme:curator:event:gallery-unpublished`
+  * `acme:curator:event:gallery-updated`
+  * `acme:curator:event:promotion-created`
+  * `acme:curator:event:promotion-deleted`
+  * `acme:curator:event:promotion-expired`
+  * `acme:curator:event:promotion-marked-as-draft`
+  * `acme:curator:event:promotion-marked-as-pending`
+  * `acme:curator:event:promotion-published`
+  * `acme:curator:event:promotion-renamed`
+  * `acme:curator:event:promotion-scheduled`
+  * `acme:curator:event:promotion-unpublished`
+  * `acme:curator:event:promotion-updated`
+  * `acme:curator:event:teaser-created`
+  * `acme:curator:event:teaser-deleted`
+  * `acme:curator:event:teaser-expired`
+  * `acme:curator:event:teaser-marked-as-draft`
+  * `acme:curator:event:teaser-marked-as-pending`
+  * `acme:curator:event:teaser-published`
+  * `acme:curator:event:teaser-renamed`
+  * `acme:curator:event:teaser-scheduled`
+  * `acme:curator:event:teaser-unpublished`
+  * `acme:curator:event:teaser-updated`
+  * `acme:curator:event:timeline-created`
+  * `acme:curator:event:timeline-deleted`
+  * `acme:curator:event:timeline-expired`
+  * `acme:curator:event:timeline-marked-as-draft`
+  * `acme:curator:event:timeline-marked-as-pending`
+  * `acme:curator:event:timeline-published`
+  * `acme:curator:event:timeline-renamed`
+  * `acme:curator:event:timeline-scheduled`
+  * `acme:curator:event:timeline-unpublished`
+  * `acme:curator:event:timeline-updated`
   * `acme:curator:node:article-teaser`
   * `acme:curator:node:gallery`
   * `acme:curator:node:gallery-teaser`
   * `acme:curator:node:promotion`
-  * `acme:curator:node:timeline-teaser`
   * `acme:curator:node:timeline`
+  * `acme:curator:node:timeline-teaser`
   * `acme:curator:node:video-teaser`
   * `acme:curator:node:youtube-video-teaser`
+  * `acme:curator:request:get-gallery-history-request`
+  * `acme:curator:request:get-gallery-history-response`
+  * `acme:curator:request:get-gallery-request`
+  * `acme:curator:request:get-gallery-response`
+  * `acme:curator:request:get-promotion-history-request`
+  * `acme:curator:request:get-promotion-history-response`
+  * `acme:curator:request:get-promotion-request`
+  * `acme:curator:request:get-promotion-response`
+  * `acme:curator:request:get-teaser-history-request`
+  * `acme:curator:request:get-teaser-history-response`
+  * `acme:curator:request:get-teaser-request`
+  * `acme:curator:request:get-teaser-response`
+  * `acme:curator:request:get-timeline-history-request`
+  * `acme:curator:request:get-timeline-history-response`
+  * `acme:curator:request:get-timeline-request`
+  * `acme:curator:request:get-timeline-response`
+  * `acme:curator:request:get-widget-history-request`
+  * `acme:curator:request:get-widget-history-response`
+  * `acme:curator:request:get-widget-request`
+  * `acme:curator:request:get-widget-response`
   * `acme:curator:request:search-galleries-request`
   * `acme:curator:request:search-galleries-response`
   * `acme:curator:request:search-promotions-request`
