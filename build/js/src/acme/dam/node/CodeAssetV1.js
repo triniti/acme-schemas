@@ -25,10 +25,10 @@ export default class CodeAssetV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiDamAssetV1Mixin.create(),
         TrinitiDamCodeAssetV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
-        TrinitiTaxonomyHashtaggableV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
       ],
     );
   }

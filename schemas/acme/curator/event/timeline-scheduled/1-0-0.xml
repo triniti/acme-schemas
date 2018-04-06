@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
 
-  <schema id="pbj:acme:canvas:event:timeline-scheduled:1-0-0">
+  <schema id="pbj:acme:curator:event:timeline-scheduled:1-0-0">
     <mixins>
       <curie-major>gdbots:pbjx:mixin:event:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:node-scheduled:v1</curie-major>

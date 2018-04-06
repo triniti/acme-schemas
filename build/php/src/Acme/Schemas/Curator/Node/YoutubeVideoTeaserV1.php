@@ -15,24 +15,33 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
-use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1 as TrinitiCuratorTeaserHasTargetV1;
-use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1Mixin as TrinitiCuratorTeaserHasTargetV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1 as TrinitiCuratorTeaserV1;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1Mixin as TrinitiCuratorTeaserV1Mixin;
 use Triniti\Schemas\Curator\Mixin\YoutubeVideoTeaser\YoutubeVideoTeaserV1 as TrinitiCuratorYoutubeVideoTeaserV1;
 use Triniti\Schemas\Curator\Mixin\YoutubeVideoTeaser\YoutubeVideoTeaserV1Mixin as TrinitiCuratorYoutubeVideoTeaserV1Mixin;
 use Triniti\Schemas\Curator\Mixin\YoutubeVideoTeaser\YoutubeVideoTeaserV1Trait as TrinitiCuratorYoutubeVideoTeaserV1Trait;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
+use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1Mixin as TrinitiTaxonomyCategorizableV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1 as TrinitiTaxonomyHasChannelV1;
+use Triniti\Schemas\Taxonomy\Mixin\HasChannel\HasChannelV1Mixin as TrinitiTaxonomyHasChannelV1Mixin;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1 as TrinitiTaxonomyHashtaggableV1;
+use Triniti\Schemas\Taxonomy\Mixin\Hashtaggable\HashtaggableV1Mixin as TrinitiTaxonomyHashtaggableV1Mixin;
 
 final class YoutubeVideoTeaserV1 extends AbstractMessage implements
     YoutubeVideoTeaser,
     GdbotsNcrNodeV1,
     TrinitiCuratorTeaserV1,
-    TrinitiCuratorTeaserHasTargetV1,
     TrinitiCuratorYoutubeVideoTeaserV1,
+    GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
-    GdbotsCommonTaggableV1
+    TrinitiPeopleHasPeopleV1,
+    TrinitiTaxonomyCategorizableV1,
+    TrinitiTaxonomyHasChannelV1,
+    TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiCuratorYoutubeVideoTeaserV1Trait;
@@ -47,12 +56,15 @@ final class YoutubeVideoTeaserV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCuratorTeaserV1Mixin::create(),
-                TrinitiCuratorTeaserHasTargetV1Mixin::create(),
                 TrinitiCuratorYoutubeVideoTeaserV1Mixin::create(),
+                GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
-                GdbotsCommonTaggableV1Mixin::create(),
+                TrinitiPeopleHasPeopleV1Mixin::create(),
+                TrinitiTaxonomyCategorizableV1Mixin::create(),
+                TrinitiTaxonomyHasChannelV1Mixin::create(),
+                TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]
         );
     }

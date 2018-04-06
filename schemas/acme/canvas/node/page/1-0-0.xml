@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <pbj-schema xmlns="http://gdbots.io/pbj/xsd"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://gdbots.io/pbj/xsd http://gdbots.io/pbj/xsd/schema.xsd">
 
   <schema id="pbj:acme:canvas:node:page:1-0-0">
-    <fields>
-      <field name="_id" type="identifier" required="true">
-        <php-options>
-          <imports>use Acme\Schemas\Canvas\PageId;</imports>
-          <class-name>PageId::class</class-name>
-          <default>function() { return PageId::generate(); }</default>
-        </php-options>
-        <js-options>
-          <imports>import PageId from '@triniti/acme-schemas/acme/canvas/PageId';</imports>
-          <class-proto>PageId</class-proto>
-          <default>() => PageId.generate()</default>
-        </js-options>
-      </field>
-    </fields>
-
     <mixins>
       <curie-major>gdbots:ncr:mixin:node:v1</curie-major>
-      <curie-major>triniti:canvas:mixin:has-blocks:v1</curie-major>
       <curie-major>triniti:canvas:mixin:page:v1</curie-major>
-      <curie-major>triniti:common:mixin:custom-code:v1</curie-major>
-      <curie-major>triniti:common:mixin:seo:v1</curie-major>
-      <curie-major>triniti:people:mixin:has-people:v1</curie-major>
-      <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>
-      <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
-      <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
+      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:expirable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
-      <curie-major>gdbots:common:mixin:taggable:v1</curie-major>
+      <curie-major>triniti:canvas:mixin:has-blocks:v1</curie-major>
+      <curie-major>triniti:common:mixin:custom-code:v1</curie-major>
+      <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:curator:mixin:teaserable:v1</curie-major>
+      <curie-major>triniti:people:mixin:has-people:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
+      <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

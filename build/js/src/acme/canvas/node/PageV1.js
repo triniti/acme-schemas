@@ -1,5 +1,4 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/canvas/node/page/1-0-0.json#
-import Fb from '@gdbots/pbj/FieldBuilder';
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirable/ExpirableV1Mixin';
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
@@ -9,14 +8,13 @@ import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publis
 import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggable/SluggableV1Mixin';
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
-import PageId from '@triniti/acme-schemas/acme/canvas/PageId';
 import Schema from '@gdbots/pbj/Schema';
-import T from '@gdbots/pbj/types';
 import TrinitiCanvasHasBlocksV1Mixin from '@triniti/schemas/triniti/canvas/mixin/has-blocks/HasBlocksV1Mixin';
 import TrinitiCanvasPageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Mixin';
 import TrinitiCanvasPageV1Trait from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Trait';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
 import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
 import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
@@ -30,28 +28,23 @@ export default class PageV1 extends Message {
    */
   static defineSchema() {
     return new Schema('pbj:acme:canvas:node:page:1-0-0', PageV1,
-      [
-        Fb.create('_id', T.IdentifierType.create())
-          .required()
-          .withDefault(() => PageId.generate())
-          .classProto(PageId)
-          .build(),
-      ],
+      [],
       [
         GdbotsNcrNodeV1Mixin.create(),
-        TrinitiCanvasHasBlocksV1Mixin.create(),
         TrinitiCanvasPageV1Mixin.create(),
-        TrinitiCommonCustomCodeV1Mixin.create(),
-        TrinitiCommonSeoV1Mixin.create(),
-        TrinitiPeopleHasPeopleV1Mixin.create(),
-        TrinitiTaxonomyCategorizableV1Mixin.create(),
-        TrinitiTaxonomyHasChannelV1Mixin.create(),
-        TrinitiTaxonomyHashtaggableV1Mixin.create(),
+        GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
-        GdbotsCommonTaggableV1Mixin.create(),
+        TrinitiCanvasHasBlocksV1Mixin.create(),
+        TrinitiCommonCustomCodeV1Mixin.create(),
+        TrinitiCommonSeoV1Mixin.create(),
+        TrinitiCuratorTeaserableV1Mixin.create(),
+        TrinitiPeopleHasPeopleV1Mixin.create(),
+        TrinitiTaxonomyCategorizableV1Mixin.create(),
+        TrinitiTaxonomyHasChannelV1Mixin.create(),
+        TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );
   }
