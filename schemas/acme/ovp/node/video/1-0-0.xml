@@ -13,8 +13,8 @@
       <curie-major>gdbots:ncr:mixin:indexed:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
-      <curie-major>triniti:curator:mixin:teaserable:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:curator:mixin:teaserable:v1</curie-major>
       <curie-major>triniti:people:mixin:has-people:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
