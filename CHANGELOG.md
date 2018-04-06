@@ -1,23 +1,22 @@
 # CHANGELOG
 
-## v0.1.6
-* __Add Schemas:__
-  * `acme:curator:node:gallery-teaser`
 
 ## v0.1.5
 * __Add Schemas:__
-  * `acme:canvas:node:image-block`
-  * `acme:canvas:node:video-block`
+  * `acme:canvas:block:gallery-block`
+  * `acme:canvas:block:image-block`
+  * `acme:canvas:block:twitter-follow-button-block`
+  * `acme:canvas:block:twitter-hashtag-button-block`
+  * `acme:canvas:block:twitter-likes-timeline-block`
+  * `acme:canvas:block:twitter-mention-button-block`
+  * `acme:canvas:block:video-block`
   * `acme:curator:node:article-teaser`
   * `acme:curator:node:gallery`
+  * `acme:curator:node:gallery-teaser`
   * `acme:curator:node:promotion`
-  * `acme:curator:node:teaser-has-target`
-  * `acme:curator:node:teaser`
-  * `acme:curator:node:teaserable`
   * `acme:curator:node:timeline-teaser`
   * `acme:curator:node:timeline`
   * `acme:curator:node:video-teaser`
-  * `acme:curator:node:widget-teaser`
   * `acme:curator:node:youtube-video-teaser`
   * `acme:curator:request:search-galleries-request`
   * `acme:curator:request:search-galleries-response`
@@ -29,6 +28,7 @@
   * `acme:curator:request:search-timelines-response`
   * `acme:curator:request:search-widgets-request`
   * `acme:curator:request:search-widgets-response`
+
 
 ## v0.1.4
 * __Add Schemas:__
