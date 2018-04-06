@@ -6,6 +6,7 @@ import TrinitiCanvasBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/blo
 import TrinitiCanvasBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/block/BlockV1Trait';
 import TrinitiCanvasImageBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/image-block/ImageBlockV1Mixin';
 import TrinitiCanvasImageBlockV1Trait from '@triniti/schemas/triniti/canvas/mixin/image-block/ImageBlockV1Trait';
+import TrinitiCanvasNodeRefBlockV1Mixin from '@triniti/schemas/triniti/canvas/mixin/node-ref-block/NodeRefBlockV1Mixin';
 
 export default class ImageBlockV1 extends Message {
   /**
@@ -18,6 +19,7 @@ export default class ImageBlockV1 extends Message {
       [],
       [
         TrinitiCanvasBlockV1Mixin.create(),
+        TrinitiCanvasNodeRefBlockV1Mixin.create(),
         TrinitiCanvasImageBlockV1Mixin.create(),
       ],
     );
