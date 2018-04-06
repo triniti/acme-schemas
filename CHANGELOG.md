@@ -14,10 +14,12 @@
   * `acme:curator:command:create-promotion`
   * `acme:curator:command:create-teaser`
   * `acme:curator:command:create-timeline`
+  * `acme:curator:command:create-widget`
   * `acme:curator:command:delete-gallery`
   * `acme:curator:command:delete-promotion`
   * `acme:curator:command:delete-teaser`
   * `acme:curator:command:delete-timeline`
+  * `acme:curator:command:delete-widget`
   * `acme:curator:command:expire-gallery`
   * `acme:curator:command:expire-promotion`
   * `acme:curator:command:expire-teaser`
@@ -35,8 +37,6 @@
   * `acme:curator:command:publish-teaser`
   * `acme:curator:command:publish-timeline`
   * `acme:curator:command:rename-gallery`
-  * `acme:curator:command:rename-promotion`
-  * `acme:curator:command:rename-teaser`
   * `acme:curator:command:rename-timeline`
   * `acme:curator:command:unpublish-gallery`
   * `acme:curator:command:unpublish-promotion`
@@ -46,6 +46,7 @@
   * `acme:curator:command:update-promotion`
   * `acme:curator:command:update-teaser`
   * `acme:curator:command:update-timeline`
+  * `acme:curator:command:update-widget`
   * `acme:curator:event:gallery-created`
   * `acme:curator:event:gallery-deleted`
   * `acme:curator:event:gallery-expired`
@@ -62,7 +63,6 @@
   * `acme:curator:event:promotion-marked-as-draft`
   * `acme:curator:event:promotion-marked-as-pending`
   * `acme:curator:event:promotion-published`
-  * `acme:curator:event:promotion-renamed`
   * `acme:curator:event:promotion-scheduled`
   * `acme:curator:event:promotion-unpublished`
   * `acme:curator:event:promotion-updated`
@@ -72,7 +72,6 @@
   * `acme:curator:event:teaser-marked-as-draft`
   * `acme:curator:event:teaser-marked-as-pending`
   * `acme:curator:event:teaser-published`
-  * `acme:curator:event:teaser-renamed`
   * `acme:curator:event:teaser-scheduled`
   * `acme:curator:event:teaser-unpublished`
   * `acme:curator:event:teaser-updated`
@@ -86,12 +85,16 @@
   * `acme:curator:event:timeline-scheduled`
   * `acme:curator:event:timeline-unpublished`
   * `acme:curator:event:timeline-updated`
+  * `acme:curator:event:widget-created`
+  * `acme:curator:event:widget-deleted`
+  * `acme:curator:event:widget-updated`
   * `acme:curator:node:article-teaser`
-  * `acme:curator:node:gallery`
+  * `acme:curator:node:carousel-widget`
   * `acme:curator:node:gallery-teaser`
+  * `acme:curator:node:gallery`
   * `acme:curator:node:promotion`
-  * `acme:curator:node:timeline`
   * `acme:curator:node:timeline-teaser`
+  * `acme:curator:node:timeline`
   * `acme:curator:node:video-teaser`
   * `acme:curator:node:youtube-video-teaser`
   * `acme:curator:request:get-gallery-history-request`
