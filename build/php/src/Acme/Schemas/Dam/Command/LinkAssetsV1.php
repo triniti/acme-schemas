@@ -1,5 +1,5 @@
 <?php
-// @link http://acme-schemas.triniti.io/json-schema/acme/dam/command/associate-assets/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/dam/command/link-assets/1-0-0.json#
 namespace Acme\Schemas\Dam\Command;
 
 use Gdbots\Pbj\AbstractMessage;
@@ -7,13 +7,13 @@ use Gdbots\Pbj\Schema;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
-use Triniti\Schemas\Dam\Mixin\AssociateAssets\AssociateAssetsV1 as TrinitiDamAssociateAssetsV1;
-use Triniti\Schemas\Dam\Mixin\AssociateAssets\AssociateAssetsV1Mixin as TrinitiDamAssociateAssetsV1Mixin;
+use Triniti\Schemas\Dam\Mixin\LinkAssets\LinkAssetsV1 as TrinitiDamLinkAssetsV1;
+use Triniti\Schemas\Dam\Mixin\LinkAssets\LinkAssetsV1Mixin as TrinitiDamLinkAssetsV1Mixin;
 
-final class AssociateAssetsV1 extends AbstractMessage implements
-    AssociateAssets,
+final class LinkAssetsV1 extends AbstractMessage implements
+    LinkAssets,
     GdbotsPbjxCommandV1,
-    TrinitiDamAssociateAssetsV1
+    TrinitiDamLinkAssetsV1
 {
     use GdbotsPbjxCommandV1Trait;
 
@@ -22,11 +22,11 @@ final class AssociateAssetsV1 extends AbstractMessage implements
      */
     protected static function defineSchema()
     {
-        return new Schema('pbj:acme:dam:command:associate-assets:1-0-0', __CLASS__,
+        return new Schema('pbj:acme:dam:command:link-assets:1-0-0', __CLASS__,
             [],
             [
                 GdbotsPbjxCommandV1Mixin::create(),
-                TrinitiDamAssociateAssetsV1Mixin::create(),
+                TrinitiDamLinkAssetsV1Mixin::create(),
             ]
         );
     }

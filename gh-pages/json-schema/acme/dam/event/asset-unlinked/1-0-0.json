@@ -1,12 +1,12 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/acme/dam/event/asset-disassociated/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/acme/dam/event/asset-unlinked/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "_schema": {
       "type": "string",
       "pattern": "^pbj:([a-z0-9-]+):([a-z0-9\\.-]+):([a-z0-9-]+)?:([a-z0-9-]+):([0-9]+-[0-9]+-[0-9]+)$",
-      "default": "pbj:acme:dam:event:asset-disassociated:1-0-0"
+      "default": "pbj:acme:dam:event:asset-unlinked:1-0-0"
     },
     "event_id": {
       "type": "string",
@@ -174,10 +174,10 @@
         "rule": "single"
       }
     },
-    "associated_ref": {
+    "linked_ref": {
       "type": "string",
       "pattern": "^[\\w\\/\\.:-]+$",
-      "description": "The node_ref to disassociate from the asset's node_ref.",
+      "description": "The node_ref to unlink from the asset's node_ref.",
       "pbj": {
         "type": "identifier",
         "rule": "single"
