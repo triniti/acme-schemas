@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v0.1.6
+* __Add Schemas:__
+  * `acme:dam:command:link-assets`
+  * `acme:dam:command:unlink-assets`
+  * `acme:dam:event:asset-linked`
+  * `acme:dam:event:asset-unlinked`
+
 
 ## v0.1.5
 * __Add Schemas:__
