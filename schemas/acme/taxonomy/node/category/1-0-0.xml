@@ -12,7 +12,7 @@
       <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
       <curie-major>triniti:common:mixin:custom-code:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
-      <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
+      <!--<curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>-->
       <curie-major>triniti:taxonomy:mixin:hashtaggable:v1</curie-major>
     </mixins>
   </schema>

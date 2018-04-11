@@ -6,8 +6,9 @@ import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Tr
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
+import TrinitiCuratorCarouselWidgetV1Mixin from '@triniti/schemas/triniti/curator/mixin/carousel-widget/CarouselWidgetV1Mixin';
+import TrinitiCuratorCarouselWidgetV1Trait from '@triniti/schemas/triniti/curator/mixin/carousel-widget/CarouselWidgetV1Trait';
 import TrinitiCuratorWidgetV1Mixin from '@triniti/schemas/triniti/curator/mixin/widget/WidgetV1Mixin';
-import TrinitiCuratorWidgetV1Trait from '@triniti/schemas/triniti/curator/mixin/widget/WidgetV1Trait';
 
 export default class CarouselWidgetV1 extends Message {
   /**
@@ -21,6 +22,7 @@ export default class CarouselWidgetV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiCuratorWidgetV1Mixin.create(),
+        TrinitiCuratorCarouselWidgetV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
       ],
@@ -29,7 +31,7 @@ export default class CarouselWidgetV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(CarouselWidgetV1);
-TrinitiCuratorWidgetV1Trait(CarouselWidgetV1);
+TrinitiCuratorCarouselWidgetV1Trait(CarouselWidgetV1);
 MessageResolver.register('acme:curator:node:carousel-widget', CarouselWidgetV1);
 Object.freeze(CarouselWidgetV1);
 Object.freeze(CarouselWidgetV1.prototype);

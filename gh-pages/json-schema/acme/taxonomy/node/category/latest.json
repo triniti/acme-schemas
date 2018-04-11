@@ -282,14 +282,6 @@
         "rule": "single"
       }
     },
-    "channel_ref": {
-      "type": "string",
-      "pattern": "^[\\w\\/\\.:-]+$",
-      "pbj": {
-        "type": "identifier",
-        "rule": "single"
-      }
-    },
     "hashtags": {
       "type": "array",
       "items": [
