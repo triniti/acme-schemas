@@ -11,7 +11,6 @@ import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixi
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiTaxonomyCategoryV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/category/CategoryV1Mixin';
 import TrinitiTaxonomyCategoryV1Trait from '@triniti/schemas/triniti/taxonomy/mixin/category/CategoryV1Trait';
-import TrinitiTaxonomyHasChannelV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/has-channel/HasChannelV1Mixin';
 import TrinitiTaxonomyHashtaggableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/hashtaggable/HashtaggableV1Mixin';
 
 export default class CategoryV1 extends Message {
@@ -31,7 +30,6 @@ export default class CategoryV1 extends Message {
         GdbotsNcrSluggableV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
-        TrinitiTaxonomyHasChannelV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
     );

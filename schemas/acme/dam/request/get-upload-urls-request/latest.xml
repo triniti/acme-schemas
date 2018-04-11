@@ -7,6 +7,11 @@
     <mixins>
       <curie-major>gdbots:pbjx:mixin:request:v1</curie-major>
       <curie-major>triniti:dam:mixin:get-upload-urls-request:v1</curie-major>
+      <curie-major>gdbots:analytics:mixin:tracked-message:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:ip-to-geo:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:time-parting:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:time-sampling:v1</curie-major>
+      <curie-major>gdbots:enrichments:mixin:ua-parser:v1</curie-major>
     </mixins>
   </schema>
 </pbj-schema>

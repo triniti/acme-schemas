@@ -268,15 +268,6 @@
         "rule": "single"
       }
     },
-    "order_date": {
-      "type": "string",
-      "format": "date-time",
-      "description": "Determines the sequence that this teaserable node will be rendered in lists, search results, etc. It DOES NOT control visibility or publishing. A date was used over an integer (e.g. seq_no) for blog-like, reverse chronological, clarity in sorting.",
-      "pbj": {
-        "type": "date-time",
-        "rule": "single"
-      }
-    },
     "person_refs": {
       "type": "array",
       "items": [

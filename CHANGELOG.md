@@ -1,7 +1,14 @@
 # CHANGELOG
 
+
 ## v0.1.6
 * __Add Schemas:__
+  * `acme:curator:node:category-teaser`
+  * `acme:curator:node:channel-teaser`
+  * `acme:curator:node:link-teaser`
+  * `acme:curator:node:page-teaser`
+  * `acme:curator:node:person-teaser`
+  * `acme:curator:node:poll-teaser`
   * `acme:dam:command:link-assets`
   * `acme:dam:command:unlink-assets`
   * `acme:dam:event:asset-linked`
