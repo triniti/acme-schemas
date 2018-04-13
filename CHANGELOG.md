@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v0.1.7
+* __Add Schemas:__
+  * `acme:canvas:block:article-block`
+  * `acme:canvas:block:audio-block`
+  * `acme:canvas:block:update-block`
+* __Remove Schemas:__ _(not used)_ 
+  * `acme:curator:command:rename-promotion`
+  * `acme:curator:command:rename-teaser`
+  * `acme:iam:request:get-role-batch-request`
+  * `acme:iam:request:get-role-batch-response`
+  * `acme:iam:request:get-user-batch-request`
+  * `acme:iam:request:get-user-batch-response`
+
+
 ## v0.1.6
 * __Add Schemas:__
   * `acme:curator:node:category-teaser`
