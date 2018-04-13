@@ -1,12 +1,12 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/acme/canvas/block/twitter-video-block/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/acme/canvas/block/update-block/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
     "_schema": {
       "type": "string",
       "pattern": "^pbj:([a-z0-9-]+):([a-z0-9\\.-]+):([a-z0-9-]+)?:([a-z0-9-]+):([0-9]+-[0-9]+-[0-9]+)$",
-      "default": "pbj:acme:canvas:block:twitter-video-block:1-0-0"
+      "default": "pbj:acme:canvas:block:update-block:1-0-0"
     },
     "etag": {
       "type": "string",
@@ -25,36 +25,26 @@
         "rule": "single"
       }
     },
-    "screen_name": {
+    "text": {
       "type": "string",
-      "pattern": "^[\\w\\.]+$",
+      "minLength": 0,
+      "maxLength": 65535,
       "pbj": {
-        "type": "string",
+        "type": "text",
         "rule": "single"
       }
     },
-    "tweet_id": {
+    "date": {
       "type": "string",
-      "pattern": "^\\d+$",
+      "format": "date-time",
       "pbj": {
-        "type": "string",
-        "rule": "single"
-      }
-    },
-    "poster_image_ref": {
-      "type": "string",
-      "pattern": "^[\\w\\/\\.:-]+$",
-      "description": "A reference to an image asset to use as the poster that will override what is provided by twitter.",
-      "pbj": {
-        "type": "identifier",
+        "type": "date-time",
         "rule": "single"
       }
     }
   },
   "required": [
-    "_schema",
-    "screen_name",
-    "tweet_id"
+    "_schema"
   ],
   "additionalProperties": false
 }
