@@ -5,35 +5,8 @@
 * __Add Schemas:__
   * `acme:canvas:mixin:soundcloud-video-block`
   * `acme:canvas:mixin:vimeo-video-block`
-  * `acme:curator:content-type`
   * `acme:taxonomy:mixin:suggest-hashtags-request`
   * `acme:taxonomy:mixin:suggest-hashtags-response`
-* __Modify Schemas:__ _(no version changes as there is no production use yet)_
-  * `acme:apollo:mixin:poll`
-    * Add `question` string field.
-    * Add `question_url` string field with format url.
-  * `acme:apollo:mixin:poll-answer`
-    * Add `url` string field with format url.
-  * `acme:canvas:mixin:imgur-post-block`
-    * Rename `context` boolean field to `show_context`.
-  * `acme:canvas:mixin:image-block`
-    * Add `caption` text field.
-  * `acme:curator:mixin:promotion`
-    * Add `priority` small-int field.
-    * Add `%dow%_start_at` and `%dow%_end_at` date-time fields, e.g. `mon_[start|end]_at`.
-  * `acme:curator:mixin:search-teasers-request`
-    * Add `content_types` string-enum set field with id `acme:curator:content-type`.
-  * `acme:curator:mixin:search-widgets-request`
-    * Add `types` string set field with format slug.
-  * `acme:curator:mixin:teaser`
-    * Add `order_date` date-time field.
-    * Add `content_type` string-enum with id `acme:curator:content-type`.
-  * `acme:dam:mixin:asset`
-    * Add `credit` string field.
-  * `acme:people:mixin:search-people-request`
-    * Change default on `sort` field to `title-asc`.
-  * `acme:taxonomy:mixin:search-categories-request`
-    * Change default on `sort` field to `title-asc`.
 
 
 ## v0.1.7
