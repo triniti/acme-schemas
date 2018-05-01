@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.8
+* __Add Schemas:__
+  * `acme:canvas:mixin:soundcloud-audio-block`
+  * `acme:canvas:mixin:vimeo-video-block`
+  * `acme:taxonomy:mixin:suggest-hashtags-request`
+  * `acme:taxonomy:mixin:suggest-hashtags-response`
+
+
 ## v0.1.7
 * __Add Schemas:__
   * `acme:canvas:block:article-block`
