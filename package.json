@@ -1,6 +1,6 @@
 {
   "name": "@triniti/acme-schemas",
-  "version": "0.1.9",
+  "version": "0.1.8",
   "description": "Sample schemas for common triniti services.",
   "repository": {
     "type": "git",
@@ -21,8 +21,8 @@
   "module": "./index.js",
   "jsnext:main": "./index.js",
   "dependencies": {
-    "@gdbots/schemas": "^1.5.1",
-    "@triniti/schemas": "^0.2.5"
+    "@gdbots/schemas": "1.5.1",
+    "@triniti/schemas": "0.2.5"
   },
   "peerDependencies": {
     "@gdbots/common": "~0.1 || ^1.0",
