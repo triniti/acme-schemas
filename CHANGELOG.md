@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.1.9
+* __Add Schemas:__
+  * `acme:dam:mixin:patch-assets`
+
 
 ## v0.1.8
 * __Add Schemas:__

@@ -1,13 +1,8 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/acme/canvas/block/image-block/1-0-0.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/canvas/mixin/document-block/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "_schema": {
-      "type": "string",
-      "pattern": "^pbj:([a-z0-9-]+):([a-z0-9\\.-]+):([a-z0-9-]+)?:([a-z0-9-]+):([0-9]+-[0-9]+-[0-9]+)$",
-      "default": "pbj:acme:canvas:block:image-block:1-0-0"
-    },
     "etag": {
       "type": "string",
       "pattern": "^[\\w\\.:-]+$",
@@ -33,35 +28,27 @@
         "rule": "single"
       }
     },
-    "caption": {
+    "launch_text": {
       "type": "string",
       "minLength": 0,
-      "maxLength": 2000,
-      "pbj": {
-        "type": "text",
-        "rule": "single"
-      }
-    },
-    "is_nsfw": {
-      "type": "boolean",
-      "pbj": {
-        "type": "boolean",
-        "rule": "single"
-      }
-    },
-    "url": {
-      "type": "string",
-      "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$",
+      "maxLength": 255,
       "pbj": {
         "type": "string",
-        "rule": "single",
-        "format": "url"
+        "rule": "single"
+      }
+    },
+    "image_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "description": "An optional reference to an image asset to use as the poster.",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
       }
     }
   },
   "required": [
-    "_schema",
     "node_ref"
   ],
-  "additionalProperties": false
+  "additionalProperties": true
 }
