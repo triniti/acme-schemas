@@ -1,12 +1,32 @@
 # CHANGELOG
 
 
+## v0.1.9
+* __Add Schemas:__
+  * `acme:canvas:block:document-block`
+  * `acme:dam:command:patch-assets`
+  * `acme:dam:event:asset-patched`
+  * `acme:sys:command:create-picklist`
+  * `acme:sys:command:delete-picklist`
+  * `acme:sys:command:update-picklist`
+  * `acme:sys:event:picklist-created`
+  * `acme:sys:event:picklist-deleted`
+  * `acme:sys:event:picklist-updated`
+  * `acme:sys:node:picklist`
+  * `acme:sys:request:get-picklist-history-request`
+  * `acme:sys:request:get-picklist-history-response`
+  * `acme:sys:request:get-picklist-request`
+  * `acme:sys:request:get-picklist-response`
+  * `acme:sys:request:list-all-picklists-request`
+  * `acme:sys:request:list-all-picklists-response`
+
+
 ## v0.1.8
 * __Add Schemas:__
-  * `acme:canvas:mixin:soundcloud-audio-block`
-  * `acme:canvas:mixin:vimeo-video-block`
-  * `acme:taxonomy:mixin:suggest-hashtags-request`
-  * `acme:taxonomy:mixin:suggest-hashtags-response`
+  * `acme:canvas:block:soundcloud-audio-block`
+  * `acme:canvas:block:vimeo-video-block`
+  * `acme:taxonomy:request:suggest-hashtags-request`
+  * `acme:taxonomy:request:suggest-hashtags-response`
 
 
 ## v0.1.7
