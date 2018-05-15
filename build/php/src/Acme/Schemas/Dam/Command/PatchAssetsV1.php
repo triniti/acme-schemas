@@ -4,6 +4,8 @@ namespace Acme\Schemas\Dam\Command;
 
 use Gdbots\Pbj\AbstractMessage;
 use Gdbots\Pbj\Schema;
+use Gdbots\Schemas\Ncr\Mixin\PatchNodes\PatchNodesV1 as GdbotsNcrPatchNodesV1;
+use Gdbots\Schemas\Ncr\Mixin\PatchNodes\PatchNodesV1Mixin as GdbotsNcrPatchNodesV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1 as GdbotsPbjxCommandV1;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Mixin as GdbotsPbjxCommandV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Command\CommandV1Trait as GdbotsPbjxCommandV1Trait;
@@ -13,6 +15,7 @@ use Triniti\Schemas\Dam\Mixin\PatchAssets\PatchAssetsV1Mixin as TrinitiDamPatchA
 final class PatchAssetsV1 extends AbstractMessage implements
     PatchAssets,
     GdbotsPbjxCommandV1,
+    GdbotsNcrPatchNodesV1,
     TrinitiDamPatchAssetsV1
 {
     use GdbotsPbjxCommandV1Trait;
@@ -26,6 +29,7 @@ final class PatchAssetsV1 extends AbstractMessage implements
             [],
             [
                 GdbotsPbjxCommandV1Mixin::create(),
+                GdbotsNcrPatchNodesV1Mixin::create(),
                 TrinitiDamPatchAssetsV1Mixin::create(),
             ]
         );

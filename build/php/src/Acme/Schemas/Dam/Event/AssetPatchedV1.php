@@ -4,6 +4,8 @@ namespace Acme\Schemas\Dam\Event;
 
 use Gdbots\Pbj\AbstractMessage;
 use Gdbots\Pbj\Schema;
+use Gdbots\Schemas\Ncr\Mixin\NodePatched\NodePatchedV1 as GdbotsNcrNodePatchedV1;
+use Gdbots\Schemas\Ncr\Mixin\NodePatched\NodePatchedV1Mixin as GdbotsNcrNodePatchedV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1 as GdbotsPbjxEventV1;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Mixin as GdbotsPbjxEventV1Mixin;
 use Gdbots\Schemas\Pbjx\Mixin\Event\EventV1Trait as GdbotsPbjxEventV1Trait;
@@ -13,6 +15,7 @@ use Triniti\Schemas\Dam\Mixin\AssetPatched\AssetPatchedV1Mixin as TrinitiDamAsse
 final class AssetPatchedV1 extends AbstractMessage implements
     AssetPatched,
     GdbotsPbjxEventV1,
+    GdbotsNcrNodePatchedV1,
     TrinitiDamAssetPatchedV1
 {
     use GdbotsPbjxEventV1Trait;
@@ -26,6 +29,7 @@ final class AssetPatchedV1 extends AbstractMessage implements
             [],
             [
                 GdbotsPbjxEventV1Mixin::create(),
+                GdbotsNcrNodePatchedV1Mixin::create(),
                 TrinitiDamAssetPatchedV1Mixin::create(),
             ]
         );
