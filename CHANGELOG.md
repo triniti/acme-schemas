@@ -1,8 +1,12 @@
 # CHANGELOG
 
-## v0.1.9
-* __Add Schemas:__
-  * `acme:dam:mixin:patch-assets`
+
+## v0.1.10
+* __Modify Schemas:__
+  * `acme:dam:command:patch-assets`
+    * Add mixin `gdbots:ncr:mixin:patch-nodes:v1`
+  * `acme:dam:event:asset-patched`
+    * Add mixin `gdbots:ncr:mixin:node-patched:v1`
 
 
 ## v0.1.9

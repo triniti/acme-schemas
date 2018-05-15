@@ -1,4 +1,5 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/dam/event/asset-patched/1-0-0.json#
+import GdbotsNcrNodePatchedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node-patched/NodePatchedV1Mixin';
 import GdbotsPbjxEventV1Mixin from '@gdbots/schemas/gdbots/pbjx/mixin/event/EventV1Mixin';
 import GdbotsPbjxEventV1Trait from '@gdbots/schemas/gdbots/pbjx/mixin/event/EventV1Trait';
 import Message from '@gdbots/pbj/Message';
@@ -17,6 +18,7 @@ export default class AssetPatchedV1 extends Message {
       [],
       [
         GdbotsPbjxEventV1Mixin.create(),
+        GdbotsNcrNodePatchedV1Mixin.create(),
         TrinitiDamAssetPatchedV1Mixin.create(),
       ],
     );
