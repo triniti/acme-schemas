@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## v0.1.11
+* __Modify Schemas:__
+  * `acme:curator:node:gallery`
+    * Add mixin `triniti:common:mixin:custom-code:v1`
+
+
 ## v0.1.10
 * __Modify Schemas:__
   * `acme:dam:command:patch-assets`
