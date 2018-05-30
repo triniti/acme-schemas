@@ -11,7 +11,7 @@ import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
-import TrinitiOvpKalturaMediaEntryV1Mixin from '@triniti/schemas/triniti/ovp.kaltura/mixin/media-entry/MediaEntryV1Mixin';
+import TrinitiOvpKalturaHasEntryV1Mixin from '@triniti/schemas/triniti/ovp.kaltura/mixin/has-entry/HasEntryV1Mixin';
 import TrinitiOvpVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Mixin';
 import TrinitiOvpVideoV1Trait from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Trait';
 import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
@@ -31,7 +31,7 @@ export default class VideoV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiOvpVideoV1Mixin.create(),
-        TrinitiOvpKalturaMediaEntryV1Mixin.create(),
+        TrinitiOvpKalturaHasEntryV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),

@@ -376,29 +376,38 @@
       "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$",
       "description": "URL to the source mp4 (generally a high-res/mezzanine file).",
       "pbj": {
-        "type": "string",
+        "type": "text",
         "rule": "single",
         "format": "url"
       }
     },
     "kaltura_metadata": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 65535,
-      "description": "An XML string containing the metadata profile(s) for the entry.",
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 65535
+        }
+      },
+      "additionalProperties": false,
+      "description": "A map containing the metadata profile values for the entry.",
       "pbj": {
         "type": "text",
-        "rule": "single"
+        "rule": "map"
       }
     },
     "kaltura_flavors": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 65535,
-      "description": "A JSON object with all of the Kaltura flavors for the entry.",
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/flavor"
+        }
+      ],
+      "additionalProperties": false,
       "pbj": {
-        "type": "text",
-        "rule": "single"
+        "type": "message",
+        "rule": "list"
       }
     },
     "tags": {
@@ -564,5 +573,15 @@
     "_schema",
     "_id"
   ],
+  "definitions": {
+    "flavor": {
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/ovp.kaltura/flavor/1-0-0.json#"
+        }
+      ]
+    }
+  },
   "additionalProperties": false
 }

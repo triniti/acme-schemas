@@ -2,6 +2,7 @@ domain: http://acme-schemas.triniti.io
 
 namespaces:
   - acme:apollo
+  - acme:boost
   - acme:canvas
   - acme:curator
   - acme:dam
