@@ -349,6 +349,8 @@
     'acme:notify:node:ios-notification' => 'Acme\Schemas\Notify\Node\IosNotificationV1',
     'acme:notify:node:slack-notification' => 'Acme\Schemas\Notify\Node\SlackNotificationV1',
     'acme:notify:node:sms-notification' => 'Acme\Schemas\Notify\Node\SmsNotificationV1',
+    'acme:notify:request:get-notification-request' => 'Acme\Schemas\Notify\Request\GetNotificationRequestV1',
+    'acme:notify:request:get-notification-response' => 'Acme\Schemas\Notify\Request\GetNotificationResponseV1',
     'acme:notify:request:search-notifications-request' => 'Acme\Schemas\Notify\Request\SearchNotificationsRequestV1',
     'acme:notify:request:search-notifications-response' => 'Acme\Schemas\Notify\Request\SearchNotificationsResponseV1',
     'acme:ovp:command:create-video' => 'Acme\Schemas\Ovp\Command\CreateVideoV1',

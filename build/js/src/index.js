@@ -348,6 +348,8 @@ import '@triniti/acme-schemas/acme/notify/node/BrowserNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/IosNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/SlackNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/SmsNotificationV1';
+import '@triniti/acme-schemas/acme/notify/request/GetNotificationRequestV1';
+import '@triniti/acme-schemas/acme/notify/request/GetNotificationResponseV1';
 import '@triniti/acme-schemas/acme/notify/request/SearchNotificationsRequestV1';
 import '@triniti/acme-schemas/acme/notify/request/SearchNotificationsResponseV1';
 import '@triniti/acme-schemas/acme/ovp/command/CreateVideoV1';
