@@ -453,6 +453,14 @@
         "format": "slug"
       }
     },
+    "sponsor_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
     "seo_title": {
       "type": "string",
       "minLength": 0,

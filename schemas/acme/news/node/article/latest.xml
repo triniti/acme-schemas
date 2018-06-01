@@ -13,10 +13,13 @@
       <curie-major>gdbots:ncr:mixin:lockable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:publishable:v1</curie-major>
       <curie-major>gdbots:ncr:mixin:sluggable:v1</curie-major>
+      <curie-major>triniti:boost:mixin:sponsorable:v1</curie-major>
       <curie-major>triniti:canvas:mixin:has-blocks:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:common:mixin:themeable:v1</curie-major>
       <curie-major>triniti:curator:mixin:teaserable:v1</curie-major>
       <curie-major>triniti:news:mixin:headline-fragments:v1</curie-major>
+      <curie-major>triniti:notify:mixin:has-notifications:v1</curie-major>
       <curie-major>triniti:people:mixin:has-people:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:has-channel:v1</curie-major>
