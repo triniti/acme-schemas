@@ -146,9 +146,9 @@
       }
     },
     "moderation_status": {
-      "type": "integer",
+      "type": "string",
       "enum": [
-        0,
+        "unknown",
         1,
         2,
         3,
@@ -157,7 +157,7 @@
         6
       ],
       "pbj": {
-        "type": "int-enum",
+        "type": "string-enum",
         "rule": "single"
       }
     },
@@ -209,18 +209,20 @@
         "rule": "single"
       }
     },
-    "flavor_params_id": {
+    "flavor_params_ids": {
       "type": "array",
       "items": [
         {
-          "type": "string",
-          "pattern": "^[\\w-]+$"
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 4294967295
         }
       ],
       "uniqueItems": true,
       "additionalProperties": false,
       "pbj": {
-        "type": "string",
+        "type": "int",
         "rule": "set"
       }
     },
@@ -332,8 +334,9 @@
     "display_in_search": {
       "type": "string",
       "enum": [
-        0,
+        "unknown",
         -1,
+        0,
         1,
         2
       ],
@@ -413,9 +416,9 @@
       }
     },
     "media_type": {
-      "type": "integer",
+      "type": "string",
       "enum": [
-        0,
+        "unknown",
         1,
         2,
         5,
@@ -425,7 +428,7 @@
         204
       ],
       "pbj": {
-        "type": "int-enum",
+        "type": "string-enum",
         "rule": "single"
       }
     },

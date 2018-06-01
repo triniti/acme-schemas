@@ -21,8 +21,8 @@
   "module": "./index.js",
   "jsnext:main": "./index.js",
   "dependencies": {
-    "@gdbots/schemas": "^1.5.3",
-    "@triniti/schemas": "^0.2.5"
+    "@gdbots/schemas": "1.5.3",
+    "@triniti/schemas": "0.3.0"
   },
   "peerDependencies": {
     "@gdbots/common": "~0.1 || ^1.0",
@@ -45,7 +45,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-module": "^4.0.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
     "faucet": "0.0.1",
