@@ -19,10 +19,14 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocksV1;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1 as TrinitiCommonThemeableV1;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1Mixin as TrinitiCommonThemeableV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1 as TrinitiCuratorTeaserableV1;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1Mixin as TrinitiCuratorTeaserableV1Mixin;
 use Triniti\Schemas\News\Mixin\Article\ArticleV1 as TrinitiNewsArticleV1;
@@ -30,6 +34,8 @@ use Triniti\Schemas\News\Mixin\Article\ArticleV1Mixin as TrinitiNewsArticleV1Mix
 use Triniti\Schemas\News\Mixin\Article\ArticleV1Trait as TrinitiNewsArticleV1Trait;
 use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1 as TrinitiNewsHeadlineFragmentsV1;
 use Triniti\Schemas\News\Mixin\HeadlineFragments\HeadlineFragmentsV1Mixin as TrinitiNewsHeadlineFragmentsV1Mixin;
+use Triniti\Schemas\Notify\Mixin\HasNotifications\HasNotificationsV1 as TrinitiNotifyHasNotificationsV1;
+use Triniti\Schemas\Notify\Mixin\HasNotifications\HasNotificationsV1Mixin as TrinitiNotifyHasNotificationsV1Mixin;
 use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
 use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1Mixin as TrinitiPeopleHasPeopleV1Mixin;
 use Triniti\Schemas\Taxonomy\Mixin\Categorizable\CategorizableV1 as TrinitiTaxonomyCategorizableV1;
@@ -49,10 +55,13 @@ final class ArticleV1 extends AbstractMessage implements
     GdbotsNcrLockableV1,
     GdbotsNcrPublishableV1,
     GdbotsNcrSluggableV1,
+    TrinitiBoostSponsorableV1,
     TrinitiCanvasHasBlocksV1,
     TrinitiCommonSeoV1,
+    TrinitiCommonThemeableV1,
     TrinitiCuratorTeaserableV1,
     TrinitiNewsHeadlineFragmentsV1,
+    TrinitiNotifyHasNotificationsV1,
     TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
@@ -77,10 +86,13 @@ final class ArticleV1 extends AbstractMessage implements
                 GdbotsNcrLockableV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
+                TrinitiBoostSponsorableV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiCommonThemeableV1Mixin::create(),
                 TrinitiCuratorTeaserableV1Mixin::create(),
                 TrinitiNewsHeadlineFragmentsV1Mixin::create(),
+                TrinitiNotifyHasNotificationsV1Mixin::create(),
                 TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),

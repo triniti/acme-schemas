@@ -9,11 +9,13 @@ import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggabl
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
+import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
 import TrinitiCanvasHasBlocksV1Mixin from '@triniti/schemas/triniti/canvas/mixin/has-blocks/HasBlocksV1Mixin';
 import TrinitiCanvasPageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Mixin';
 import TrinitiCanvasPageV1Trait from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Trait';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
 import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
 import TrinitiTaxonomyCategorizableV1Mixin from '@triniti/schemas/triniti/taxonomy/mixin/categorizable/CategorizableV1Mixin';
@@ -37,9 +39,11 @@ export default class PageV1 extends Message {
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
+        TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiCanvasHasBlocksV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiCommonThemeableV1Mixin.create(),
         TrinitiCuratorTeaserableV1Mixin.create(),
         TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),

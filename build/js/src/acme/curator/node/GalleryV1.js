@@ -9,8 +9,10 @@ import GdbotsNcrSluggableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/sluggabl
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
+import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
 import TrinitiCuratorGalleryV1Mixin from '@triniti/schemas/triniti/curator/mixin/gallery/GalleryV1Mixin';
 import TrinitiCuratorGalleryV1Trait from '@triniti/schemas/triniti/curator/mixin/gallery/GalleryV1Trait';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
@@ -36,8 +38,10 @@ export default class GalleryV1 extends Message {
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
+        TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiCommonThemeableV1Mixin.create(),
         TrinitiCuratorTeaserableV1Mixin.create(),
         TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),

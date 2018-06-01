@@ -15,6 +15,8 @@ use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1;
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1 as TrinitiCuratorTeaserV1;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1Mixin as TrinitiCuratorTeaserV1Mixin;
 use Triniti\Schemas\Curator\Mixin\YoutubeVideoTeaser\YoutubeVideoTeaserV1 as TrinitiCuratorYoutubeVideoTeaserV1;
@@ -38,6 +40,7 @@ final class YoutubeVideoTeaserV1 extends AbstractMessage implements
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
+    TrinitiBoostSponsorableV1,
     TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
@@ -61,6 +64,7 @@ final class YoutubeVideoTeaserV1 extends AbstractMessage implements
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
+                TrinitiBoostSponsorableV1Mixin::create(),
                 TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),

@@ -17,6 +17,8 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
+use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocksV1;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1 as TrinitiCanvasPageV1;
@@ -26,6 +28,8 @@ use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1 as TrinitiCommonCustomC
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1Mixin as TrinitiCommonCustomCodeV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1 as TrinitiCommonThemeableV1;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1Mixin as TrinitiCommonThemeableV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1 as TrinitiCuratorTeaserableV1;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1Mixin as TrinitiCuratorTeaserableV1Mixin;
 use Triniti\Schemas\People\Mixin\HasPeople\HasPeopleV1 as TrinitiPeopleHasPeopleV1;
@@ -46,9 +50,11 @@ final class PageV1 extends AbstractMessage implements
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
     GdbotsNcrSluggableV1,
+    TrinitiBoostSponsorableV1,
     TrinitiCanvasHasBlocksV1,
     TrinitiCommonCustomCodeV1,
     TrinitiCommonSeoV1,
+    TrinitiCommonThemeableV1,
     TrinitiCuratorTeaserableV1,
     TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
@@ -73,9 +79,11 @@ final class PageV1 extends AbstractMessage implements
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
+                TrinitiBoostSponsorableV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
                 TrinitiCommonCustomCodeV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiCommonThemeableV1Mixin::create(),
                 TrinitiCuratorTeaserableV1Mixin::create(),
                 TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),

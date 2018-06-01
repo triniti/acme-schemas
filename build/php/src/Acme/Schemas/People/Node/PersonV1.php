@@ -15,6 +15,8 @@ use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1 as TrinitiCommonThemeableV1;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1Mixin as TrinitiCommonThemeableV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1 as TrinitiCuratorTeaserableV1;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1Mixin as TrinitiCuratorTeaserableV1Mixin;
 use Triniti\Schemas\People\Mixin\Person\PersonV1 as TrinitiPeoplePersonV1;
@@ -31,6 +33,7 @@ final class PersonV1 extends AbstractMessage implements
     GdbotsNcrIndexedV1,
     GdbotsNcrSluggableV1,
     TrinitiCommonSeoV1,
+    TrinitiCommonThemeableV1,
     TrinitiCuratorTeaserableV1,
     TrinitiTaxonomyHashtaggableV1
 {
@@ -51,6 +54,7 @@ final class PersonV1 extends AbstractMessage implements
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
+                TrinitiCommonThemeableV1Mixin::create(),
                 TrinitiCuratorTeaserableV1Mixin::create(),
                 TrinitiTaxonomyHashtaggableV1Mixin::create(),
             ]

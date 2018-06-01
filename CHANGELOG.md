@@ -2,9 +2,68 @@
 
 
 ## v0.1.11
+* __Add Schemas:__
+  * `acme:boost:command:create-sponsor`
+  * `acme:boost:command:delete-sponsor`
+  * `acme:boost:command:expire-sponsor`
+  * `acme:boost:command:mark-sponsor-as-draft`
+  * `acme:boost:command:mark-sponsor-as-pending`
+  * `acme:boost:command:publish-sponsor`
+  * `acme:boost:command:rename-sponsor`
+  * `acme:boost:command:unpublish-sponsor`
+  * `acme:boost:command:update-sponsor`
+  * `acme:boost:event:sponsor-created`
+  * `acme:boost:event:sponsor-deleted`
+  * `acme:boost:event:sponsor-expired`
+  * `acme:boost:event:sponsor-marked-as-draft`
+  * `acme:boost:event:sponsor-marked-as-pending`
+  * `acme:boost:event:sponsor-published`
+  * `acme:boost:event:sponsor-renamed`
+  * `acme:boost:event:sponsor-scheduled`
+  * `acme:boost:event:sponsor-unpublished`
+  * `acme:boost:event:sponsor-updated`
+  * `acme:boost:node:sponsor`
+  * `acme:boost:request:get-sponsor-batch-request`
+  * `acme:boost:request:get-sponsor-batch-response`
+  * `acme:boost:request:get-sponsor-history-request`
+  * `acme:boost:request:get-sponsor-history-response`
+  * `acme:boost:request:get-sponsor-request`
+  * `acme:boost:request:get-sponsor-response`
+  * `acme:boost:request:search-sponsors-request`
+  * `acme:boost:request:search-sponsors-response`
+  * `acme:canvas:block:poll-grid-block`
 * __Modify Schemas:__
+  * `acme:apollo:node:poll`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+    * Add mixin `triniti:curator:mixin:teaserable:v1`
+  * `acme:canvas:node:page`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
   * `acme:curator:node:gallery`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
     * Add mixin `triniti:common:mixin:custom-code:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+  * `acme:curator:node:*-teaser`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+  * `acme:curator:node:timeline`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+  * `acme:news:node:article`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+    * Add mixin `triniti:notify:mixin:has-notifications:v1`
+  * `acme:ovp:node:video`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+  * `acme:people:node:person`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+  * `acme:taxonomy:node:category`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+    * Add mixin `triniti:curator:mixin:teaserable:v1`
+  * `acme:taxonomy:node:channel`
+    * Add mixin `triniti:boost:mixin:sponsorable:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+    * Add mixin `triniti:curator:mixin:teaserable:v1`
+
 
 
 ## v0.1.10

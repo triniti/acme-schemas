@@ -8,6 +8,7 @@ import GdbotsNcrPublishableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/publis
 import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
+import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
 import TrinitiCuratorTeaserHasTargetV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser-has-target/TeaserHasTargetV1Mixin';
 import TrinitiCuratorTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser/TeaserV1Mixin';
 import TrinitiCuratorVideoTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/video-teaser/VideoTeaserV1Mixin';
@@ -35,6 +36,7 @@ export default class VideoTeaserV1 extends Message {
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrPublishableV1Mixin.create(),
+        TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),
         TrinitiTaxonomyHasChannelV1Mixin.create(),

@@ -8,6 +8,7 @@ import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
 import TrinitiPeoplePersonV1Mixin from '@triniti/schemas/triniti/people/mixin/person/PersonV1Mixin';
 import TrinitiPeoplePersonV1Trait from '@triniti/schemas/triniti/people/mixin/person/PersonV1Trait';
@@ -29,6 +30,7 @@ export default class PersonV1 extends Message {
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiCommonThemeableV1Mixin.create(),
         TrinitiCuratorTeaserableV1Mixin.create(),
         TrinitiTaxonomyHashtaggableV1Mixin.create(),
       ],
