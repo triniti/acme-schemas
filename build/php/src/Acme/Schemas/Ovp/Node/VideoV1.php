@@ -21,8 +21,8 @@ use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1 as TrinitiCuratorTeaserableV1;
 use Triniti\Schemas\Curator\Mixin\Teaserable\TeaserableV1Mixin as TrinitiCuratorTeaserableV1Mixin;
-use Triniti\Schemas\OvpKaltura\Mixin\MediaEntry\MediaEntryV1 as TrinitiOvpKalturaMediaEntryV1;
-use Triniti\Schemas\OvpKaltura\Mixin\MediaEntry\MediaEntryV1Mixin as TrinitiOvpKalturaMediaEntryV1Mixin;
+use Triniti\Schemas\OvpKaltura\Mixin\HasEntry\HasEntryV1 as TrinitiOvpKalturaHasEntryV1;
+use Triniti\Schemas\OvpKaltura\Mixin\HasEntry\HasEntryV1Mixin as TrinitiOvpKalturaHasEntryV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1 as TrinitiOvpVideoV1;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Mixin as TrinitiOvpVideoV1Mixin;
 use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Trait as TrinitiOvpVideoV1Trait;
@@ -39,7 +39,7 @@ final class VideoV1 extends AbstractMessage implements
     Video,
     GdbotsNcrNodeV1,
     TrinitiOvpVideoV1,
-    TrinitiOvpKalturaMediaEntryV1,
+    TrinitiOvpKalturaHasEntryV1,
     GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
@@ -65,7 +65,7 @@ final class VideoV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiOvpVideoV1Mixin::create(),
-                TrinitiOvpKalturaMediaEntryV1Mixin::create(),
+                TrinitiOvpKalturaHasEntryV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),
