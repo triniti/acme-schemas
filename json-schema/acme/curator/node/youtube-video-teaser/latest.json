@@ -250,6 +250,14 @@
         "rule": "single"
       }
     },
+    "sponsor_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
     "person_refs": {
       "type": "array",
       "items": [

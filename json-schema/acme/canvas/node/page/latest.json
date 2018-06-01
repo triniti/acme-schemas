@@ -252,6 +252,14 @@
         "format": "slug"
       }
     },
+    "sponsor_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
     "blocks": {
       "type": "array",
       "items": [
@@ -330,6 +338,18 @@
       "pbj": {
         "type": "boolean",
         "rule": "single"
+      }
+    },
+    "theme": {
+      "type": "string",
+      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "A string used to indicate that a visual treatment should be applied to a piece of content, e.g. \"christmas\" or \"taco\".",
+      "pbj": {
+        "type": "string",
+        "rule": "single",
+        "format": "slug"
       }
     },
     "order_date": {

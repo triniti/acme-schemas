@@ -215,6 +215,14 @@
         "format": "slug"
       }
     },
+    "sponsor_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
     "custom_code": {
       "type": "object",
       "patternProperties": {
@@ -279,6 +287,27 @@
       "description": "Unlisted content will not show up in any search results but can still be viewed if you know the URL.",
       "pbj": {
         "type": "boolean",
+        "rule": "single"
+      }
+    },
+    "theme": {
+      "type": "string",
+      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "A string used to indicate that a visual treatment should be applied to a piece of content, e.g. \"christmas\" or \"taco\".",
+      "pbj": {
+        "type": "string",
+        "rule": "single",
+        "format": "slug"
+      }
+    },
+    "order_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Determines the sequence that this teaserable node will be rendered in lists, search results, etc. It DOES NOT control visibility or publishing. A date was used over an integer (e.g. seq_no) for blog-like, reverse chronological, clarity in sorting.",
+      "pbj": {
+        "type": "date-time",
         "rule": "single"
       }
     },
