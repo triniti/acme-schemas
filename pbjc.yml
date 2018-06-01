@@ -8,6 +8,7 @@ namespaces:
   - acme:dam
   - acme:iam
   - acme:news
+  - acme:notify
   - acme:ovp
   - acme:people
   - acme:sys
