@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## v0.1.12
+* __Add Schemas:__
+  * `acme:dam:command:reorder-gallery-assets`
+  * `acme:dam:event:gallery-asset-reordered`
+
+
 ## v0.1.11
 * __Add Schemas:__
   * `acme:boost:command:create-sponsor`
