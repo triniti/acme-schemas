@@ -175,7 +175,7 @@
         "rule": "single"
       }
     },
-    "gallery_seq_number": {
+    "gallery_seq": {
       "type": "integer",
       "default": 0,
       "minimum": 0,
@@ -199,8 +199,7 @@
   "required": [
     "_schema",
     "event_id",
-    "node_ref",
-    "gallery_seq_number"
+    "node_ref"
   ],
   "definitions": {
     "app": {

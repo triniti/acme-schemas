@@ -186,7 +186,7 @@
         "overridable": true
       }
     },
-    "gallery_seq_numbers": {
+    "gallery_seqs": {
       "type": "object",
       "patternProperties": {
         "^[a-zA-Z_]{1}[\\w\\.:-]+$": {
@@ -196,7 +196,6 @@
           "maximum": 4294967295
         }
       },
-      "minProperties": 1,
       "additionalProperties": false,
       "description": "A map of asset ids to gallery sequence numbers.",
       "pbj": {
@@ -216,8 +215,7 @@
   },
   "required": [
     "_schema",
-    "command_id",
-    "gallery_seq_numbers"
+    "command_id"
   ],
   "definitions": {
     "app": {
