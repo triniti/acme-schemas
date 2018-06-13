@@ -15,6 +15,8 @@ use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1 as GdbotsNcrSluggableV1;
 use Gdbots\Schemas\Ncr\Mixin\Sluggable\SluggableV1Mixin as GdbotsNcrSluggableV1Mixin;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1 as TrinitiCommonAdvertisingV1;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1Mixin as TrinitiCommonAdvertisingV1Mixin;
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1 as TrinitiCommonCustomCodeV1;
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1Mixin as TrinitiCommonCustomCodeV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
@@ -37,6 +39,7 @@ final class CategoryV1 extends AbstractMessage implements
     GdbotsNcrIndexedV1,
     GdbotsNcrSluggableV1,
     TrinitiBoostSponsorableV1,
+    TrinitiCommonAdvertisingV1,
     TrinitiCommonCustomCodeV1,
     TrinitiCommonSeoV1,
     TrinitiCommonThemeableV1,
@@ -60,6 +63,7 @@ final class CategoryV1 extends AbstractMessage implements
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrSluggableV1Mixin::create(),
                 TrinitiBoostSponsorableV1Mixin::create(),
+                TrinitiCommonAdvertisingV1Mixin::create(),
                 TrinitiCommonCustomCodeV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
                 TrinitiCommonThemeableV1Mixin::create(),

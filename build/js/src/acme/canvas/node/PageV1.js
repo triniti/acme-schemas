@@ -13,6 +13,7 @@ import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin
 import TrinitiCanvasHasBlocksV1Mixin from '@triniti/schemas/triniti/canvas/mixin/has-blocks/HasBlocksV1Mixin';
 import TrinitiCanvasPageV1Mixin from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Mixin';
 import TrinitiCanvasPageV1Trait from '@triniti/schemas/triniti/canvas/mixin/page/PageV1Trait';
+import TrinitiCommonAdvertisingV1Mixin from '@triniti/schemas/triniti/common/mixin/advertising/AdvertisingV1Mixin';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
@@ -41,6 +42,7 @@ export default class PageV1 extends Message {
         GdbotsNcrSluggableV1Mixin.create(),
         TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiCanvasHasBlocksV1Mixin.create(),
+        TrinitiCommonAdvertisingV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiCommonThemeableV1Mixin.create(),

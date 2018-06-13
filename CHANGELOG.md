@@ -1,6 +1,30 @@
 # CHANGELOG
 
 
+## v0.1.12
+* __Add Schemas:__
+  * `acme:curator:node:blogroll-widget`
+  * `acme:dam:command:reorder-gallery-assets`
+  * `acme:dam:event:gallery-asset-reordered`
+* __Modify Schemas:__
+  * `acme:canvas:node:page`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:curator:node:gallery`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:curator:node:timeline`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:news:node:article`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:ovp:node:video`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:people:node:person`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:taxonomy:node:category`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+  * `acme:taxonomy:node:channel`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+
+
 ## v0.1.11
 * __Add Schemas:__
   * `acme:boost:command:create-sponsor`

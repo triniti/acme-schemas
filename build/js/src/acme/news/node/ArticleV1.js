@@ -12,6 +12,7 @@ import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
 import TrinitiCanvasHasBlocksV1Mixin from '@triniti/schemas/triniti/canvas/mixin/has-blocks/HasBlocksV1Mixin';
+import TrinitiCommonAdvertisingV1Mixin from '@triniti/schemas/triniti/common/mixin/advertising/AdvertisingV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
@@ -44,6 +45,7 @@ export default class ArticleV1 extends Message {
         GdbotsNcrSluggableV1Mixin.create(),
         TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiCanvasHasBlocksV1Mixin.create(),
+        TrinitiCommonAdvertisingV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiCommonThemeableV1Mixin.create(),
         TrinitiCuratorTeaserableV1Mixin.create(),
