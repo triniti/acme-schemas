@@ -24,6 +24,8 @@ use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasB
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1 as TrinitiCanvasPageV1;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Mixin as TrinitiCanvasPageV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\Page\PageV1Trait as TrinitiCanvasPageV1Trait;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1 as TrinitiCommonAdvertisingV1;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1Mixin as TrinitiCommonAdvertisingV1Mixin;
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1 as TrinitiCommonCustomCodeV1;
 use Triniti\Schemas\Common\Mixin\CustomCode\CustomCodeV1Mixin as TrinitiCommonCustomCodeV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
@@ -52,6 +54,7 @@ final class PageV1 extends AbstractMessage implements
     GdbotsNcrSluggableV1,
     TrinitiBoostSponsorableV1,
     TrinitiCanvasHasBlocksV1,
+    TrinitiCommonAdvertisingV1,
     TrinitiCommonCustomCodeV1,
     TrinitiCommonSeoV1,
     TrinitiCommonThemeableV1,
@@ -81,6 +84,7 @@ final class PageV1 extends AbstractMessage implements
                 GdbotsNcrSluggableV1Mixin::create(),
                 TrinitiBoostSponsorableV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCommonAdvertisingV1Mixin::create(),
                 TrinitiCommonCustomCodeV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
                 TrinitiCommonThemeableV1Mixin::create(),

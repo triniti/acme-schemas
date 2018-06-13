@@ -23,6 +23,8 @@ use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsor
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1 as TrinitiCanvasHasBlocksV1;
 use Triniti\Schemas\Canvas\Mixin\HasBlocks\HasBlocksV1Mixin as TrinitiCanvasHasBlocksV1Mixin;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1 as TrinitiCommonAdvertisingV1;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1Mixin as TrinitiCommonAdvertisingV1Mixin;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
 use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
 use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1 as TrinitiCommonThemeableV1;
@@ -57,6 +59,7 @@ final class ArticleV1 extends AbstractMessage implements
     GdbotsNcrSluggableV1,
     TrinitiBoostSponsorableV1,
     TrinitiCanvasHasBlocksV1,
+    TrinitiCommonAdvertisingV1,
     TrinitiCommonSeoV1,
     TrinitiCommonThemeableV1,
     TrinitiCuratorTeaserableV1,
@@ -88,6 +91,7 @@ final class ArticleV1 extends AbstractMessage implements
                 GdbotsNcrSluggableV1Mixin::create(),
                 TrinitiBoostSponsorableV1Mixin::create(),
                 TrinitiCanvasHasBlocksV1Mixin::create(),
+                TrinitiCommonAdvertisingV1Mixin::create(),
                 TrinitiCommonSeoV1Mixin::create(),
                 TrinitiCommonThemeableV1Mixin::create(),
                 TrinitiCuratorTeaserableV1Mixin::create(),

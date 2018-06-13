@@ -169,6 +169,18 @@
         "rule": "single"
       }
     },
+    "search_request": {
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/search-nodes-request"
+        }
+      ],
+      "pbj": {
+        "type": "message",
+        "rule": "single"
+      }
+    },
     "tags": {
       "type": "object",
       "patternProperties": {
@@ -189,5 +201,18 @@
     "_schema",
     "_id"
   ],
+  "definitions": {
+    "search-nodes-request": {
+      "type": "object",
+      "anyOf": [
+        {
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/ncr/mixin/search-nodes-request/1-0-0.json#"
+        },
+        {
+          "$ref": "http://acme-schemas.triniti.io/json-schema/gdbots/ncr/mixin/search-nodes-request/1-0-1.json#"
+        }
+      ]
+    }
+  },
   "additionalProperties": false
 }
