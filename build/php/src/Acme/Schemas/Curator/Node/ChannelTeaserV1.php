@@ -17,9 +17,9 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
-use Triniti\Schemas\Curator\Mixin\CategoryTeaser\CategoryTeaserV1 as TrinitiCuratorCategoryTeaserV1;
-use Triniti\Schemas\Curator\Mixin\CategoryTeaser\CategoryTeaserV1Mixin as TrinitiCuratorCategoryTeaserV1Mixin;
-use Triniti\Schemas\Curator\Mixin\CategoryTeaser\CategoryTeaserV1Trait as TrinitiCuratorCategoryTeaserV1Trait;
+use Triniti\Schemas\Curator\Mixin\ChannelTeaser\ChannelTeaserV1 as TrinitiCuratorChannelTeaserV1;
+use Triniti\Schemas\Curator\Mixin\ChannelTeaser\ChannelTeaserV1Mixin as TrinitiCuratorChannelTeaserV1Mixin;
+use Triniti\Schemas\Curator\Mixin\ChannelTeaser\ChannelTeaserV1Trait as TrinitiCuratorChannelTeaserV1Trait;
 use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1 as TrinitiCuratorTeaserHasTargetV1;
 use Triniti\Schemas\Curator\Mixin\TeaserHasTarget\TeaserHasTargetV1Mixin as TrinitiCuratorTeaserHasTargetV1Mixin;
 use Triniti\Schemas\Curator\Mixin\Teaser\TeaserV1 as TrinitiCuratorTeaserV1;
@@ -38,7 +38,7 @@ final class ChannelTeaserV1 extends AbstractMessage implements
     GdbotsNcrNodeV1,
     TrinitiCuratorTeaserV1,
     TrinitiCuratorTeaserHasTargetV1,
-    TrinitiCuratorCategoryTeaserV1,
+    TrinitiCuratorChannelTeaserV1,
     GdbotsCommonTaggableV1,
     GdbotsNcrExpirableV1,
     GdbotsNcrIndexedV1,
@@ -50,7 +50,7 @@ final class ChannelTeaserV1 extends AbstractMessage implements
     TrinitiTaxonomyHashtaggableV1
 {
     use GdbotsNcrNodeV1Trait;
-    use TrinitiCuratorCategoryTeaserV1Trait;
+    use TrinitiCuratorChannelTeaserV1Trait;
 
     /**
      * @return Schema
@@ -63,7 +63,7 @@ final class ChannelTeaserV1 extends AbstractMessage implements
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiCuratorTeaserV1Mixin::create(),
                 TrinitiCuratorTeaserHasTargetV1Mixin::create(),
-                TrinitiCuratorCategoryTeaserV1Mixin::create(),
+                TrinitiCuratorChannelTeaserV1Mixin::create(),
                 GdbotsCommonTaggableV1Mixin::create(),
                 GdbotsNcrExpirableV1Mixin::create(),
                 GdbotsNcrIndexedV1Mixin::create(),

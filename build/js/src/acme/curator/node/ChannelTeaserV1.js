@@ -9,8 +9,8 @@ import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
-import TrinitiCuratorCategoryTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/category-teaser/CategoryTeaserV1Mixin';
-import TrinitiCuratorCategoryTeaserV1Trait from '@triniti/schemas/triniti/curator/mixin/category-teaser/CategoryTeaserV1Trait';
+import TrinitiCuratorChannelTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/channel-teaser/ChannelTeaserV1Mixin';
+import TrinitiCuratorChannelTeaserV1Trait from '@triniti/schemas/triniti/curator/mixin/channel-teaser/ChannelTeaserV1Trait';
 import TrinitiCuratorTeaserHasTargetV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser-has-target/TeaserHasTargetV1Mixin';
 import TrinitiCuratorTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaser/TeaserV1Mixin';
 import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
@@ -31,7 +31,7 @@ export default class ChannelTeaserV1 extends Message {
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiCuratorTeaserV1Mixin.create(),
         TrinitiCuratorTeaserHasTargetV1Mixin.create(),
-        TrinitiCuratorCategoryTeaserV1Mixin.create(),
+        TrinitiCuratorChannelTeaserV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
@@ -47,7 +47,7 @@ export default class ChannelTeaserV1 extends Message {
 }
 
 GdbotsNcrNodeV1Trait(ChannelTeaserV1);
-TrinitiCuratorCategoryTeaserV1Trait(ChannelTeaserV1);
+TrinitiCuratorChannelTeaserV1Trait(ChannelTeaserV1);
 MessageResolver.register('acme:curator:node:channel-teaser', ChannelTeaserV1);
 Object.freeze(ChannelTeaserV1);
 Object.freeze(ChannelTeaserV1.prototype);
