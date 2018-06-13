@@ -206,6 +206,7 @@
     'acme:curator:event:widget-deleted' => 'Acme\Schemas\Curator\Event\WidgetDeletedV1',
     'acme:curator:event:widget-updated' => 'Acme\Schemas\Curator\Event\WidgetUpdatedV1',
     'acme:curator:node:article-teaser' => 'Acme\Schemas\Curator\Node\ArticleTeaserV1',
+    'acme:curator:node:blogroll-widget' => 'Acme\Schemas\Curator\Node\BlogrollWidgetV1',
     'acme:curator:node:carousel-widget' => 'Acme\Schemas\Curator\Node\CarouselWidgetV1',
     'acme:curator:node:category-teaser' => 'Acme\Schemas\Curator\Node\CategoryTeaserV1',
     'acme:curator:node:channel-teaser' => 'Acme\Schemas\Curator\Node\ChannelTeaserV1',

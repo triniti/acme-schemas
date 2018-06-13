@@ -169,7 +169,15 @@
     "node_ref": {
       "type": "string",
       "pattern": "^[\\w\\/\\.:-]+$",
-      "description": "The asset's node ref.",
+      "pbj": {
+        "type": "identifier",
+        "rule": "single"
+      }
+    },
+    "gallery_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "description": "The node ref for the gallery where the asset is used.",
       "pbj": {
         "type": "identifier",
         "rule": "single"
@@ -183,15 +191,6 @@
       "description": "An integer value representing the order in which this asset will appear in a gallery.",
       "pbj": {
         "type": "int",
-        "rule": "single"
-      }
-    },
-    "gallery_ref": {
-      "type": "string",
-      "pattern": "^[\\w\\/\\.:-]+$",
-      "description": "The node ref for the gallery where the asset is used.",
-      "pbj": {
-        "type": "identifier",
         "rule": "single"
       }
     }

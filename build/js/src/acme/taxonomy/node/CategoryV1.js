@@ -8,6 +8,7 @@ import Message from '@gdbots/pbj/Message';
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import Schema from '@gdbots/pbj/Schema';
 import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
+import TrinitiCommonAdvertisingV1Mixin from '@triniti/schemas/triniti/common/mixin/advertising/AdvertisingV1Mixin';
 import TrinitiCommonCustomCodeV1Mixin from '@triniti/schemas/triniti/common/mixin/custom-code/CustomCodeV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
@@ -32,6 +33,7 @@ export default class CategoryV1 extends Message {
         GdbotsNcrIndexedV1Mixin.create(),
         GdbotsNcrSluggableV1Mixin.create(),
         TrinitiBoostSponsorableV1Mixin.create(),
+        TrinitiCommonAdvertisingV1Mixin.create(),
         TrinitiCommonCustomCodeV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiCommonThemeableV1Mixin.create(),
