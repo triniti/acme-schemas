@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## v0.1.13
+* __Add Schemas:__
+  * `acme:curator:node:card-deck-widget`
+  * `acme:iam:node:email-app`
+  * `acme:notify:node:email-notification`
+* __Modify Schemas:__
+  * `acme:curator:node:*-teaser`
+    * Add mixin `triniti:common:mixin:advertising:v1`
+    * Add mixin `triniti:common:mixin:seo:v1`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+* __Delete Schemas:__ 
+  * `acme:canvas:block:update-block`
+
+
 ## v0.1.12
 * __Add Schemas:__
   * `acme:curator:node:blogroll-widget`
@@ -195,7 +209,7 @@
   * `acme:canvas:block:article-block`
   * `acme:canvas:block:audio-block`
   * `acme:canvas:block:update-block`
-* __Remove Schemas:__ _(not used)_ 
+* __Delete Schemas:__ _(not used)_ 
   * `acme:curator:command:rename-promotion`
   * `acme:curator:command:rename-teaser`
   * `acme:iam:request:get-role-batch-request`
@@ -416,7 +430,7 @@
   * `acme:taxonomy:request:get-channel-response`
   * `acme:taxonomy:request:search-categories-request`
   * `acme:taxonomy:request:search-categories-response`
-* __Remove Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
+* __Delete Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
   * `acme:apollo:mixin:get-poll-batch-request`
   * `acme:apollo:mixin:get-poll-batch-response`
   * `acme:canvas:mixin:get-page-batch-request`

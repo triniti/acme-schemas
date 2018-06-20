@@ -42,7 +42,6 @@
     'acme:canvas:block:twitter-tweet-block' => 'Acme\Schemas\Canvas\Block\TwitterTweetBlockV1',
     'acme:canvas:block:twitter-user-timeline-block' => 'Acme\Schemas\Canvas\Block\TwitterUserTimelineBlockV1',
     'acme:canvas:block:twitter-video-block' => 'Acme\Schemas\Canvas\Block\TwitterVideoBlockV1',
-    'acme:canvas:block:update-block' => 'Acme\Schemas\Canvas\Block\UpdateBlockV1',
     'acme:canvas:block:vevo-video-block' => 'Acme\Schemas\Canvas\Block\VevoVideoBlockV1',
     'acme:canvas:block:video-block' => 'Acme\Schemas\Canvas\Block\VideoBlockV1',
     'acme:canvas:block:vimeo-video-block' => 'Acme\Schemas\Canvas\Block\VimeoVideoBlockV1',
