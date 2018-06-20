@@ -17,6 +17,12 @@ use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1 as GdbotsNcrPublishableV1
 use Gdbots\Schemas\Ncr\Mixin\Publishable\PublishableV1Mixin as GdbotsNcrPublishableV1Mixin;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1 as TrinitiBoostSponsorableV1;
 use Triniti\Schemas\Boost\Mixin\Sponsorable\SponsorableV1Mixin as TrinitiBoostSponsorableV1Mixin;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1 as TrinitiCommonAdvertisingV1;
+use Triniti\Schemas\Common\Mixin\Advertising\AdvertisingV1Mixin as TrinitiCommonAdvertisingV1Mixin;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1 as TrinitiCommonSeoV1;
+use Triniti\Schemas\Common\Mixin\Seo\SeoV1Mixin as TrinitiCommonSeoV1Mixin;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1 as TrinitiCommonThemeableV1;
+use Triniti\Schemas\Common\Mixin\Themeable\ThemeableV1Mixin as TrinitiCommonThemeableV1Mixin;
 use Triniti\Schemas\Curator\Mixin\ArticleTeaser\ArticleTeaserV1 as TrinitiCuratorArticleTeaserV1;
 use Triniti\Schemas\Curator\Mixin\ArticleTeaser\ArticleTeaserV1Mixin as TrinitiCuratorArticleTeaserV1Mixin;
 use Triniti\Schemas\Curator\Mixin\ArticleTeaser\ArticleTeaserV1Trait as TrinitiCuratorArticleTeaserV1Trait;
@@ -44,6 +50,9 @@ final class ArticleTeaserV1 extends AbstractMessage implements
     GdbotsNcrIndexedV1,
     GdbotsNcrPublishableV1,
     TrinitiBoostSponsorableV1,
+    TrinitiCommonAdvertisingV1,
+    TrinitiCommonSeoV1,
+    TrinitiCommonThemeableV1,
     TrinitiPeopleHasPeopleV1,
     TrinitiTaxonomyCategorizableV1,
     TrinitiTaxonomyHasChannelV1,
@@ -69,6 +78,9 @@ final class ArticleTeaserV1 extends AbstractMessage implements
                 GdbotsNcrIndexedV1Mixin::create(),
                 GdbotsNcrPublishableV1Mixin::create(),
                 TrinitiBoostSponsorableV1Mixin::create(),
+                TrinitiCommonAdvertisingV1Mixin::create(),
+                TrinitiCommonSeoV1Mixin::create(),
+                TrinitiCommonThemeableV1Mixin::create(),
                 TrinitiPeopleHasPeopleV1Mixin::create(),
                 TrinitiTaxonomyCategorizableV1Mixin::create(),
                 TrinitiTaxonomyHasChannelV1Mixin::create(),

@@ -41,6 +41,7 @@ import '@triniti/acme-schemas/acme/iam/node/AlexaAppV1';
 import '@triniti/acme-schemas/acme/iam/node/AndroidAppV1';
 import '@triniti/acme-schemas/acme/iam/node/AppleNewsAppV1';
 import '@triniti/acme-schemas/acme/iam/node/BrowserAppV1';
+import '@triniti/acme-schemas/acme/iam/node/EmailAppV1';
 import '@triniti/acme-schemas/acme/iam/node/IosAppV1';
 import '@triniti/acme-schemas/acme/iam/node/RoleV1';
 import '@triniti/acme-schemas/acme/iam/node/SlackAppV1';

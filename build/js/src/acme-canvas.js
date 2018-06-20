@@ -41,7 +41,6 @@ import '@triniti/acme-schemas/acme/canvas/block/TwitterSearchTimelineBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/TwitterTweetBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/TwitterUserTimelineBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/TwitterVideoBlockV1';
-import '@triniti/acme-schemas/acme/canvas/block/UpdateBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/VevoVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/VideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/VimeoVideoBlockV1';

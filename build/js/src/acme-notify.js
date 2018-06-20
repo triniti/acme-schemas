@@ -21,6 +21,7 @@ import '@triniti/acme-schemas/acme/notify/node/AlexaNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/AndroidNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/AppleNewsNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/BrowserNotificationV1';
+import '@triniti/acme-schemas/acme/notify/node/EmailNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/IosNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/SlackNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/SmsNotificationV1';

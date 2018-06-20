@@ -22,6 +22,7 @@
     'acme:notify:node:android-notification' => 'Acme\Schemas\Notify\Node\AndroidNotificationV1',
     'acme:notify:node:apple-news-notification' => 'Acme\Schemas\Notify\Node\AppleNewsNotificationV1',
     'acme:notify:node:browser-notification' => 'Acme\Schemas\Notify\Node\BrowserNotificationV1',
+    'acme:notify:node:email-notification' => 'Acme\Schemas\Notify\Node\EmailNotificationV1',
     'acme:notify:node:ios-notification' => 'Acme\Schemas\Notify\Node\IosNotificationV1',
     'acme:notify:node:slack-notification' => 'Acme\Schemas\Notify\Node\SlackNotificationV1',
     'acme:notify:node:sms-notification' => 'Acme\Schemas\Notify\Node\SmsNotificationV1',
