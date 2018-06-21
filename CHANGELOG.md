@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.1.14
+* Use `triniti/schemas` v0.5.0.
+* __Add Schemas:__
+  * `acme:canvas:block:page-break-block`
+* __Delete Schemas:__
+  * `acme:canvas:block:pull-quote-block`
+
+
 ## v0.1.13
 * __Add Schemas:__
   * `acme:curator:node:card-deck-widget`

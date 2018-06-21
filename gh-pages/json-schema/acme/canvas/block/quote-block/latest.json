@@ -60,6 +60,13 @@
         "rule": "single",
         "format": "url"
       }
+    },
+    "is_pull_quote": {
+      "type": "boolean",
+      "pbj": {
+        "type": "boolean",
+        "rule": "single"
+      }
     }
   },
   "required": [
