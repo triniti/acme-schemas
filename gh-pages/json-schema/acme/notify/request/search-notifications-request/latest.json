@@ -359,6 +359,7 @@
       "type": "string",
       "enum": [
         "unknown",
+        "draft",
         "scheduled",
         "sent",
         "canceled",

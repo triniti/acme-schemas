@@ -17,6 +17,7 @@
       <curie-major>triniti:canvas:mixin:has-blocks:v1</curie-major>
       <curie-major>triniti:common:mixin:advertising:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:common:mixin:swipeable:v1</curie-major>
       <curie-major>triniti:common:mixin:themeable:v1</curie-major>
       <curie-major>triniti:curator:mixin:teaserable:v1</curie-major>
       <curie-major>triniti:news:mixin:headline-fragments:v1</curie-major>

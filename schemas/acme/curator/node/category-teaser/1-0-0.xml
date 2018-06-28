@@ -16,6 +16,7 @@
       <curie-major>triniti:boost:mixin:sponsorable:v1</curie-major>
       <curie-major>triniti:common:mixin:advertising:v1</curie-major>
       <curie-major>triniti:common:mixin:seo:v1</curie-major>
+      <curie-major>triniti:common:mixin:swipeable:v1</curie-major>
       <curie-major>triniti:common:mixin:themeable:v1</curie-major>
       <curie-major>triniti:people:mixin:has-people:v1</curie-major>
       <curie-major>triniti:taxonomy:mixin:categorizable:v1</curie-major>

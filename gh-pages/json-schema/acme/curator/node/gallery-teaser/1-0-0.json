@@ -197,18 +197,14 @@
         "rule": "single"
       }
     },
-    "related_teasers": {
-      "type": "array",
-      "items": [
-        {
-          "type": "string",
-          "pattern": "^[\\w\\/\\.:-]+$"
-        }
-      ],
-      "additionalProperties": false,
+    "cta_text": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "Text to be used for the call to action.",
       "pbj": {
-        "type": "identifier",
-        "rule": "list"
+        "type": "string",
+        "rule": "single"
       }
     },
     "gallery_ref": {
@@ -224,14 +220,6 @@
       "pattern": "^[\\w\\/\\.:-]+$",
       "pbj": {
         "type": "identifier",
-        "rule": "single"
-      }
-    },
-    "show_only_in_timeline": {
-      "type": "boolean",
-      "description": "When true this means the teaser should ONLY appear when viewing the timeline it's associated with. This is to ensure the teaser doesn't show up in other uses cases like \"top teasers by #hashtag\".",
-      "pbj": {
-        "type": "boolean",
         "rule": "single"
       }
     },
@@ -362,6 +350,26 @@
       "description": "Unlisted content will not show up in any search results but can still be viewed if you know the URL.",
       "pbj": {
         "type": "boolean",
+        "rule": "single"
+      }
+    },
+    "swipe": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "A swipe (aka banner/label/overlay) is a short string used in a visual treatment on the node. e.g. \"Exclusive\", \"NSFW\", \"Breaking Bad Mojo\".",
+      "pbj": {
+        "type": "string",
+        "rule": "single"
+      }
+    },
+    "soft_swipe": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "Same idea as swipe but you know, softer.",
+      "pbj": {
+        "type": "string",
         "rule": "single"
       }
     },

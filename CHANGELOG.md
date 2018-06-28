@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.1.15
+* Use `triniti/schemas` v0.6.0.
+* __Modify Schemas:__
+  * `acme:canvas:node:page`
+    * Add mixin `triniti:common:mixin:swipeable:v1`
+  * `acme:curator:node:*-teaser`
+    * Add mixin `triniti:common:mixin:swipeable:v1`
+  * `acme:news:node:article`
+    * Add mixin `triniti:common:mixin:swipeable:v1`
+  * `acme:ovp:node:video`
+    * Add mixin `triniti:common:mixin:swipeable:v1`
+
+
 ## v0.1.14
 * Use `triniti/schemas` v0.5.0.
 * __Add Schemas:__

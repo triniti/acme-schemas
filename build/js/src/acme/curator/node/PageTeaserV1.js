@@ -11,6 +11,7 @@ import Schema from '@gdbots/pbj/Schema';
 import TrinitiBoostSponsorableV1Mixin from '@triniti/schemas/triniti/boost/mixin/sponsorable/SponsorableV1Mixin';
 import TrinitiCommonAdvertisingV1Mixin from '@triniti/schemas/triniti/common/mixin/advertising/AdvertisingV1Mixin';
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
+import TrinitiCommonSwipeableV1Mixin from '@triniti/schemas/triniti/common/mixin/swipeable/SwipeableV1Mixin';
 import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
 import TrinitiCuratorPageTeaserV1Mixin from '@triniti/schemas/triniti/curator/mixin/page-teaser/PageTeaserV1Mixin';
 import TrinitiCuratorPageTeaserV1Trait from '@triniti/schemas/triniti/curator/mixin/page-teaser/PageTeaserV1Trait';
@@ -42,6 +43,7 @@ export default class PageTeaserV1 extends Message {
         TrinitiBoostSponsorableV1Mixin.create(),
         TrinitiCommonAdvertisingV1Mixin.create(),
         TrinitiCommonSeoV1Mixin.create(),
+        TrinitiCommonSwipeableV1Mixin.create(),
         TrinitiCommonThemeableV1Mixin.create(),
         TrinitiPeopleHasPeopleV1Mixin.create(),
         TrinitiTaxonomyCategorizableV1Mixin.create(),
