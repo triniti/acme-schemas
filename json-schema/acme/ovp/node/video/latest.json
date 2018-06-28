@@ -250,16 +250,6 @@
         "rule": "single"
       }
     },
-    "swipe": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255,
-      "description": "A swipe (aka banner/label/overlay) is a short string used in a visual treatment on the video. e.g. \"Exclusive\", \"NSFW\", \"Breaking Bad Mojo\".",
-      "pbj": {
-        "type": "string",
-        "rule": "single"
-      }
-    },
     "related_videos": {
       "type": "array",
       "items": [
@@ -539,6 +529,26 @@
       "description": "Unlisted content will not show up in any search results but can still be viewed if you know the URL.",
       "pbj": {
         "type": "boolean",
+        "rule": "single"
+      }
+    },
+    "swipe": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "A swipe (aka banner/label/overlay) is a short string used in a visual treatment on the node. e.g. \"Exclusive\", \"NSFW\", \"Breaking Bad Mojo\".",
+      "pbj": {
+        "type": "string",
+        "rule": "single"
+      }
+    },
+    "soft_swipe": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "description": "Same idea as swipe but you know, softer.",
+      "pbj": {
+        "type": "string",
         "rule": "single"
       }
     },
