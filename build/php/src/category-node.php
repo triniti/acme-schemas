@@ -58,6 +58,7 @@
     'acme:ovp:node:video' => 'Acme\Schemas\Ovp\Node\VideoV1',
     'acme:people:node:person' => 'Acme\Schemas\People\Node\PersonV1',
     'acme:sys:node:picklist' => 'Acme\Schemas\Sys\Node\PicklistV1',
+    'acme:sys:node:redirect' => 'Acme\Schemas\Sys\Node\RedirectV1',
     'acme:taxonomy:node:category' => 'Acme\Schemas\Taxonomy\Node\CategoryV1',
     'acme:taxonomy:node:channel' => 'Acme\Schemas\Taxonomy\Node\ChannelV1',
 ]);

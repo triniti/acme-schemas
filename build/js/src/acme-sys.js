@@ -9,17 +9,30 @@
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
 import '@triniti/acme-schemas/acme/sys/command/CreatePicklistV1';
+import '@triniti/acme-schemas/acme/sys/command/CreateRedirectV1';
 import '@triniti/acme-schemas/acme/sys/command/DeletePicklistV1';
+import '@triniti/acme-schemas/acme/sys/command/DeleteRedirectV1';
 import '@triniti/acme-schemas/acme/sys/command/UpdatePicklistV1';
+import '@triniti/acme-schemas/acme/sys/command/UpdateRedirectV1';
 import '@triniti/acme-schemas/acme/sys/event/PicklistCreatedV1';
 import '@triniti/acme-schemas/acme/sys/event/PicklistDeletedV1';
 import '@triniti/acme-schemas/acme/sys/event/PicklistUpdatedV1';
+import '@triniti/acme-schemas/acme/sys/event/RedirectCreatedV1';
+import '@triniti/acme-schemas/acme/sys/event/RedirectDeletedV1';
+import '@triniti/acme-schemas/acme/sys/event/RedirectUpdatedV1';
 import '@triniti/acme-schemas/acme/sys/node/PicklistV1';
+import '@triniti/acme-schemas/acme/sys/node/RedirectV1';
 import '@triniti/acme-schemas/acme/sys/request/GetPicklistHistoryRequestV1';
 import '@triniti/acme-schemas/acme/sys/request/GetPicklistHistoryResponseV1';
 import '@triniti/acme-schemas/acme/sys/request/GetPicklistRequestV1';
 import '@triniti/acme-schemas/acme/sys/request/GetPicklistResponseV1';
+import '@triniti/acme-schemas/acme/sys/request/GetRedirectHistoryRequestV1';
+import '@triniti/acme-schemas/acme/sys/request/GetRedirectHistoryResponseV1';
+import '@triniti/acme-schemas/acme/sys/request/GetRedirectRequestV1';
+import '@triniti/acme-schemas/acme/sys/request/GetRedirectResponseV1';
 import '@triniti/acme-schemas/acme/sys/request/ListAllPicklistsRequestV1';
 import '@triniti/acme-schemas/acme/sys/request/ListAllPicklistsResponseV1';
+import '@triniti/acme-schemas/acme/sys/request/SearchRedirectsRequestV1';
+import '@triniti/acme-schemas/acme/sys/request/SearchRedirectsResponseV1';
 
 export default MessageResolver;
