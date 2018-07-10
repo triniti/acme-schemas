@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v0.1.16
+* __Add Schemas:__
+  * `acme:sys:commmand:create-redirect`
+  * `acme:sys:commmand:delete-redirect`
+  * `acme:sys:commmand:update-redirect`
+  * `acme:sys:event:redirect-created`
+  * `acme:sys:event:redirect-deleted`
+  * `acme:sys:event:redirect-updated`
+  * `acme:sys:node:redirect`
+  * `acme:sys:request:get-redirect-history-request`
+  * `acme:sys:request:get-redirect-history-response`
+  * `acme:sys:request:get-redirect-request`
+  * `acme:sys:request:get-redirect-response`
+  * `acme:sys:request:search-redirects-request`
+  * `acme:sys:request:search-redirects-response`
+
 
 ## v0.1.15
 * Use `triniti/schemas` v0.6.0.
