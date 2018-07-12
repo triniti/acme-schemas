@@ -192,6 +192,22 @@
         "rule": "list"
       }
     },
+    "quality": {
+      "type": "string",
+      "pattern": "^[\\w\\.-]+$",
+      "pbj": {
+        "type": "string",
+        "rule": "single"
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[\\w\\.-]+$",
+      "pbj": {
+        "type": "string",
+        "rule": "single"
+      }
+    },
     "ctx_ip_geo": {
       "type": "object",
       "anyOf": [
