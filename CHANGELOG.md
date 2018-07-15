@@ -1,6 +1,8 @@
 # CHANGELOG
 
+
 ## v0.1.16
+* Use `triniti/schemas` v0.6.1.
 * __Add Schemas:__
   * `acme:sys:commmand:create-redirect`
   * `acme:sys:commmand:delete-redirect`

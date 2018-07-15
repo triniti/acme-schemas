@@ -4,6 +4,8 @@ namespace Acme\Schemas\Sys\Node;
 
 use Gdbots\Pbj\AbstractMessage;
 use Gdbots\Pbj\Schema;
+use Gdbots\Schemas\Ncr\Mixin\Indexed\IndexedV1 as GdbotsNcrIndexedV1;
+use Gdbots\Schemas\Ncr\Mixin\Indexed\IndexedV1Mixin as GdbotsNcrIndexedV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1 as GdbotsNcrNodeV1;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Mixin as GdbotsNcrNodeV1Mixin;
 use Gdbots\Schemas\Ncr\Mixin\Node\NodeV1Trait as GdbotsNcrNodeV1Trait;
@@ -14,7 +16,8 @@ use Triniti\Schemas\Sys\Mixin\Redirect\RedirectV1Trait as TrinitiSysRedirectV1Tr
 final class RedirectV1 extends AbstractMessage implements
     Redirect,
     GdbotsNcrNodeV1,
-    TrinitiSysRedirectV1
+    TrinitiSysRedirectV1,
+    GdbotsNcrIndexedV1
 {
     use GdbotsNcrNodeV1Trait;
     use TrinitiSysRedirectV1Trait;
@@ -29,6 +32,7 @@ final class RedirectV1 extends AbstractMessage implements
             [
                 GdbotsNcrNodeV1Mixin::create(),
                 TrinitiSysRedirectV1Mixin::create(),
+                GdbotsNcrIndexedV1Mixin::create(),
             ]
         );
     }

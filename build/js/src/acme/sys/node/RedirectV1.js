@@ -1,4 +1,5 @@
 // @link http://acme-schemas.triniti.io/json-schema/acme/sys/node/redirect/1-0-0.json#
+import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin';
 import GdbotsNcrNodeV1Trait from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Trait';
 import Message from '@gdbots/pbj/Message';
@@ -19,6 +20,7 @@ export default class RedirectV1 extends Message {
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiSysRedirectV1Mixin.create(),
+        GdbotsNcrIndexedV1Mixin.create(),
       ],
     );
   }
