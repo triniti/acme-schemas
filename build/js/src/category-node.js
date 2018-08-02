@@ -56,6 +56,7 @@ import '@triniti/acme-schemas/acme/notify/node/SlackNotificationV1';
 import '@triniti/acme-schemas/acme/notify/node/SmsNotificationV1';
 import '@triniti/acme-schemas/acme/ovp/node/VideoV1';
 import '@triniti/acme-schemas/acme/people/node/PersonV1';
+import '@triniti/acme-schemas/acme/sys/node/FlagsetV1';
 import '@triniti/acme-schemas/acme/sys/node/PicklistV1';
 import '@triniti/acme-schemas/acme/sys/node/RedirectV1';
 import '@triniti/acme-schemas/acme/taxonomy/node/CategoryV1';
