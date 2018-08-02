@@ -1,6 +1,29 @@
 # CHANGELOG
 
 
+## v0.1.17
+* Use `triniti/schemas` v0.6.2
+* __Add Schemas:__
+  * `acme:sys:commmand:create-flagset`
+  * `acme:sys:commmand:delete-flagset`
+  * `acme:sys:commmand:update-flagset`
+  * `acme:sys:event:flagset-created`
+  * `acme:sys:event:flagset-deleted`
+  * `acme:sys:event:flagset-updated`
+  * `acme:sys:node:flagset`
+  * `acme:sys:request:get-flagset-history-request`
+  * `acme:sys:request:get-flagset-history-response`
+  * `acme:sys:request:get-flagset-request`
+  * `acme:sys:request:get-flagset-response`
+  * `acme:sys:request:list-all-flagsets-request`
+  * `acme:sys:request:list-all-flagsets-response`
+    
+* __Modify Schemas:__
+  * `acme:canvas:node:page`
+    * Add mixin `triniti:sys:mixin:vanity-urlable:v1`
+  * `acme:sys:request:get-redirect-response`
+    * Add mixin `triniti:sys:mixin:get-redirect-response:v1`
+
 ## v0.1.16
 * Use `triniti/schemas` v0.6.1.
 * __Add Schemas:__
