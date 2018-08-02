@@ -2,7 +2,7 @@
 
 
 ## v0.1.17
-* Use `triniti/schemas` v0.6.2
+* Use `triniti/schemas` v0.6.2.
 * __Add Schemas:__
   * `acme:sys:commmand:create-flagset`
   * `acme:sys:commmand:delete-flagset`
@@ -17,12 +17,12 @@
   * `acme:sys:request:get-flagset-response`
   * `acme:sys:request:list-all-flagsets-request`
   * `acme:sys:request:list-all-flagsets-response`
-    
 * __Modify Schemas:__
   * `acme:canvas:node:page`
     * Add mixin `triniti:sys:mixin:vanity-urlable:v1`
   * `acme:sys:request:get-redirect-response`
     * Add mixin `triniti:sys:mixin:get-redirect-response:v1`
+
 
 ## v0.1.16
 * Use `triniti/schemas` v0.6.1.
