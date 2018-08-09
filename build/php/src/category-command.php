@@ -64,6 +64,7 @@
     'acme:curator:command:publish-timeline' => 'Acme\Schemas\Curator\Command\PublishTimelineV1',
     'acme:curator:command:rename-gallery' => 'Acme\Schemas\Curator\Command\RenameGalleryV1',
     'acme:curator:command:rename-timeline' => 'Acme\Schemas\Curator\Command\RenameTimelineV1',
+    'acme:curator:command:sync-teaser' => 'Acme\Schemas\Curator\Command\SyncTeaserV1',
     'acme:curator:command:unpublish-gallery' => 'Acme\Schemas\Curator\Command\UnpublishGalleryV1',
     'acme:curator:command:unpublish-promotion' => 'Acme\Schemas\Curator\Command\UnpublishPromotionV1',
     'acme:curator:command:unpublish-teaser' => 'Acme\Schemas\Curator\Command\UnpublishTeaserV1',
