@@ -5,6 +5,11 @@
 * Use `triniti/schemas` v0.6.3.
 * __Add Schemas:__
   * `acme:curator:command:sync-teaser`
+* __Modify Schemas:__
+  * `acme:curator:node:*-widget`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+  * `acme:people:node:person`
+    * Add mixin `triniti:canvas:mixin:has-blocks:v1`
 
 
 ## v0.1.17
