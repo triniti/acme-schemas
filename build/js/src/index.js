@@ -153,6 +153,7 @@ import '@triniti/acme-schemas/acme/curator/command/PublishTeaserV1';
 import '@triniti/acme-schemas/acme/curator/command/PublishTimelineV1';
 import '@triniti/acme-schemas/acme/curator/command/RenameGalleryV1';
 import '@triniti/acme-schemas/acme/curator/command/RenameTimelineV1';
+import '@triniti/acme-schemas/acme/curator/command/SyncTeaserV1';
 import '@triniti/acme-schemas/acme/curator/command/UnpublishGalleryV1';
 import '@triniti/acme-schemas/acme/curator/command/UnpublishPromotionV1';
 import '@triniti/acme-schemas/acme/curator/command/UnpublishTeaserV1';

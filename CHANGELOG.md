@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v0.1.18
+* Use `triniti/schemas` v0.6.3.
+* __Add Schemas:__
+  * `acme:curator:command:sync-teaser`
+* __Modify Schemas:__
+  * `acme:curator:node:*-widget`
+    * Add mixin `triniti:common:mixin:themeable:v1`
+  * `acme:people:node:person`
+    * Add mixin `triniti:canvas:mixin:has-blocks:v1`
+
+
 ## v0.1.17
 * Use `triniti/schemas` v0.6.2.
 * __Add Schemas:__
@@ -73,7 +84,7 @@
     * Add mixin `triniti:common:mixin:advertising:v1`
     * Add mixin `triniti:common:mixin:seo:v1`
     * Add mixin `triniti:common:mixin:themeable:v1`
-* __Delete Schemas:__ 
+* __Delete Schemas:__
   * `acme:canvas:block:update-block`
 
 
@@ -271,7 +282,7 @@
   * `acme:canvas:block:article-block`
   * `acme:canvas:block:audio-block`
   * `acme:canvas:block:update-block`
-* __Delete Schemas:__ _(not used)_ 
+* __Delete Schemas:__ _(not used)_
   * `acme:curator:command:rename-promotion`
   * `acme:curator:command:rename-teaser`
   * `acme:iam:request:get-role-batch-request`
