@@ -1,6 +1,16 @@
 # CHANGELOG
 
 
+## v0.1.21
+* Use `gdbots/schemas` v1.5.7 and `triniti/schemas` v0.6.6.
+* __Modify Schemas:__
+  * `acme:notify:node:email-notification`
+    * Add `distro_video_url` string field with url format.
+    * Add `distro_video_embed` text field.
+    * Add `distro_photo_url` string field.
+    * Add `distro_document_url` string field.
+    * Add `distro_date` string field.
+    
 ## v0.1.20
 * Use `gdbots/schemas` v1.5.6 and `triniti/schemas` v0.6.5.
 * __Add Schemas:__
