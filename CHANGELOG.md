@@ -536,8 +536,8 @@ __BREAKING CHANGES__
 * __Delete Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
   * `acme:apollo:request:get-poll-batch-request`
   * `acme:apollo:request:get-poll-batch-response`
-  * `acme:canvas:block:get-page-batch-request`
-  * `acme:canvas:block:get-page-batch-response`
+  * `acme:canvas:request:get-page-batch-request`
+  * `acme:canvas:request:get-page-batch-response`
   * `acme:news:request:get-article-batch-request`
   * `acme:news:request:get-article-batch-response`
   * `acme:ovp:request:get-video-batch-request`
