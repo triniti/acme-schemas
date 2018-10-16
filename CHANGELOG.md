@@ -1,6 +1,26 @@
 # CHANGELOG
 
 
+## v0.2.0
+__BREAKING CHANGES__
+
+* Use `gdbots/schemas` v1.5.7 and `triniti/schemas` v0.7.0.
+* __Delete Schemas:__
+  * `acme:canvas:block:pinterest-board-block`
+  * `acme:canvas:block:pinterest-profile-block`
+  * `acme:canvas:block:twitter-collection-timeline-block`
+  * `acme:canvas:block:twitter-follow-button-block`
+  * `acme:canvas:block:twitter-hashtag-button-block`
+  * `acme:canvas:block:twitter-likes-timeline-block`
+  * `acme:canvas:block:twitter-list-timeline-block`
+  * `acme:canvas:block:twitter-mention-button-block`
+  * `acme:canvas:block:twitter-moment-block`
+  * `acme:canvas:block:twitter-search-timeline-block`
+  * `acme:canvas:block:twitter-user-timeline-block`
+  * `acme:canvas:block:twitter-video-block`
+  * `acme:canvas:block:vevo-video-block`
+
+
 ## v0.1.20
 * Use `gdbots/schemas` v1.5.6 and `triniti/schemas` v0.6.5.
 * __Add Schemas:__
@@ -515,14 +535,14 @@
   * `acme:taxonomy:request:search-categories-request`
   * `acme:taxonomy:request:search-categories-response`
 * __Delete Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
-  * `acme:apollo:mixin:get-poll-batch-request`
-  * `acme:apollo:mixin:get-poll-batch-response`
-  * `acme:canvas:mixin:get-page-batch-request`
-  * `acme:canvas:mixin:get-page-batch-response`
-  * `acme:news:mixin:get-article-batch-request`
-  * `acme:news:mixin:get-article-batch-response`
-  * `acme:ovp:mixin:get-video-batch-request`
-  * `acme:ovp:mixin:get-video-batch-response`
+  * `acme:apollo:request:get-poll-batch-request`
+  * `acme:apollo:request:get-poll-batch-response`
+  * `acme:canvas:request:get-page-batch-request`
+  * `acme:canvas:request:get-page-batch-response`
+  * `acme:news:request:get-article-batch-request`
+  * `acme:news:request:get-article-batch-response`
+  * `acme:ovp:request:get-video-batch-request`
+  * `acme:ovp:request:get-video-batch-response`
 
 
 ## v0.1.3
