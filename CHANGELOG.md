@@ -1,6 +1,28 @@
 # CHANGELOG
 
 
+## v0.1.21
+* Use `gdbots/schemas` v1.5.7 and `triniti/schemas` v0.7.0.
+* __Modify Schemas:__
+  * `acme:canvas:mixin:image-block`    
+    * Add `fallback_src_url` string form with format url.
+  * `acme:notify:mixin:email-notification`
+    * Add `sender` string field with format email.
+* __Delete Schemas:__
+  * `acme:canvas:mixin:pinterest-board-block`
+  * `acme:canvas:mixin:pinterest-profile-block`
+  * `acme:canvas:mixin:twitter-collection-timeline-block`
+  * `acme:canvas:mixin:twitter-follow-button-block`
+  * `acme:canvas:mixin:twitter-hashtag-button-block`
+  * `acme:canvas:mixin:twitter-likes-timeline-block`
+  * `acme:canvas:mixin:twitter-list-timeline-block`
+  * `acme:canvas:mixin:twitter-mention-button-block`
+  * `acme:canvas:mixin:twitter-moment-block`
+  * `acme:canvas:mixin:twitter-search-timeline-block`
+  * `acme:canvas:mixin:twitter-user-timeline-block`
+  * `acme:canvas:mixin:twitter-video-block`
+  * `acme:canvas:mixin:vevo-video-block`
+
 ## v0.1.20
 * Use `gdbots/schemas` v1.5.6 and `triniti/schemas` v0.6.5.
 * __Add Schemas:__
