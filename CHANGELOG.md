@@ -534,14 +534,14 @@ __BREAKING CHANGES__
   * `acme:taxonomy:request:search-categories-request`
   * `acme:taxonomy:request:search-categories-response`
 * __Delete Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
-  * `acme:apollo:mixin:get-poll-batch-request`
-  * `acme:apollo:mixin:get-poll-batch-response`
+  * `acme:apollo:request:get-poll-batch-request`
+  * `acme:apollo:request:get-poll-batch-response`
   * `acme:canvas:block:get-page-batch-request`
   * `acme:canvas:block:get-page-batch-response`
-  * `acme:news:mixin:get-article-batch-request`
-  * `acme:news:mixin:get-article-batch-response`
-  * `acme:ovp:mixin:get-video-batch-request`
-  * `acme:ovp:mixin:get-video-batch-response`
+  * `acme:news:request:get-article-batch-request`
+  * `acme:news:request:get-article-batch-response`
+  * `acme:ovp:request:get-video-batch-request`
+  * `acme:ovp:request:get-video-batch-response`
 
 
 ## v0.1.3
