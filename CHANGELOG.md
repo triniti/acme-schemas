@@ -1,27 +1,24 @@
 # CHANGELOG
 
 
-## v0.1.21
+## v0.2.0
+__BREAKING CHANGES__
+
 * Use `gdbots/schemas` v1.5.7 and `triniti/schemas` v0.7.0.
-* __Modify Schemas:__
-  * `acme:canvas:mixin:image-block`    
-    * Add `fallback_src_url` string form with format url.
-  * `acme:notify:mixin:email-notification`
-    * Add `sender` string field with format email.
 * __Delete Schemas:__
-  * `acme:canvas:mixin:pinterest-board-block`
-  * `acme:canvas:mixin:pinterest-profile-block`
-  * `acme:canvas:mixin:twitter-collection-timeline-block`
-  * `acme:canvas:mixin:twitter-follow-button-block`
-  * `acme:canvas:mixin:twitter-hashtag-button-block`
-  * `acme:canvas:mixin:twitter-likes-timeline-block`
-  * `acme:canvas:mixin:twitter-list-timeline-block`
-  * `acme:canvas:mixin:twitter-mention-button-block`
-  * `acme:canvas:mixin:twitter-moment-block`
-  * `acme:canvas:mixin:twitter-search-timeline-block`
-  * `acme:canvas:mixin:twitter-user-timeline-block`
-  * `acme:canvas:mixin:twitter-video-block`
-  * `acme:canvas:mixin:vevo-video-block`
+  * `acme:canvas:block:pinterest-board-block`
+  * `acme:canvas:block:pinterest-profile-block`
+  * `acme:canvas:block:twitter-collection-timeline-block`
+  * `acme:canvas:block:twitter-follow-button-block`
+  * `acme:canvas:block:twitter-hashtag-button-block`
+  * `acme:canvas:block:twitter-likes-timeline-block`
+  * `acme:canvas:block:twitter-list-timeline-block`
+  * `acme:canvas:block:twitter-mention-button-block`
+  * `acme:canvas:block:twitter-moment-block`
+  * `acme:canvas:block:twitter-search-timeline-block`
+  * `acme:canvas:block:twitter-user-timeline-block`
+  * `acme:canvas:block:twitter-video-block`
+  * `acme:canvas:block:vevo-video-block`
 
 ## v0.1.20
 * Use `gdbots/schemas` v1.5.6 and `triniti/schemas` v0.6.5.
@@ -539,8 +536,8 @@
 * __Delete Schemas:__ _(not used and probably won't be needed due to lazy loading and derefs)_
   * `acme:apollo:mixin:get-poll-batch-request`
   * `acme:apollo:mixin:get-poll-batch-response`
-  * `acme:canvas:mixin:get-page-batch-request`
-  * `acme:canvas:mixin:get-page-batch-response`
+  * `acme:canvas:block:get-page-batch-request`
+  * `acme:canvas:block:get-page-batch-response`
   * `acme:news:mixin:get-article-batch-request`
   * `acme:news:mixin:get-article-batch-response`
   * `acme:ovp:mixin:get-video-batch-request`
