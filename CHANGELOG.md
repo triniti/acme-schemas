@@ -20,6 +20,7 @@ __BREAKING CHANGES__
   * `acme:canvas:block:twitter-video-block`
   * `acme:canvas:block:vevo-video-block`
 
+
 ## v0.1.20
 * Use `gdbots/schemas` v1.5.6 and `triniti/schemas` v0.6.5.
 * __Add Schemas:__
