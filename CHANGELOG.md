@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.3.0
+__BREAKING CHANGES__
+
+* Use `triniti/schemas` v0.8.0.
+* __Modify Schemas:__
+  * `acme:curator:request:search-teasers-request`
+    * Add mixin `triniti:curator:mixin:widget-search-request:v1`
+  * `acme:dam:node:image-asset`
+    * Add mixin `triniti:apollo:mixin:has-poll:v1`
+  * `acme:news:request:search-articles-request`
+    * Add mixin `triniti:curator:mixin:widget-search-request:v1`
+
+
 ## v0.2.0
 __BREAKING CHANGES__
 

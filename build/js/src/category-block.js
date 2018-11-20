@@ -33,6 +33,5 @@ import '@triniti/acme-schemas/acme/canvas/block/VideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/VimeoVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/YoutubePlaylistBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/YoutubeVideoBlockV1';
-import '@triniti/schemas/triniti/canvas/block/RenderContextV1';
 
 export default MessageResolver;

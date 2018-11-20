@@ -34,5 +34,4 @@
     'acme:canvas:block:vimeo-video-block' => 'Acme\Schemas\Canvas\Block\VimeoVideoBlockV1',
     'acme:canvas:block:youtube-playlist-block' => 'Acme\Schemas\Canvas\Block\YoutubePlaylistBlockV1',
     'acme:canvas:block:youtube-video-block' => 'Acme\Schemas\Canvas\Block\YoutubeVideoBlockV1',
-    'triniti:canvas:block:render-context' => 'Triniti\Schemas\Canvas\Block\RenderContextV1',
 ]);
