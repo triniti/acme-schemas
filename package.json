@@ -1,6 +1,6 @@
 {
   "name": "@triniti/acme-schemas",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Sample schemas for common triniti services.",
   "repository": {
     "type": "git",
