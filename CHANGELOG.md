@@ -1,6 +1,45 @@
 # CHANGELOG
 
 
+## v0.4.0
+__BREAKING CHANGES__
+
+* Use `triniti/schemas` v0.9.0.
+* __Add Schemas:__
+  * `acme:curator:mixin:card-widget`
+  * `acme:curator:mixin:code-widget`
+  * `acme:curator:mixin:hero-bar-widget`
+  * `acme:curator:mixin:render-promotion-request`
+  * `acme:curator:mixin:render-promotion-response`
+  * `acme:curator:mixin:render-widget-request`
+  * `acme:curator:mixin:render-widget-response`
+  * `acme:curator:mixin:slider-widget`
+  * `acme:curator:mixin:tag-cloud-widget`
+* __Modify Schemas:__
+  * `acme:curator:node:blogroll-widget`
+    * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
+  * `acme:curator:node:carousel-widget`
+    * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
+  * `acme:curator:node:gridler-widget`
+    * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
+  * `acme:curator:node:tetris-widget`
+    * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
+  * `acme:curator:request:search-galleries-request`
+    * Add mixin `triniti:curator:mixin:widget-search-request:v1`
+  * `acme:curator:request:search-galleries-response`
+    * Add mixin `triniti:curator:mixin:widget-search-response:v1`
+  * `acme:curator:request:search-teasers-response`
+    * Add mixin `triniti:curator:mixin:widget-search-response:v1`
+  * `acme:news:request:search-articles-response`
+    * Add mixin `triniti:curator:mixin:widget-search-response:v1`
+  * `acme:ovp:request:search-video-request`
+    * Add mixin `triniti:curator:mixin:widget-search-request:v1`
+  * `acme:ovp:request:search-video-response`
+    * Add mixin `triniti:curator:mixin:widget-search-response:v1`
+* __Delete Schemas:__
+  * `acme:curator:node:card-deck-widget`
+
+
 ## v0.3.0
 __BREAKING CHANGES__
 
