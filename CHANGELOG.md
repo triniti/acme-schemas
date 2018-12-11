@@ -20,12 +20,12 @@ __BREAKING CHANGES__
   * `acme:curator:node:card-widget`
   * `acme:curator:node:code-widget`
   * `acme:curator:node:hero-bar-widget`
+  * `acme:curator:node:slider-widget`
+  * `acme:curator:node:tag-cloud-widget`
   * `acme:curator:request:render-promotion-request`
   * `acme:curator:request:render-promotion-response`
   * `acme:curator:request:render-widget-request`
   * `acme:curator:request:render-widget-response`
-  * `acme:curator:node:slider-widget`
-  * `acme:curator:node:tag-cloud-widget`
 * __Modify Schemas:__
   * `acme:curator:node:blogroll-widget`
     * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
