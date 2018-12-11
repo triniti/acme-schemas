@@ -1,20 +1,31 @@
 # CHANGELOG
 
 
+## v0.5.0
+__BREAKING CHANGES__
+
+* Use `triniti/schemas` v0.10.0.
+* __Add Schemas:__
+  * `acme:curator:node:showtimes-widget`
+  * `acme:curator:node:spotlight-widget`
+* __Delete Schemas:__
+  * `acme:curator:node:card-widget`
+
+
 ## v0.4.0
 __BREAKING CHANGES__
 
 * Use `triniti/schemas` v0.9.0.
 * __Add Schemas:__
-  * `acme:curator:mixin:card-widget`
-  * `acme:curator:mixin:code-widget`
-  * `acme:curator:mixin:hero-bar-widget`
-  * `acme:curator:mixin:render-promotion-request`
-  * `acme:curator:mixin:render-promotion-response`
-  * `acme:curator:mixin:render-widget-request`
-  * `acme:curator:mixin:render-widget-response`
-  * `acme:curator:mixin:slider-widget`
-  * `acme:curator:mixin:tag-cloud-widget`
+  * `acme:curator:node:card-widget`
+  * `acme:curator:node:code-widget`
+  * `acme:curator:node:hero-bar-widget`
+  * `acme:curator:request:render-promotion-request`
+  * `acme:curator:request:render-promotion-response`
+  * `acme:curator:request:render-widget-request`
+  * `acme:curator:request:render-widget-response`
+  * `acme:curator:node:slider-widget`
+  * `acme:curator:node:tag-cloud-widget`
 * __Modify Schemas:__
   * `acme:curator:node:blogroll-widget`
     * Add mixin `triniti:curator:mixin:widget-has-search-request:v1`
