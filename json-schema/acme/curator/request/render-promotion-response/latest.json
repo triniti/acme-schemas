@@ -101,13 +101,6 @@
         "rule": "single"
       }
     },
-    "from_cache": {
-      "type": "boolean",
-      "pbj": {
-        "type": "boolean",
-        "rule": "single"
-      }
-    },
     "promotion": {
       "type": "object",
       "anyOf": [

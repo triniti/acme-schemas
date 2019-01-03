@@ -36,7 +36,7 @@
     },
     "screen_name": {
       "type": "string",
-      "pattern": "^[\\w\\.]+$",
+      "pattern": "^\\w{1,15}$",
       "pbj": {
         "type": "string",
         "rule": "single"
