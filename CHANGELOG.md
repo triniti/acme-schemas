@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## v0.6.1
+* Use `triniti/schemas` v0.11.1.
+* __Add Schemas:__
+  * `acme:canvas:block:spotify-track-block`
+
+
 ## v0.6.0
 __BREAKING CHANGES__
 

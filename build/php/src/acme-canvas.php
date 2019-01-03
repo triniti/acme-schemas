@@ -28,6 +28,7 @@
     'acme:canvas:block:poll-grid-block' => 'Acme\Schemas\Canvas\Block\PollGridBlockV1',
     'acme:canvas:block:quote-block' => 'Acme\Schemas\Canvas\Block\QuoteBlockV1',
     'acme:canvas:block:soundcloud-audio-block' => 'Acme\Schemas\Canvas\Block\SoundcloudAudioBlockV1',
+    'acme:canvas:block:spotify-track-block' => 'Acme\Schemas\Canvas\Block\SpotifyTrackBlockV1',
     'acme:canvas:block:text-block' => 'Acme\Schemas\Canvas\Block\TextBlockV1',
     'acme:canvas:block:twitter-tweet-block' => 'Acme\Schemas\Canvas\Block\TwitterTweetBlockV1',
     'acme:canvas:block:video-block' => 'Acme\Schemas\Canvas\Block\VideoBlockV1',
