@@ -104,6 +104,7 @@
     'acme:news:command:mark-article-as-draft' => 'Acme\Schemas\News\Command\MarkArticleAsDraftV1',
     'acme:news:command:mark-article-as-pending' => 'Acme\Schemas\News\Command\MarkArticleAsPendingV1',
     'acme:news:command:publish-article' => 'Acme\Schemas\News\Command\PublishArticleV1',
+    'acme:news:command:remove-article-slotting' => 'Acme\Schemas\News\Command\RemoveArticleSlottingV1',
     'acme:news:command:rename-article' => 'Acme\Schemas\News\Command\RenameArticleV1',
     'acme:news:command:unlock-article' => 'Acme\Schemas\News\Command\UnlockArticleV1',
     'acme:news:command:unpublish-article' => 'Acme\Schemas\News\Command\UnpublishArticleV1',
@@ -145,5 +146,6 @@
     'gdbots:ncr:command:create-edge' => 'Gdbots\Schemas\Ncr\Command\CreateEdgeV1',
     'gdbots:ncr:command:delete-edge' => 'Gdbots\Schemas\Ncr\Command\DeleteEdgeV1',
     'gdbots:pbjx:command:check-health' => 'Gdbots\Schemas\Pbjx\Command\CheckHealthV1',
+    'triniti:migrator:command:sync-cf-nodes' => 'Triniti\Schemas\Migrator\Command\SyncCfNodesV1',
     'triniti:ovp.kaltura:command:sync-entry' => 'Triniti\Schemas\OvpKaltura\Command\SyncEntryV1',
 ]);

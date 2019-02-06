@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v0.7.0
+__BREAKING CHANGES__
+
+* Use `triniti/schemas` v0.12.1.
+* __Add Schemas:__
+  * `acme:apollo:node:poll-stats`
+  * `acme:curator:node:alert-widget`
+  * `acme:curator:node:gallery-widget`
+  * `acme:curator:node:playlist-widget`
+  * `acme:news:command:remove-article-slotting`
+  * `acme:news:event:apple-news-article-synced`
+  * `acme:news:event:article-slotting-removed`
+  * `acme:news:node:article-stats`
+
+
 ## v0.6.1
 * Use `triniti/schemas` v0.11.1.
 * __Add Schemas:__

@@ -30,6 +30,7 @@
     'acme:apollo:event:poll-updated' => 'Acme\Schemas\Apollo\Event\PollUpdatedV1',
     'acme:apollo:event:vote-casted' => 'Acme\Schemas\Apollo\Event\VoteCastedV1',
     'acme:apollo:node:poll' => 'Acme\Schemas\Apollo\Node\PollV1',
+    'acme:apollo:node:poll-stats' => 'Acme\Schemas\Apollo\Node\PollStatsV1',
     'acme:apollo:request:get-poll-history-request' => 'Acme\Schemas\Apollo\Request\GetPollHistoryRequestV1',
     'acme:apollo:request:get-poll-history-response' => 'Acme\Schemas\Apollo\Request\GetPollHistoryResponseV1',
     'acme:apollo:request:get-poll-request' => 'Acme\Schemas\Apollo\Request\GetPollRequestV1',

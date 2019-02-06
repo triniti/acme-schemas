@@ -29,6 +29,7 @@ import '@triniti/acme-schemas/acme/apollo/event/PollUnpublishedV1';
 import '@triniti/acme-schemas/acme/apollo/event/PollUpdatedV1';
 import '@triniti/acme-schemas/acme/apollo/event/VoteCastedV1';
 import '@triniti/acme-schemas/acme/apollo/node/PollV1';
+import '@triniti/acme-schemas/acme/apollo/node/PollStatsV1';
 import '@triniti/acme-schemas/acme/apollo/request/GetPollHistoryRequestV1';
 import '@triniti/acme-schemas/acme/apollo/request/GetPollHistoryResponseV1';
 import '@triniti/acme-schemas/acme/apollo/request/GetPollRequestV1';

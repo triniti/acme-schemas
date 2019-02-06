@@ -103,6 +103,7 @@ import '@triniti/acme-schemas/acme/news/command/LockArticleV1';
 import '@triniti/acme-schemas/acme/news/command/MarkArticleAsDraftV1';
 import '@triniti/acme-schemas/acme/news/command/MarkArticleAsPendingV1';
 import '@triniti/acme-schemas/acme/news/command/PublishArticleV1';
+import '@triniti/acme-schemas/acme/news/command/RemoveArticleSlottingV1';
 import '@triniti/acme-schemas/acme/news/command/RenameArticleV1';
 import '@triniti/acme-schemas/acme/news/command/UnlockArticleV1';
 import '@triniti/acme-schemas/acme/news/command/UnpublishArticleV1';
@@ -144,6 +145,7 @@ import '@triniti/acme-schemas/acme/taxonomy/command/UpdateChannelV1';
 import '@gdbots/schemas/gdbots/ncr/command/CreateEdgeV1';
 import '@gdbots/schemas/gdbots/ncr/command/DeleteEdgeV1';
 import '@gdbots/schemas/gdbots/pbjx/command/CheckHealthV1';
+import '@triniti/schemas/triniti/migrator/command/SyncCfNodesV1';
 import '@triniti/schemas/triniti/ovp.kaltura/command/SyncEntryV1';
 
 export default MessageResolver;
