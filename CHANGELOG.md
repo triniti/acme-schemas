@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v0.7.2
+* Use `triniti/schemas` v0.12.3.
+* __Add Schemas:__
+  * `acme:news:command:collect-article-stats`
+  * `acme:news:event:article-stats-collected`
+
+
 ## v0.7.1
 * Use `triniti/schemas` v0.12.2.
 

@@ -97,6 +97,7 @@
     'acme:iam:command:update-app' => 'Acme\Schemas\Iam\Command\UpdateAppV1',
     'acme:iam:command:update-role' => 'Acme\Schemas\Iam\Command\UpdateRoleV1',
     'acme:iam:command:update-user' => 'Acme\Schemas\Iam\Command\UpdateUserV1',
+    'acme:news:command:collect-article-stats' => 'Acme\Schemas\News\Command\CollectArticleStatsV1',
     'acme:news:command:create-article' => 'Acme\Schemas\News\Command\CreateArticleV1',
     'acme:news:command:delete-article' => 'Acme\Schemas\News\Command\DeleteArticleV1',
     'acme:news:command:expire-article' => 'Acme\Schemas\News\Command\ExpireArticleV1',

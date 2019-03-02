@@ -112,6 +112,7 @@ import '@triniti/acme-schemas/acme/news/event/ArticlePublishedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleRenamedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleScheduledV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleSlottingRemovedV1';
+import '@triniti/acme-schemas/acme/news/event/ArticleStatsCollectedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUnlockedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUnpublishedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUpdatedV1';

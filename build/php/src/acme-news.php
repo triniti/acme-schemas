@@ -9,6 +9,7 @@
  */
 
 \Gdbots\Pbj\MessageResolver::registerMap([
+    'acme:news:command:collect-article-stats' => 'Acme\Schemas\News\Command\CollectArticleStatsV1',
     'acme:news:command:create-article' => 'Acme\Schemas\News\Command\CreateArticleV1',
     'acme:news:command:delete-article' => 'Acme\Schemas\News\Command\DeleteArticleV1',
     'acme:news:command:expire-article' => 'Acme\Schemas\News\Command\ExpireArticleV1',
@@ -32,6 +33,7 @@
     'acme:news:event:article-renamed' => 'Acme\Schemas\News\Event\ArticleRenamedV1',
     'acme:news:event:article-scheduled' => 'Acme\Schemas\News\Event\ArticleScheduledV1',
     'acme:news:event:article-slotting-removed' => 'Acme\Schemas\News\Event\ArticleSlottingRemovedV1',
+    'acme:news:event:article-stats-collected' => 'Acme\Schemas\News\Event\ArticleStatsCollectedV1',
     'acme:news:event:article-unlocked' => 'Acme\Schemas\News\Event\ArticleUnlockedV1',
     'acme:news:event:article-unpublished' => 'Acme\Schemas\News\Event\ArticleUnpublishedV1',
     'acme:news:event:article-updated' => 'Acme\Schemas\News\Event\ArticleUpdatedV1',

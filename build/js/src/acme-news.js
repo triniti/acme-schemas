@@ -8,6 +8,7 @@
  */
 
 import MessageResolver from '@gdbots/pbj/MessageResolver';
+import '@triniti/acme-schemas/acme/news/command/CollectArticleStatsV1';
 import '@triniti/acme-schemas/acme/news/command/CreateArticleV1';
 import '@triniti/acme-schemas/acme/news/command/DeleteArticleV1';
 import '@triniti/acme-schemas/acme/news/command/ExpireArticleV1';
@@ -31,6 +32,7 @@ import '@triniti/acme-schemas/acme/news/event/ArticlePublishedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleRenamedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleScheduledV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleSlottingRemovedV1';
+import '@triniti/acme-schemas/acme/news/event/ArticleStatsCollectedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUnlockedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUnpublishedV1';
 import '@triniti/acme-schemas/acme/news/event/ArticleUpdatedV1';

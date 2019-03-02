@@ -96,6 +96,7 @@ import '@triniti/acme-schemas/acme/iam/command/RevokeRolesFromUserV1';
 import '@triniti/acme-schemas/acme/iam/command/UpdateAppV1';
 import '@triniti/acme-schemas/acme/iam/command/UpdateRoleV1';
 import '@triniti/acme-schemas/acme/iam/command/UpdateUserV1';
+import '@triniti/acme-schemas/acme/news/command/CollectArticleStatsV1';
 import '@triniti/acme-schemas/acme/news/command/CreateArticleV1';
 import '@triniti/acme-schemas/acme/news/command/DeleteArticleV1';
 import '@triniti/acme-schemas/acme/news/command/ExpireArticleV1';
