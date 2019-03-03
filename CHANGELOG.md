@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## v0.8.0
+__BREAKING CHANGES__
+
+* Use `triniti/schemas` v0.13.0.
+
+
 ## v0.7.2
 * Use `triniti/schemas` v0.12.3.
 * __Add Schemas:__
