@@ -1,6 +1,10 @@
 # CHANGELOG
 
 
+## v0.8.1
+* Use `triniti/schemas` v0.13.1.
+
+
 ## v0.8.0
 __BREAKING CHANGES__
 
