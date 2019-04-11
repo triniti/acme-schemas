@@ -1,6 +1,11 @@
 # CHANGELOG
 
 
+## v0.10.3
+* Use `gdbots/schemas` v1.5.10.
+* Use `triniti/schemas` v0.15.2.
+
+
 ## v0.10.2
 * Use `gdbots/pbjc` v0.4.0 with optimized manifest for php.
 * Use `gdbots/schemas` v1.5.9.
