@@ -1,4 +1,4 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-1.json#
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirable/ExpirableV1Mixin';
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
@@ -16,6 +16,7 @@ import TrinitiCommonAdvertisingV1Mixin from '@triniti/schemas/triniti/common/mix
 import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/SeoV1Mixin';
 import TrinitiCommonSwipeableV1Mixin from '@triniti/schemas/triniti/common/mixin/swipeable/SwipeableV1Mixin';
 import TrinitiCommonThemeableV1Mixin from '@triniti/schemas/triniti/common/mixin/themeable/ThemeableV1Mixin';
+import TrinitiCuratorHasRelatedTeasersV1Mixin from '@triniti/schemas/triniti/curator/mixin/has-related-teasers/HasRelatedTeasersV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
 import TrinitiNewsArticleV1Mixin from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Mixin';
 import TrinitiNewsArticleV1Trait from '@triniti/schemas/triniti/news/mixin/article/ArticleV1Trait';
@@ -33,7 +34,7 @@ export default class ArticleV1 extends Message {
    * @returns {Schema}
    */
   static defineSchema() {
-    return new Schema('pbj:acme:news:node:article:1-0-0', ArticleV1,
+    return new Schema('pbj:acme:news:node:article:1-0-1', ArticleV1,
       [],
       [
         GdbotsNcrNodeV1Mixin.create(),
@@ -50,6 +51,7 @@ export default class ArticleV1 extends Message {
         TrinitiCommonSeoV1Mixin.create(),
         TrinitiCommonSwipeableV1Mixin.create(),
         TrinitiCommonThemeableV1Mixin.create(),
+        TrinitiCuratorHasRelatedTeasersV1Mixin.create(),
         TrinitiCuratorTeaserableV1Mixin.create(),
         TrinitiNewsHeadlineFragmentsV1Mixin.create(),
         TrinitiNotifyHasNotificationsV1Mixin.create(),

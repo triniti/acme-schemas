@@ -193,6 +193,9 @@
         },
         {
           "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/gallery/1-0-1.json#"
+        },
+        {
+          "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/gallery/1-0-2.json#"
         }
       ]
     }

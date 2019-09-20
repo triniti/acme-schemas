@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v1.0.6
+* Use `triniti/schemas` v1.0.7.
+* __Add Schemas:__
+  * `acme:canvas:block:divider-block`
+  * `acme:curator:command:remove-teaser-slotting`
+  * `acme:curator:event:teaser-slotting-removed`
+* __Modify Schemas:__
+  * `acme:news:node:article` patch revision `1-0-1`
+    * Add mixin `triniti:curator:mixin:has-related-teasers:v1`
+
+
 ## v1.0.5
 * Use `triniti/schemas` v1.0.5.
 
