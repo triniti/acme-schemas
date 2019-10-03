@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v1.1.0
+* Use `gdbots/schemas` v1.6.0.
+* Use `triniti/schemas` v1.1.0.
+* __Add Schemas:__
+  * `acme:curator:node:asset-teaser`
+
+
 ## v1.0.6
 * Use `triniti/schemas` v1.0.7.
 * __Add Schemas:__

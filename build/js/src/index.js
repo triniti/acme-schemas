@@ -201,6 +201,7 @@ import '@triniti/acme-schemas/acme/curator/event/WidgetUpdatedV1';
 import '@triniti/acme-schemas/acme/curator/node/AdWidgetV1';
 import '@triniti/acme-schemas/acme/curator/node/AlertWidgetV1';
 import '@triniti/acme-schemas/acme/curator/node/ArticleTeaserV1';
+import '@triniti/acme-schemas/acme/curator/node/AssetTeaserV1';
 import '@triniti/acme-schemas/acme/curator/node/BlogrollWidgetV1';
 import '@triniti/acme-schemas/acme/curator/node/CarouselWidgetV1';
 import '@triniti/acme-schemas/acme/curator/node/CategoryTeaserV1';
