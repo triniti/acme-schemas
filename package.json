@@ -1,6 +1,6 @@
 {
   "name": "@triniti/acme-schemas",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Sample schemas for common triniti services.",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "jsnext:main": "./index.js",
   "dependencies": {
     "@gdbots/schemas": "1.6.0",
-    "@triniti/schemas": "1.1.0"
+    "@triniti/schemas": "1.1.2"
   },
   "peerDependencies": {
     "@gdbots/common": "~0.1 || ^1.0",
@@ -33,7 +33,7 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "@gdbots/common": "^1.0.0",
+    "@gdbots/common": "^1.0.2",
     "@gdbots/pbj": "^1.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -47,7 +47,7 @@
     "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react": "^7.16.0",
     "faucet": "0.0.1",
     "lodash": "^4.17.15",
     "lodash-es": "^4.17.15",
