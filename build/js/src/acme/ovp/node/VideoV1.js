@@ -1,4 +1,4 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-0.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-1.json#
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirable/ExpirableV1Mixin';
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
@@ -15,6 +15,7 @@ import TrinitiCommonSeoV1Mixin from '@triniti/schemas/triniti/common/mixin/seo/S
 import TrinitiCommonSwipeableV1Mixin from '@triniti/schemas/triniti/common/mixin/swipeable/SwipeableV1Mixin';
 import TrinitiCuratorTeaserableV1Mixin from '@triniti/schemas/triniti/curator/mixin/teaserable/TeaserableV1Mixin';
 import TrinitiOvpKalturaHasEntryV1Mixin from '@triniti/schemas/triniti/ovp.kaltura/mixin/has-entry/HasEntryV1Mixin';
+import TrinitiOvpMedialiveHasChannelV1Mixin from '@triniti/schemas/triniti/ovp.medialive/mixin/has-channel/HasChannelV1Mixin';
 import TrinitiOvpVideoV1Mixin from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Mixin';
 import TrinitiOvpVideoV1Trait from '@triniti/schemas/triniti/ovp/mixin/video/VideoV1Trait';
 import TrinitiPeopleHasPeopleV1Mixin from '@triniti/schemas/triniti/people/mixin/has-people/HasPeopleV1Mixin';
@@ -29,12 +30,13 @@ export default class VideoV1 extends Message {
    * @returns {Schema}
    */
   static defineSchema() {
-    return new Schema('pbj:acme:ovp:node:video:1-0-0', VideoV1,
+    return new Schema('pbj:acme:ovp:node:video:1-0-1', VideoV1,
       [],
       [
         GdbotsNcrNodeV1Mixin.create(),
         TrinitiOvpVideoV1Mixin.create(),
         TrinitiOvpKalturaHasEntryV1Mixin.create(),
+        TrinitiOvpMedialiveHasChannelV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
