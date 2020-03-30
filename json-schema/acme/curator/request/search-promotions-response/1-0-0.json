@@ -238,6 +238,9 @@
       "anyOf": [
         {
           "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/promotion/1-0-0.json#"
+        },
+        {
+          "$ref": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/promotion/1-0-1.json#"
         }
       ]
     }
