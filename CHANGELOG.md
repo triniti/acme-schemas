@@ -2,6 +2,17 @@
 
 
 ## v1.1.8
+* Use `gdbots/schemas` v1.6.6.
+* __Modify Schemas:__
+  * `acme:curator:node:gallery` patch revision `1-0-1`
+    * Add mixin `gdbots:common:mixin:labelable:v1`
+  * `acme:news:node:article` patch revision `1-0-2`
+    * Add mixin `gdbots:common:mixin:labelable:v1`
+  * `acme:ovp:node:video` patch revision `1-0-3`
+    * Add mixin `gdbots:common:mixin:labelable:v1`
+
+
+## v1.1.8
 * Use `triniti/schemas` v1.1.11.
 
 

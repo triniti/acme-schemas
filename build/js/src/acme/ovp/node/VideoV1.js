@@ -1,4 +1,5 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-2.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-3.json#
+import GdbotsCommonLabelableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/labelable/LabelableV1Mixin';
 import GdbotsCommonTaggableV1Mixin from '@gdbots/schemas/gdbots/common/mixin/taggable/TaggableV1Mixin';
 import GdbotsNcrExpirableV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/expirable/ExpirableV1Mixin';
 import GdbotsNcrIndexedV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/indexed/IndexedV1Mixin';
@@ -31,7 +32,7 @@ export default class VideoV1 extends Message {
    * @returns {Schema}
    */
   static defineSchema() {
-    return new Schema('pbj:acme:ovp:node:video:1-0-2', VideoV1,
+    return new Schema('pbj:acme:ovp:node:video:1-0-3', VideoV1,
       [],
       [
         GdbotsNcrNodeV1Mixin.create(),
@@ -39,6 +40,7 @@ export default class VideoV1 extends Message {
         TrinitiOvpJwplayerHasMediaV1Mixin.create(),
         TrinitiOvpKalturaHasEntryV1Mixin.create(),
         TrinitiOvpMedialiveHasChannelV1Mixin.create(),
+        GdbotsCommonLabelableV1Mixin.create(),
         GdbotsCommonTaggableV1Mixin.create(),
         GdbotsNcrExpirableV1Mixin.create(),
         GdbotsNcrIndexedV1Mixin.create(),
