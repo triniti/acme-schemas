@@ -1,7 +1,7 @@
 # CHANGELOG
 
 
-## v1.1.8
+## v1.1.9
 * Use `gdbots/schemas` v1.6.6.
 * __Modify Schemas:__
   * `acme:curator:node:gallery` patch revision `1-0-1`
