@@ -47,8 +47,5 @@
     "tape": "^5.0.1",
     "utf8": "^3.0.0",
     "uuid": "^8.3.0"
-  },
-  "babel": {
-    "presets": "./.babelrc.js"
   }
 }
