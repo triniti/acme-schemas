@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## v1.1.12
+* Use `triniti/schemas` v1.1.14.
+* __Add Schemas:__
+  * `acme:canvas:block:eme-form-block`
+
+
 ## v1.1.11
 * Use `triniti/schemas` v1.1.13.
 

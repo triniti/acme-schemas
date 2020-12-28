@@ -67,6 +67,7 @@ import '@triniti/acme-schemas/acme/canvas/block/AudioBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/CodeBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/DividerBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/DocumentBlockV1';
+import '@triniti/acme-schemas/acme/canvas/block/EmeFormBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/FacebookPostBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/FacebookVideoBlockV1';
 import '@triniti/acme-schemas/acme/canvas/block/GalleryBlockV1';
