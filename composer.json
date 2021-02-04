@@ -12,11 +12,11 @@
   ],
   "require": {
     "php": ">=7.4",
-    "gdbots/schemas": "^2.0.0",
-    "triniti/schemas": "dev-sy5"
+    "gdbots/schemas": "2.1.0",
+    "triniti/schemas": "2.0.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.4",
+    "phpunit/phpunit": "^9.1",
     "gdbots/pbjc": "v1.x-dev",
     "symfony/yaml": "^4.4"
   },
@@ -41,15 +41,6 @@
       "vendor/bin/pbjc",
       "git add .",
       "@test"
-    ],
-    "post-package-install": [
-      "Gdbots\\Pbjc\\Composer\\ScriptHandler::writePbjSchemaStoresFile"
-    ],
-    "post-package-uninstall": [
-      "Gdbots\\Pbjc\\Composer\\ScriptHandler::writePbjSchemaStoresFile"
-    ],
-    "post-package-update": [
-      "Gdbots\\Pbjc\\Composer\\ScriptHandler::writePbjSchemaStoresFile"
     ],
     "test": [
       "vendor/bin/phpunit",
