@@ -1,10 +1,9 @@
 # CHANGELOG
 
 
-## v1.1.12
-* Use `triniti/schemas` v1.1.14.
-* __Add Schemas:__
-  * `acme:canvas:block:eme-form-block`
+## v2.0.0
+* Use `gdbots/schemas` v2.1.0
+* Use `triniti/schemas` v2.0.0
 
 
 ## v1.1.11

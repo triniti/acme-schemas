@@ -1,21 +1,20 @@
 <?php
+declare(strict_types=1);
 
-use Gdbots\Common\Util\ArrayUtils;
+use Acme\Schemas\Dam\Node\ImageAssetV1;
+use Gdbots\Pbj\Exception\AssertionFailed;
 use Gdbots\Pbj\Exception\RequiredFieldNotSet;
 use Gdbots\Pbj\Message;
-use Gdbots\Pbj\MessageRef;
 use Gdbots\Pbj\MessageResolver;
+use Gdbots\Pbj\Util\ArrayUtil;
+use Gdbots\Pbj\WellKnown\MessageRef;
 use PHPUnit\Framework\TestCase;
-use Acme\Schemas\Dam\Node\ImageAssetV1;
 
 class SchemaTest extends TestCase
 {
-    /**
-     * @throws \Throwable
-     */
     public function testCanCreateAllMessages()
     {
-        /** @var Message $className */
+        /** @var Message|string $className */
         foreach (MessageResolver::all() as $curie => $className) {
             $message = $className::create();
             $this->assertInstanceOf($className, $message);
@@ -32,7 +31,7 @@ class SchemaTest extends TestCase
                 throw $e;
             }
 
-            $this->assertTrue(ArrayUtils::isAssoc($message->getUriTemplateVars()));
+            $this->assertTrue(ArrayUtil::isAssoc($message->getUriTemplateVars()));
         }
     }
 
@@ -54,11 +53,10 @@ class SchemaTest extends TestCase
 
     /**
      * @dataProvider getInvalidMimeTypeSamples
-     *
-     * @expectedException \Gdbots\Pbj\Exception\AssertionFailed
      */
     public function testInvalidMimeTypesThrowException($sampleMimeType)
     {
+        $this->expectException(AssertionFailed::class);
         ImageAssetV1::create()->set('mime_type', $sampleMimeType);
     }
 
