@@ -18,4 +18,5 @@ return [
     'acme:notify:node:ios-notification:v1',
     'acme:notify:node:slack-notification:v1',
     'acme:notify:node:sms-notification:v1',
+    'acme:notify:node:twitter-notification:v1',
 ];

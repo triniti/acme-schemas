@@ -15,6 +15,7 @@ return [
     'acme:canvas:block:code-block:v1',
     'acme:canvas:block:divider-block:v1',
     'acme:canvas:block:document-block:v1',
+    'acme:canvas:block:eme-form-block:v1',
     'acme:canvas:block:facebook-post-block:v1',
     'acme:canvas:block:facebook-video-block:v1',
     'acme:canvas:block:gallery-block:v1',
