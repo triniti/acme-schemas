@@ -149,7 +149,7 @@ final class ArticleV1 extends AbstractMessage
                  * with a human friendly label. e.g. "super-hero", "hero", "chud".
                  */
                 Fb::create('classification', T\StringType::create())
-                    ->format(Format::SLUG())
+                    ->format(Format::SLUG)
                     ->build(),
                 Fb::create('word_count', T\SmallIntType::create())
                     ->build(),
@@ -185,7 +185,7 @@ final class ArticleV1 extends AbstractMessage
                     ->pattern('^[\w\/\.\\\:=+-]+$')
                     ->build(),
                 Fb::create('apple_news_share_url', T\TextType::create())
-                    ->format(Format::URL())
+                    ->format(Format::URL)
                     ->build(),
                 /*
                  * Timestamp when Apple News was last updated at.
@@ -259,7 +259,7 @@ final class ArticleV1 extends AbstractMessage
                  * - CAN be changed, but in practice once nodes are published you should avoid it if possible
                  */
                 Fb::create('slug', T\StringType::create())
-                    ->format(Format::SLUG())
+                    ->format(Format::SLUG)
                     ->build(),
                 Fb::create('sponsor_ref', T\NodeRefType::create())
                     ->build(),
@@ -322,7 +322,7 @@ final class ArticleV1 extends AbstractMessage
                  * applied to a piece of content, e.g. "christmas" or "taco".
                  */
                 Fb::create('theme', T\StringType::create())
-                    ->format(Format::SLUG())
+                    ->format(Format::SLUG)
                     ->build(),
                 Fb::create('related_teasers_heading', T\StringType::create())
                     ->build(),
@@ -362,7 +362,7 @@ final class ArticleV1 extends AbstractMessage
                  */
                 Fb::create('hf_styles', T\StringType::create())
                     ->asAList()
-                    ->format(Format::SLUG())
+                    ->format(Format::SLUG)
                     ->build(),
                 Fb::create('primary_person_refs', T\NodeRefType::create())
                     ->asASet()
@@ -377,7 +377,7 @@ final class ArticleV1 extends AbstractMessage
                     ->build(),
                 Fb::create('hashtags', T\StringType::create())
                     ->asASet()
-                    ->format(Format::HASHTAG())
+                    ->format(Format::HASHTAG)
                     ->build(),
             ],
             self::MIXINS
