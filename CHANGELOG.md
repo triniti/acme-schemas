@@ -1,6 +1,11 @@
 # CHANGELOG
 
 
+## v3.0.1
+* Use `gdbots/schemas` v3.0.1
+* Use `triniti/schemas` v3.0.1
+
+
 ## v3.0.0
 __BREAKING CHANGES__
 
