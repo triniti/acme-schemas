@@ -9,6 +9,7 @@
 export default [
   'acme:apollo:node:poll-stats:v1',
   'acme:apollo:node:poll:v1',
+  'acme:apollo:node:reactions:v1',
   'acme:boost:node:sponsor:v1',
   'acme:canvas:node:page:v1',
   'acme:curator:node:ad-widget:v1',

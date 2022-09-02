@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## v3.0.2
+* Use `triniti/schemas` v3.0.3
+* __Add Schemas:__
+  * `acme:apollo:node:reactions`
+* __Modify Schemas:__
+  * `acme:news:node:article` patch revision `1-0-3`
+    * Add mixin `triniti:apollo:mixin:has-reactions:v1`
+  * `acme:ovp:node:video` patch revision `1-0-4`
+    * Add mixin `triniti:apollo:mixin:has-reactions:v1`
+
+
 ## v3.0.1
 * Use `gdbots/schemas` v3.0.1
 * Use `triniti/schemas` v3.0.1

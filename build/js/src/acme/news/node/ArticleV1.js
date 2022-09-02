@@ -1,4 +1,4 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-2.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-3.json#
 import Fb from '@gdbots/pbj/FieldBuilder.js';
 import Format from '@gdbots/pbj/enums/Format.js';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin.js';
@@ -330,7 +330,7 @@ export default class ArticleV1 extends Message {
 }
 
 const M = ArticleV1;
-M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:news:node:article:1-0-2';
+M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:news:node:article:1-0-3';
 M.prototype.SCHEMA_CURIE = M.SCHEMA_CURIE = 'acme:news:node:article';
 M.prototype.SCHEMA_CURIE_MAJOR = M.SCHEMA_CURIE_MAJOR = 'acme:news:node:article:v1';
 M.prototype.MIXINS = M.MIXINS = [
@@ -350,6 +350,8 @@ M.prototype.MIXINS = M.MIXINS = [
   'gdbots:ncr:mixin:publishable',
   'gdbots:ncr:mixin:sluggable:v1',
   'gdbots:ncr:mixin:sluggable',
+  'triniti:apollo:mixin:has-reactions:v1',
+  'triniti:apollo:mixin:has-reactions',
   'triniti:boost:mixin:sponsorable:v1',
   'triniti:boost:mixin:sponsorable',
   'triniti:canvas:mixin:has-blocks:v1',

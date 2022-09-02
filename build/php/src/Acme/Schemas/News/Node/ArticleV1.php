@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-2.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/news/node/article/1-0-3.json#
 namespace Acme\Schemas\News\Node;
 
 use Gdbots\Pbj\AbstractMessage;
@@ -16,7 +16,7 @@ use Triniti\Schemas\News\Mixin\Article\ArticleV1Mixin as TrinitiNewsArticleV1Mix
 
 final class ArticleV1 extends AbstractMessage
 {
-    const SCHEMA_ID = 'pbj:acme:news:node:article:1-0-2';
+    const SCHEMA_ID = 'pbj:acme:news:node:article:1-0-3';
     const SCHEMA_CURIE = 'acme:news:node:article';
     const SCHEMA_CURIE_MAJOR = 'acme:news:node:article:v1';
     const MIXINS = [
@@ -36,6 +36,8 @@ final class ArticleV1 extends AbstractMessage
       'gdbots:ncr:mixin:publishable',
       'gdbots:ncr:mixin:sluggable:v1',
       'gdbots:ncr:mixin:sluggable',
+      'triniti:apollo:mixin:has-reactions:v1',
+      'triniti:apollo:mixin:has-reactions',
       'triniti:boost:mixin:sponsorable:v1',
       'triniti:boost:mixin:sponsorable',
       'triniti:canvas:mixin:has-blocks:v1',
