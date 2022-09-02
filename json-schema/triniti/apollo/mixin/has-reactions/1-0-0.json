@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/people/mixin/person/1-0-1.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/apollo/mixin/has-reactions/1-0-0.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -125,40 +125,6 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 255
-    },
-    "display_title": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255
-    },
-    "image_ref": {
-      "type": "string",
-      "pattern": "^[\\w\\/\\.:-]+$",
-      "description": "A reference to the image asset to use for widgets, sharing, seo."
-    },
-    "bio": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 65535,
-      "description": "A short bio of the person. It should typically not have HTML as it is used in metadata, feeds, SERP and social."
-    },
-    "bio_source": {
-      "type": "string",
-      "pattern": "^([\\w\\/-]|[\\w-][\\w\\/-]*[\\w-])$",
-      "minLength": 0,
-      "maxLength": 255,
-      "description": "Indicates where the bio data originated from, e.g. imdb, freebase, custom."
-    },
-    "imdb_url": {
-      "type": "string",
-      "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
-    },
-    "twitter_username": {
-      "type": "string",
-      "pattern": "^\\w{1,15}$"
-    },
-    "is_celebrity": {
-      "type": "boolean"
     }
   },
   "required": [
