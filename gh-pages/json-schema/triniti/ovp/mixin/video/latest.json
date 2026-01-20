@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/ovp/mixin/video/1-0-5.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/ovp/mixin/video/1-0-6.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -135,6 +135,10 @@
       "type": "string",
       "pattern": "^[\\w\\/\\.:-]+$",
       "description": "A reference to the image asset to use as the poster."
+    },
+    "is_vertical": {
+      "type": "boolean",
+      "description": "Indicates whether this video is in vertical (portrait) orientation."
     },
     "is_live": {
       "type": "boolean"

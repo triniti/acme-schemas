@@ -97,6 +97,13 @@ final class BrowserAppV1 extends AbstractMessage
                 Fb::create('fcm_api_key', T\TextType::create())
                     ->build(),
                 /*
+                 * An encrypted value of the service account file that can be obtained from the service accounts tab of the Firebase
+                 * console.
+                 * @link https://firebase.google.com/docs/cloud-messaging/auth-server
+                 */
+                Fb::create('fcm_auth_config', T\TextType::create())
+                    ->build(),
+                /*
                  * A unique identifier used to identify an app within a Firebase project that can be obtained
                  * from the Firebase console.
                  * @link https://firebase.google.com/docs/web/setup?authuser=0#config-object
@@ -123,6 +130,12 @@ final class BrowserAppV1 extends AbstractMessage
                  */
                 Fb::create('fcm_web_api_key', T\StringType::create())
                     ->pattern('^[\w\.-]+$')
+                    ->build(),
+                /*
+                 * The Braze REST API Key (also known as an API Identifier) that is used to authenticate API requests to Braze.
+                 * This key should be encrypted for storage and decrypted before use in API calls.
+                 */
+                Fb::create('braze_api_key', T\TextType::create())
                     ->build(),
             ],
             self::MIXINS
