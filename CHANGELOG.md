@@ -1,6 +1,16 @@
 # CHANGELOG
 
 
+## v3.0.3
+* Use `gdbots/schemas` v3.0.5
+* Use `triniti/schemas` v3.0.6
+* __Modify Schemas:__
+  * `acme:ovp:node:video` patch revision `1-0-5`
+    * Inherits `is_vertical` boolean field from `triniti:ovp:mixin:video:v1`.
+  * `acme:dam:node:video-asset` patch revision `1-0-2`
+    * Inherits `is_vertical` boolean field from `triniti:dam:mixin:video-asset:v1`.
+
+
 ## v3.0.2
 * Use `triniti/schemas` v3.0.3
 * __Add Schemas:__
