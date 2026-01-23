@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-5.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-4.json#
 namespace Acme\Schemas\Ovp\Node;
 
 use Gdbots\Pbj\AbstractMessage;
@@ -17,7 +17,7 @@ use Triniti\Schemas\Ovp\Mixin\Video\VideoV1Mixin as TrinitiOvpVideoV1Mixin;
 
 final class VideoV1 extends AbstractMessage
 {
-    const SCHEMA_ID = 'pbj:acme:ovp:node:video:1-0-5';
+    const SCHEMA_ID = 'pbj:acme:ovp:node:video:1-0-4';
     const SCHEMA_CURIE = 'acme:ovp:node:video';
     const SCHEMA_CURIE_MAJOR = 'acme:ovp:node:video:v1';
     const MIXINS = [

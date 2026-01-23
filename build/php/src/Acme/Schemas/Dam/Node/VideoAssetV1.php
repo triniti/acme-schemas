@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-// @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/video-asset/1-0-2.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/video-asset/1-0-1.json#
 namespace Acme\Schemas\Dam\Node;
 
 use Gdbots\Pbj\AbstractMessage;
@@ -18,7 +18,7 @@ use Triniti\Schemas\Ovp\Enum\TranscriptionStatus;
 
 final class VideoAssetV1 extends AbstractMessage
 {
-    const SCHEMA_ID = 'pbj:acme:dam:node:video-asset:1-0-2';
+    const SCHEMA_ID = 'pbj:acme:dam:node:video-asset:1-0-1';
     const SCHEMA_CURIE = 'acme:dam:node:video-asset';
     const SCHEMA_CURIE_MAJOR = 'acme:dam:node:video-asset:v1';
     const MIXINS = [

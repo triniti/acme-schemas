@@ -1,4 +1,4 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-5.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/ovp/node/video/1-0-4.json#
 import Fb from '@gdbots/pbj/FieldBuilder.js';
 import Format from '@gdbots/pbj/enums/Format.js';
 import GdbotsNcrNodeV1Mixin from '@gdbots/schemas/gdbots/ncr/mixin/node/NodeV1Mixin.js';
@@ -351,7 +351,7 @@ export default class VideoV1 extends Message {
 }
 
 const M = VideoV1;
-M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:ovp:node:video:1-0-5';
+M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:ovp:node:video:1-0-4';
 M.prototype.SCHEMA_CURIE = M.SCHEMA_CURIE = 'acme:ovp:node:video';
 M.prototype.SCHEMA_CURIE_MAJOR = M.SCHEMA_CURIE_MAJOR = 'acme:ovp:node:video:v1';
 M.prototype.MIXINS = M.MIXINS = [

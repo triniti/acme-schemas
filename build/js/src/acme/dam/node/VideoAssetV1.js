@@ -1,4 +1,4 @@
-// @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/video-asset/1-0-2.json#
+// @link http://acme-schemas.triniti.io/json-schema/acme/dam/node/video-asset/1-0-1.json#
 import AssetId from '@triniti/schemas/triniti/dam/AssetId.js';
 import Fb from '@gdbots/pbj/FieldBuilder.js';
 import Format from '@gdbots/pbj/enums/Format.js';
@@ -168,7 +168,7 @@ export default class VideoAssetV1 extends Message {
 }
 
 const M = VideoAssetV1;
-M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:dam:node:video-asset:1-0-2';
+M.prototype.SCHEMA_ID = M.SCHEMA_ID = 'pbj:acme:dam:node:video-asset:1-0-1';
 M.prototype.SCHEMA_CURIE = M.SCHEMA_CURIE = 'acme:dam:node:video-asset';
 M.prototype.SCHEMA_CURIE_MAJOR = M.SCHEMA_CURIE_MAJOR = 'acme:dam:node:video-asset:v1';
 M.prototype.MIXINS = M.MIXINS = [
