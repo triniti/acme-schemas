@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/dam/mixin/video-asset/1-0-1.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/dam/mixin/video-asset/1-0-2.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -204,6 +204,10 @@
       "minimum": 0,
       "maximum": 65535,
       "description": "Duration of the video in seconds."
+    },
+    "is_vertical": {
+      "type": "boolean",
+      "description": "Indicates whether this video is in vertical (portrait) orientation."
     }
   },
   "required": [
