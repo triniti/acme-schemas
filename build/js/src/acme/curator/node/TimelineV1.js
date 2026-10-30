@@ -71,8 +71,19 @@ export default class TimelineV1 extends Message {
          */
         Fb.create('image_ref', T.NodeRefType.create())
           .build(),
+        /*
+         * A reference to the video to use as the primary media for the timeline.
+         */
+        Fb.create('video_ref', T.NodeRefType.create())
+          .build(),
         Fb.create('allow_comments', T.BooleanType.create())
           .withDefault(true)
+          .build(),
+        /*
+         * When true, this timeline represents a live blog parent; individual updates
+         * are authored as teasers referencing this timeline.
+         */
+        Fb.create('is_live_blog', T.BooleanType.create())
           .build(),
         /*
          * A description of the timeline (usually a few sentences). It should typically
@@ -144,6 +155,13 @@ export default class TimelineV1 extends Message {
           .build(),
         Fb.create('meta_keywords', T.StringType.create())
           .asASet()
+          .build(),
+        /*
+         * Alternate URLs for SEO. Entries should be fully-qualified URLs.
+         */
+        Fb.create('seo_alternate_urls', T.StringType.create())
+          .asASet()
+          .format(Format.URL)
           .build(),
         /*
          * Unlisted content will not show up in any search results

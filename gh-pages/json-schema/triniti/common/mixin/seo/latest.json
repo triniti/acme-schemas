@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/common/mixin/seo/1-0-1.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/common/mixin/seo/1-0-2.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -39,6 +39,18 @@
       ],
       "uniqueItems": true,
       "additionalProperties": false
+    },
+    "seo_alternate_urls": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string",
+          "pattern": "^(https?:\\/\\/)?([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$"
+        }
+      ],
+      "uniqueItems": true,
+      "additionalProperties": false,
+      "description": "Alternate URLs for SEO. Entries should be fully-qualified URLs."
     },
     "is_unlisted": {
       "type": "boolean",

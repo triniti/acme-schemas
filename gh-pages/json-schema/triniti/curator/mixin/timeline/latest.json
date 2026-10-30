@@ -1,5 +1,5 @@
 {
-  "id": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/timeline/1-0-1.json#",
+  "id": "http://acme-schemas.triniti.io/json-schema/triniti/curator/mixin/timeline/1-0-3.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
@@ -136,9 +136,18 @@
       "pattern": "^[\\w\\/\\.:-]+$",
       "description": "A reference to the image asset to use for widgets, sharing, seo."
     },
+    "video_ref": {
+      "type": "string",
+      "pattern": "^[\\w\\/\\.:-]+$",
+      "description": "A reference to the video to use as the primary media for the timeline."
+    },
     "allow_comments": {
       "type": "boolean",
       "default": true
+    },
+    "is_live_blog": {
+      "type": "boolean",
+      "description": "When true, this timeline represents a live blog parent; individual updates are authored as teasers referencing this timeline."
     },
     "description": {
       "type": "string",

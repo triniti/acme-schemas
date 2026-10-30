@@ -8,6 +8,7 @@ use Gdbots\Pbj\Message;
 use Gdbots\Pbj\MessageResolver;
 use Gdbots\Pbj\Util\ArrayUtil;
 use Gdbots\Pbj\WellKnown\MessageRef;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class SchemaTest extends TestCase
@@ -36,7 +37,7 @@ class SchemaTest extends TestCase
         }
     }
 
-    public function getInvalidMimeTypeSamples()
+    public static function getInvalidMimeTypeSamples()
     {
         return [
             // No forward slash
@@ -52,16 +53,14 @@ class SchemaTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider getInvalidMimeTypeSamples
-     */
+    #[DataProvider('getInvalidMimeTypeSamples')]
     public function testInvalidMimeTypesThrowException($sampleMimeType)
     {
         $this->expectException(AssertionFailed::class);
         ImageAssetV1::create()->set('mime_type', $sampleMimeType);
     }
 
-    public function getValidMimeTypeSamples()
+    public static function getValidMimeTypeSamples()
     {
         return [
             // Allow digits in type and subtype
@@ -75,9 +74,7 @@ class SchemaTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider getValidMimeTypeSamples
-     */
+    #[DataProvider('getValidMimeTypeSamples')]
     public function testValidMimeTypes($sampleMimeType)
     {
         ImageAssetV1::create()->set('mime_type', $sampleMimeType);

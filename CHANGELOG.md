@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v3.1.0
+__POSSIBLE BREAKING CHANGES__
+* The underlying gdbots/pbj (javascript) has been upgraded from 3.x to 4.x so we can use the latest uuid package for security reasons. The interface remains the same but npm packaging being what it is (horrible) you might run into dependency issues.
+* Require php 8.5.12 or later (php2shell fixes).
+* Use `gdbots/schemas` v3.1.0
+* Use `triniti/schemas` v3.1.0
+
+
 ## v3.0.3
 * Use `gdbots/schemas` v3.0.5
 * Use `triniti/schemas` v3.0.6
